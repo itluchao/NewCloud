@@ -1,0 +1,339 @@
+body{
+	background: #eaeeef;
+}
+.total_data_box{
+	border-bottom: 1rem solid #eaeeef;
+	width: 100%;
+	height: 21.55rem; 
+	background: url('https://static.ncmimg.com/wx_xcx/image/total_data_bg.jpg') no-repeat center;
+	background-size: cover;
+}
+.total_data{
+	padding-top: 3.9rem;
+}
+.total_data h4{
+	color: #FFF;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	text-align: center;
+}
+.total_data p{
+	color: #FFF;
+	font-size: 4.5rem;
+	line-height: 5.5rem;
+	text-align: center;
+}
+.total_data span{
+	display: block;
+	color: #FFF;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	text-align: center;
+}
+.today_tswk{
+
+	padding: 0 1.5rem;
+	color: #FFF;
+	text-align: center;
+	margin-top: 3.5rem;
+}
+.today_data{
+	width: 50%;
+	box-sizing: border-box;
+	border-right: 1px solid #FFF;
+}
+.tswk_data{
+	width: 50%;
+	box-sizing: border-box;
+}
+.today_tswk p{
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+}
+.today_tswk span{
+	font-size: 1.2rem;
+	line-height: 2.4rem;
+}
+.data_list{
+	background: #FFF;
+	padding: 0 1.5rem 5rem;
+}
+.data_list li{
+	height: 6.95rem;
+	border-bottom: 1px solid #ebeeef;
+}
+.record_date{
+	font-size: 1.5rem;
+	line-height: 4.2rem;
+	color: #313131;
+}
+.use_time{
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+}
+.use_time span{
+	padding-left: 1.75rem;
+	background: url('https://static.ncmimg.com/wx_xcx/image/clock_icon.png') no-repeat left center;
+	background-size: 1.2rem;
+	color: #a2a2a2;
+}
+.use_time b{
+	margin-left: 1rem;
+	color: #ef8532;
+}
+.down_app_box{
+	background: #FFF;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 4.9rem;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+}
+.down_app_box .close_btn{
+	width: 1.6rem;
+	height: 1.6rem;
+	background: url('https://static.ncmimg.com/wx_xcx/image/close_bg.png') no-repeat center;
+	background-size: cover;
+	margin-left: 1.5rem;
+	margin-top: 1.55rem;
+}
+.down_app_box .logo_img{
+	margin-left: 0.9rem;
+	width: 13.35rem;
+	margin-top: 0.75rem;
+}
+.down_app_box .down_btn{
+	width: 6.5rem;
+	height: 2.6rem;
+	border: 1px solid #5e99c1;
+	color: #5e99c1;
+	font-size: 1.2rem;
+	line-height: 2.6rem;
+	border-radius: 0.25rem;
+	text-align: center;
+	margin-top: 1.15rem;
+	margin-right: 1.5rem;
+}
+.about_logo_box{
+	width: 8.9rem;
+	height: 8.9rem;
+	border: 1px solid #DDD;
+	border-radius: 1.3rem;
+	background: #FFF;
+	text-align: center;
+	line-height: 8.9rem;
+	margin: 4.65rem auto 4rem;
+}
+.about_logo_box img{
+	width: 5.895rem;
+}
+.guide_link_box{
+	border-top: 1px solid #DDD;
+	background: #FFF;
+}
+.guide_link_box a{
+	display: block;
+	width: 34.5rem;
+	padding: 0 1.5rem;
+	height: 4.95rem;
+	border-bottom: 1px solid #DDD;
+	line-height: 4.95rem;
+	font-size: 1.6rem;
+	color: #000;
+	background: url('https://static.ncmimg.com/wx_xcx/image/link_icon.png') no-repeat 35.1rem 1.8rem;
+	background-size: 0.9rem;
+}
+.information_box{
+	border-top: 1px solid #DDD;
+	margin-top: 1rem;
+	background: #FFF;
+}
+.information_box li{
+	padding: 0 1.5rem;
+	overflow: hidden;
+	height: 4.95rem;
+	line-height: 4.95rem;
+	border-bottom: 1px solid #DDD;
+}
+.information_box li span{
+	float: left;
+	font-size: 1.6rem;
+	color: #000;
+}
+.information_box li p{
+	float: right;
+	font-size: 1.3rem;	
+	color: #999;
+}
+.head_box{
+	margin-top: 1rem;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	background: #FFF;
+	height: 6.9rem;
+	background-image: url('https://static.ncmimg.com/wx_xcx/image/link_icon.png');
+	background-repeat: no-repeat;
+	background-position: 35.1rem center;
+	background-size: 0.9rem;
+}
+.head_portrait{
+	float: left;
+	width: 4.8rem;
+	height: 4.8rem;
+	border-radius: 50%;
+	margin: 1.05rem 1.7rem 1.05rem 1.5rem;
+}
+.id_box{
+	padding-top: 1.5rem;
+}
+.id_box p{
+	line-height: 2.3rem;
+	font-size: 1.6rem;
+	color: #111;
+}
+.id_box span{
+	line-height: 1.2rem;
+	font-size: 1.2rem;
+	color: #929292;
+}
+.yuntie_link_box{
+	background: #FFF;
+	border-top: 1px soild #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	margin-top: 1rem;
+	padding: 0 1.5rem;
+}
+.yuntie_link_box li{
+	height: 5.3rem;
+	border-bottom: 1px solid #e1e1e1;
+	line-height: 5.3rem;
+	overflow: hidden;
+	background: url('https://static.ncmimg.com/wx_xcx/image/link_icon.png') no-repeat right center;
+	background-size: 0.9rem;
+}
+.yuntie_link_box li:nth-last-child(1){
+	border: none;
+}
+.yuntie_link_box li a{
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.yuntie_link_box li img{
+	float: left;
+	width: 2rem;
+	height: 2rem;
+	margin-right: 1.2rem;
+	margin-top: 1.8rem;
+}
+.yuntie_link_box li span{
+	float: left;
+	font-size: 1.6rem;
+	line-height: 5.3rem;
+	color: #000;
+}
+.yuntie_link_box li b{
+	float: right;
+	font-size: 1.6rem;
+	line-height: 5.3rem;
+	color: #e86200;
+	margin-right: 2rem;
+}
+
+.total_integral{
+	width: 11rem;
+	height: 11rem;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-top: 2.5rem;
+	background: #fc9e48;
+	color: #FFF;
+	text-align: center;
+}
+.total_integral h4{
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	padding-top: 3.2rem;
+}
+.total_integral p{
+	font-size: 3rem;
+	line-height: 3.2rem;
+}
+.integral_box{
+	position: relative;
+}
+.integral_box > a{
+	position: absolute;
+	right: 1.5rem;
+	top: 0.5rem;
+	background: url('https://static.ncmimg.com/wen_icon.png') no-repeat left center;
+	background-size: 1.2rem;
+	padding-left: 1.7rem;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	color: #666;
+}
+.detail_title{
+	margin-top: 3.2rem;
+	padding-left: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+.detail_title b{
+	float: left;
+	width: 13.75rem;
+	height: 0.7rem;
+	border-bottom: 1px solid #DDD;
+}
+.detail_title span{
+	float: left;
+	width: 7rem;
+	line-height: 1.4rem;
+	font-size: 1.4rem;
+	text-align: center;
+	color: #666;
+}
+.detail_box{
+	padding: 0 1.5rem;
+}
+.detail_box li{
+	overflow: hidden;
+	padding: 0 0.5rem; 
+	border-bottom: 1px solid #DDD;
+	height: 6rem;
+	box-sizing: border-box;
+}
+.get_integral p{
+	padding-top: 1.2rem;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	color: #666;
+}
+.get_integral span{
+	display: block;
+	padding-top: 0.5rem;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	color: #999;
+}
+.detail_box li b{
+	float: right;
+	font-size: 2.4rem;
+	line-height: 6rem;
+	color: #efa259;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

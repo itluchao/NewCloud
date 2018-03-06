@@ -1,0 +1,42 @@
+
+    <!--<link rel="stylesheet" type="text/css" href="{$Think.const.MOBILE_STATIC_PATH}/css/coupon.css">-->
+<!--head-->
+<div class="content">
+    <div class="content_head clearfix">
+        <a href="javascript:window.history.back();"></a>
+        <h3>我的优惠券</h3>
+    </div>
+    {if condition="empty($coupon)"}
+    <div class="empty_coupon_box show"></div>
+    {else /}
+    <div class="coupon_box">
+        {volist name="coupon" id="val"}
+        <div {if condition="$val['status'] eq 1"}class="usable_coupon"{else /}class="disabled_coupon"{/if}>
+            <h3>满{$val['total']}可用</h3>
+            <p>有效期：{$val['time_area']}</p>
+            <span>现金大礼包</span>
+            <div class="yhje_box clearfix">
+                <b>￥</b>
+                <span>{$val['cash']}</span>
+            </div>
+        </div>
+        {/volist}
+    </div>
+    {/if}
+</div>
+<!--content-->
+<div class="foot clearfix">
+    <div class="home_page fl">
+        <a href="index.html" class="on">首页</a>
+    </div>
+    <div class="shopping_car fl">
+        <a href="javascript:;" class="">购物车</a>
+    </div>
+    <div class="mine fl">
+        <a href="javascript:;" class="">我的</a>
+    </div>
+</div>
+<div class="foot_masking"></div>
+<!--foot-->
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title>添加材料</title>
+    <link rel="stylesheet" type="text/css"  href="https://static.ncmimg.com/crm/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="https://static.ncmimg.com/crm/css/customer.css" />
+    <link rel="stylesheet" href="https://static.ncmimg.com/crm/css/weui.css"/>
+    <link rel="stylesheet" href="https://static.ncmimg.com/crm/css/example.css"/>
+    <script src="https://static.ncmimg.com/crm/js/jquery-1.7.2.js"></script>
+    <script src="https://static.ncmimg.com/crm/js/index.js"></script>
+    <script src="https://static.ncmimg.com/crm/js/crm_area.js"></script>
+    <script type="text/javascript" src="https://static.ncmimg.com/crm/js/zepto.min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+    <script type="text/javascript" src="https://static.ncmimg.com/crm/js/example.js"></script>
+</head>
+<body ontouchstart>
+    <div class="add_new_msg">
+        <ul class="add_new_list">
+            <li>
+                <span>医院客户</span>
+                <input type="text" placeholder="请输入名称">
+            </li>
+            <li>
+                <span>选择材料类型</span>
+                <select name="">
+                    <option value="请选择材料类型">请选择材料类型</option>
+                    <option value="申请表">申请表</option>
+                    <option value="两方协议">两方协议</option>
+                    <option value="项目合作细则">项目合作细则</option>
+                    <option value="中日技术协议">中日技术协议</option>
+                    <option value="材料收集表">材料收集表</option>
+                    <option value="现场尽调反馈">现场尽调反馈</option>
+                    <option value="金融协议">金融协议</option>
+                    <option value="金融放款">金融放款</option>
+                </select>
+            </li>
+            <li>
+                <span>材料内容</span>
+                <textarea name="" placeholder="请输入材料内容"></textarea>
+            </li>
+        </ul>
+    </div>
+    <div class="add_new_msg">
+        <h3 class="add_pic_title">附加图片</h3>
+        <div class="weui-uploader__bd add_pic_box">
+            <div class="weui-uploader__input-box">
+                <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple/>
+            </div>
+        </div>
+    </div>
+    <div class="add_new_msg">
+        <ul class="add_new_list">
+            <li>
+                <span>备注</span>
+                <textarea name="" placeholder="请输入备注内容"></textarea>
+            </li>
+        </ul>
+    </div>
+    <a href="javascript:;" class="new_customer_save_btn">保存</a>
+</body>
+</html>
+<script>
+    var area = new areaFn({
+        provinceName:'#111',
+        cityName:'#222',
+        areaName:'#333'
+    });
+
+
+    $(function(){
+        var tmpl = '<li class="weui-uploader__file" style="background-image:url(#url#)"></li>',
+            $gallery = $("#gallery"), $galleryImg = $("#galleryImg"),
+            $uploaderInput = $("#uploaderInput"),
+            $uploaderFiles = $("#uploaderFiles")
+            ;
+
+        $uploaderInput.on("change", function(e){
+            var src, url = window.URL || window.webkitURL || window.mozURL, files = e.target.files;
+            for (var i = 0, len = files.length; i < len; ++i) {
+                var file = files[i];
+
+                if (url) {
+                    src = url.createObjectURL(file);
+                } else {
+                    src = e.target.result;
+                }
+
+                $uploaderFiles.append($(tmpl.replace('#url#', src)));
+            }
+        });
+        $uploaderFiles.on("click", "li", function(){
+            $galleryImg.attr("style", this.getAttribute("style"));
+            $gallery.fadeIn(100);
+        });
+        $gallery.on("click", function(){
+            $gallery.fadeOut(100);
+        });
+    });
+</script>

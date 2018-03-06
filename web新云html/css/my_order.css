@@ -1,0 +1,179 @@
+body{
+	background: #f0f0f0;
+}
+.content_head{
+	height: 4.95rem;
+	border-bottom: 1px solid #dadada;
+	background: #FFF;
+}
+.content_head a{
+	float: left;
+	width: 0.95rem;
+	height: 1.75rem;
+	background: url('../img/back_btn.png') no-repeat center;
+	background-size: cover;
+	margin-left: 1.6rem;
+	margin-top: 1.6rem;
+}
+.content_head h3 {
+	float: left;
+	margin-left: 12.65rem;
+	line-height: 4.95rem;
+	font-size: 1.8rem;
+	color: #363636;
+}
+.order_empty_box{
+	display: none;
+	text-align: center;
+	padding-top: 8rem;
+}
+.order_empty_box img{
+	width: 17.9rem;
+}
+.order_empty_box p{
+	font-size: 1.8rem;
+	color: #c4c4c4;
+	line-height: 8.8rem;
+}
+.order_empty_box a{
+	display: block;
+	margin: 0 auto;
+	width: 14.2rem;
+	height: 3.5rem;
+	border: 2px solid #3b88ee;
+	text-align: center;
+	line-height: 3.5rem;
+	border-radius: 1.75rem;
+	color: #3b88ee;
+	font-size: 1.5rem;
+}
+.order_box li{
+	background: #FFF;
+	margin-top: 1rem;
+}
+.order_date_num_box{
+	height: 6rem;
+	border-bottom: 1px solid #EEE;
+	padding: 0 1.5rem;
+}
+.order_date_num{
+	padding-top: 1.15rem;
+}
+.order_num{
+	padding-left: 2.2rem;
+	background: url('../img/icon_bh_01.png') no-repeat 0.2rem center;
+	background-size: 1.05rem;
+}
+.order_date{
+	padding-left: 2.2rem;
+	background: url('../img/icon_bh_02.png') no-repeat 0.2rem center;
+	background-size: 1.05rem;
+}
+.order_num p,.order_num span,.order_date p,.order_date span{
+	float: left;
+	line-height: 1.9rem;
+	font-size: 1.2rem;
+	color: #626262;
+}
+.state{
+	line-height: 6rem;
+	font-size: 1.5rem;
+	color: #d95638;
+}
+.product_msg_box{
+	background: #f0f0f0;
+}
+.product_msg_box li:first-child{
+	margin-top: 0;
+}
+.product_msg_box li{
+	overflow: hidden;
+	height: 9.1rem;
+	border-bottom: 1px solid #e4e4e4;
+	margin-top: 0.5rem;
+	padding: 0 1.5rem;
+	background: #f7f7f7
+}
+.pro_img_box{
+	margin-top: 1.7rem;
+	width: 5.6rem;
+	height: 5.6rem;
+	border: 1px solid #cacaca;
+	border-radius: 0.4rem;
+	background: #FFF;
+	text-align: center;
+}
+.pro_img_box img{
+	width: 3.8rem;
+	margin-top: 0.5rem;
+}
+.pro_msg{
+	margin-left: 1.65rem;
+	padding-top: 2.9rem;
+}
+.pro_msg h4{
+	line-height: 1.5rem;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+	color: #252525;
+}
+.pro_msg p{
+	line-height: 1.3rem;
+	font-size: 1.3rem;
+	color: #959595;
+}
+.pro_price{
+	padding-top: 2.45rem;
+}
+.pro_price .now_price{
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	color: #515151;
+}
+.pro_price .old_price{
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	color: #ababab;
+}
+.pro_price .number{
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	color: #515151;
+	text-align: right;
+}
+.totle_box{
+	height: 4.1rem;
+	background: #FFF;
+	padding: 0 1.5rem;
+}
+.totle_box p{
+	float: right;
+	color: #373737;
+	font-size: 1.2rem;
+	line-height: 4.1rem;
+}
+.totle_box b{
+	font-weight: normal;
+}
+.finish_box{
+	height: 26.3rem;
+	padding-top: 23.2rem;
+	background: url('../img/finish_img.png') no-repeat center 13.5rem;
+	background-size: 7.95rem;
+}
+.finish_box h3{
+	line-height: 1.8rem;
+	font-size: 1.8rem;
+	color: #363636;
+	text-align: center;
+	margin-bottom: 2.2rem;
+}
+.finish_box a{
+	display: block;
+	line-height: 1.3rem;
+	font-size: 1.3rem;
+	text-align: center;
+	color: #3b88ee;
+}
+
+

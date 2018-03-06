@@ -1,0 +1,142 @@
+.login_head{ 
+	height: 4.95rem;
+	border-bottom: 1px solid #dadada;
+	position: relative;
+}
+.login_head b{
+	position: absolute;
+	top: 1.6rem;
+	left: 18.7rem;
+	height: 1.7rem;
+	width: 1px;
+	background: #5c5c5c;
+}
+.login_head > div{
+	width: 18.75rem;
+	text-align: center;
+	padding-top: 0.35rem;
+	position: relative;
+}
+.login_head > div a{
+	font-size: 1.5rem;
+	line-height: 4.6rem;
+	color: #363636;
+}
+.login_head .on a{
+	color: #3b88ee;
+}
+.login_head .on span{
+	position: absolute;
+	left: 50%;
+	bottom: -1px;
+	width: 3.25rem;
+	margin-left: -1.625rem;
+	height: 0.25rem;
+	background: #3b88ee;
+}
+.content_box{
+	padding-top: 3.9rem;
+	padding-left: 1.5rem;
+	background: #f0f0f0;
+}
+.tel_box{
+	position: relative;
+	margin-bottom: 1.75rem;
+}
+.password_box{
+	position: relative;
+	margin-bottom: 2.45rem;
+}
+.tel_box input,.password_box input{
+	width: 26.5rem;
+	padding-left: 8rem;
+	font-size: 1.3rem;
+	height: 4.6rem;
+	border: none;
+	border-radius: 0;
+	-webkit-appearance:none;
+}
+.tel_box span,.password_box span{
+	line-height: 4.6rem;
+	font-size: 1.3rem;
+	color: #363636;
+	position: absolute;
+	top: 0;
+	left: 1.6rem;
+}
+.content_box .submit_btn{
+	border: none;
+	width: 34.5rem;
+	height: 4.6rem;
+	line-height: 4.6rem;
+	background: #3b88ee;
+	color: #FFF;
+	text-align: center;
+	font-size: 1.8rem;
+	border-radius: 0;
+	-webkit-appearance:none;
+}
+.zhuce_repassword_box{
+	padding-right: 1.5rem;
+	margin-top: 1.3rem;
+	padding-bottom: 6rem;
+	height: 1.2rem;
+}
+.zhuce_repassword_box a{
+	line-height: 1.2rem;
+	font-size: 1.2rem;
+	color: #939393;
+}
+.login_mode_box h3{
+	line-height: 4rem;
+	width: 34.5rem;
+	border-bottom: 1px solid #b2b2b2;
+	color: #afafaf;
+	font-size: 1.4rem;
+}
+.mode_box{
+	padding-top: 2.6rem;
+	padding-bottom: 3.2rem;
+}
+.mode_box a{
+	float: left;
+	width: 4.75rem;
+	height: 6.9rem;
+}
+.mode_box .qq{
+	background: url('../img/icon_qq.png') no-repeat center;
+	background-size: cover;
+	margin-left: 4.9rem;
+}
+.mode_box .weixin{
+	background: url('../img/icon_wx.png') no-repeat center;
+	background-size: cover;
+	margin-left: 5.25rem;
+}
+.mode_box .weibo{
+	background: url('../img/icon_wb.png') no-repeat center;
+	background-size: cover;
+	margin-left: 5.25rem;
+}
+.password_box .send_test_btn{
+	position: absolute;
+	top: 0; 
+	right: 1.5rem;
+	width: 12.4rem;
+	height: 4.6rem;
+	line-height: 4.6rem;
+	text-align: center;
+	color: #FFF;
+	font-size: 1.3rem;
+	background: #3b88ee;
+	padding: 0;
+	-webkit-appearance:none;
+	border-radius: 0;
+}
+
+
+
+
+
+
+

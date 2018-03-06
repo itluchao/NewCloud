@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title>添加联系人</title>
+    <link rel="stylesheet" type="text/css"  href="https://static.ncmimg.com/crm/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="https://static.ncmimg.com/crm/css/customer.css" />
+    <script src="https://static.ncmimg.com/crm/js/jquery-1.7.2.js"></script>
+    <script src="https://static.ncmimg.com/crm/js/index.js"></script>
+</head>
+<body ontouchstart>
+    <div class="add_new_msg">
+        <ul class="add_new_list">
+            <li>
+                <span>姓名</span>
+                <input type="text" placeholder="请输入姓名">
+            </li>
+            <li>
+                <span>性别</span>
+                <div class="gender_box fr clearfix" id="gender_box">
+                    <b class="gender">男</b>
+                    <b>女</b>
+                    <input type="hidden" value="男">
+                </div>
+            </li>
+            <li>
+                <span>生日</span>
+                <input type="number" placeholder="请输入生日">
+            </li>
+            <li>
+                <span>手机号</span>
+                <input type="tel" placeholder="请输入手机号">
+            </li>
+            <li>
+                <span>电话</span>
+                <input type="tel" placeholder="请输入电话">
+            </li>
+            <li>
+                <span>邮箱</span>
+                <input type="email" placeholder="请输入邮箱">
+            </li>
+            <li>
+                <span>传真</span>
+                <input type="tel" placeholder="请输入传真">
+            </li>
+            <li>
+                <span>微信</span>
+                <input type="text" placeholder="请输入微信">
+            </li>
+            <li>
+                <span>QQ</span>
+                <input type="number" placeholder="请输入QQ">
+            </li>
+            <li>
+                <span>地址</span>
+                <input type="text" placeholder="请输入地址">
+            </li>
+            <li>
+                <span>备注</span>
+                <input type="text" placeholder="请输入备注">
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+<script>
+    $("#gender_box b").click(function(event) {
+        $(this).addClass('gender').siblings('b').removeClass('gender');
+        $(".gender_box input").val($(".gender").html())
+    });
+</script>

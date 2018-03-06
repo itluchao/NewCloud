@@ -1,0 +1,402 @@
+body{ 
+	width: 37.5rem;
+	overflow-x: hidden;
+}
+.head{ 
+	width: 37.5rem;
+	height: 4.4rem;
+	background: #3b88ee; 
+	background-image: url(https://static.ncmimg.com/51pain/mobile/img/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 3rem 2.15rem;
+	position: fixed;
+	top: 0rem;
+	left: 0rem;
+	right: 0rem;
+	z-index: 3;
+}
+.head_masking{
+	height:4.4rem;
+}
+.menu{ 
+	width: 1.85rem;
+	height: 1.85rem;
+	background: url(https://static.ncmimg.com/51pain/mobile/img/function.png) no-repeat left top;
+	background-size: cover;
+	margin-top: 1.3rem;
+	margin-left: 1.55rem;
+}
+.index_link{
+	background:none;
+	width:3rem;
+	height:2.25rem;
+	margin-left:13.85rem;
+	margin-top:1.1rem;
+}
+.personal{ 
+	width: 1.65rem;
+	height: 1.75rem;
+	background: url(https://static.ncmimg.com/51pain/mobile/img/personal.png) no-repeat right top;
+	background-size: cover;
+	margin-top: 1.35rem;
+	margin-right: 1.55rem;
+}
+.menu_box{
+	width: 23rem;
+	padding-left: 3rem;
+	height: 54.4rem;
+	position: absolute;
+	top: 4.35rem;
+	z-index: 2;
+	background: #FFF;
+	box-shadow: 0.75rem 2.25rem 5rem #ededed;
+	-webkit-transition:0s all ease;
+	-webkit-transform:translate3d(-30rem,0,0)
+}
+.menu_box h2{
+	font-size:1.8rem;
+	color:#282828;
+	padding-top:3.65rem;
+	padding-bottom: 2rem;
+}
+.menu_box li {
+	width:19.35rem;
+	position:relative;
+	border-bottom: 1px solid #e6e6e6;
+}
+.menu_box li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.menu_box li a span{
+	width:5rem;
+	height: 8.7rem;
+	line-height: 8.7rem;
+	box-sizing: border-box;
+}
+.menu_box span img{
+	margin-top:0.45rem;
+	width:1.65rem;
+	height:1.95rem;
+}
+.menu_box li a p{
+	font-size:1.3rem;
+	line-height: 8.7rem;
+}
+
+.foot{
+	width:37.5rem;
+	height: 4.9rem;
+	border-top: 1px solid #d3d3d3;
+	position: fixed;
+	bottom: 0rem; 
+	left: 0rem; 
+	right: 0rem;
+	background: #FFF;
+	z-index: 3;
+}
+.foot_masking{
+	height: 4.9rem;
+}
+.foot > div{
+	width:33.3%;
+	height: 100%;
+}
+.foot > div a{
+	display: block;
+	margin: auto;
+	text-align: center;
+	width: 3.8rem;
+	padding-top: 3rem;
+	font-size: 1.1rem;
+	color: #3f3f3f;
+}
+.home_page a{
+	background: url(https://static.ncmimg.com/51pain/mobile/img/home_page.png) no-repeat center 0.85rem;
+	background-size: 1.65rem 1.65rem;
+}
+.home_page .on{
+	background: url(https://static.ncmimg.com/51pain/mobile/img/home_page_on.png) no-repeat center 0.85rem;
+	background-size: 1.65rem 1.65rem;
+	color: #3b88ee;
+}
+.shopping_car a{
+	background: url(https://static.ncmimg.com/51pain/mobile/img/shopping_car.png) no-repeat center 0.85rem;
+	background-size: 1.9rem 1.75rem;
+}
+.shopping_car .on{
+	background: url(https://static.ncmimg.com/51pain/mobile/img/shopping_car_on.png) no-repeat center 0.85rem;
+	background-size: 1.9rem 1.75rem;
+	color: #3b88ee;
+}
+.mine a{
+	background: url(https://static.ncmimg.com/51pain/mobile/img/mine.png) no-repeat center 0.85rem;
+	background-size: 1.5rem 1.7rem;
+}
+.mine .on{
+	background: url(https://static.ncmimg.com/51pain/mobile/img/mine_on.png) no-repeat center 0.85rem;
+	background-size: 1.5rem 1.7rem;
+	color: #3b88ee;
+}
+
+/*content*/
+.index_content_01{
+	width: 37.5rem;
+	height: 61.1rem;
+	overflow: hidden;
+}
+.index_content_01 > div{
+	height: 100%;
+}
+.index_content_01 .product1{
+	width: 37.5rem;
+	height: 100% !important;
+	box-sizing: border-box;
+	border-bottom: 1px solid #e5e5e5;
+	background: url(https://static.ncmimg.com/51pain/mobile/img/home_bg_02.png) no-repeat center;
+	background-size: cover;
+	text-align: center;
+}
+.index_content_01 .product1 h4{
+	padding-top: 4rem;
+	font-size: 2.7rem;
+	line-height: 2.7rem;
+	margin-bottom: 1.2rem;
+}
+.index_content_01 .product1 p{
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+	margin-bottom: 2.5rem;
+}
+.index_content_01 .product1 a{
+	display: block;
+	margin: 0 auto;
+	width: 11.65rem;
+	height: 3.2rem;
+	border-radius: 1.6rem;
+	background: #d22d52;
+	line-height: 3.2rem;
+	font-size: 1.5rem;
+	text-align: center;
+	color: #FFF;
+}
+.index_content_01 .product2{
+	width: 37.5rem;
+	height: 100% !important;
+	box-sizing: border-box;
+	padding-top: 38.5rem;
+	border-bottom: 1px solid #e5e5e5;
+	background: url(https://static.ncmimg.com/51pain/mobile/img/home_bg.png) no-repeat center;
+	background-size: cover;
+	text-align: center;
+}
+.index_content_01 .product2 > h4{
+	font-size: 2rem;
+	line-height: 2.9rem;
+}
+.index_content_01 .product2 >p{
+	font-size: 1.5rem;
+	line-height: 2.4rem;
+	font-weight: 100;
+	margin-bottom: 3.65rem; 
+	color: #5d5d5d;
+}
+.product_price{
+	display: inline-block;
+	margin: 0 auto;
+}
+.product_price span{
+	float: left;
+	font-size: 1.6rem;
+	color: #4d4d4d;
+	padding-top: 1rem;
+}
+.product_price p{
+	float: left;
+	font-size: 3.2rem;
+	line-height: 3.2rem;
+	color: #d22d52;
+}
+.original_cost p{ 
+	line-height: 2.9rem;
+	font-size: 1.2rem;
+	color: #7f7e7e;
+	text-decoration: line-through;
+	opacity: 0;
+}
+.index_content_01 .product2 > a{
+	display: block;
+	margin: 0 auto;
+	width: 11.65rem;
+	height: 3.2rem;
+	border-radius: 1.6rem;
+	background: #d22d52;
+	line-height: 3.2rem;
+	font-size: 1.5rem;
+	text-align: center;
+	color: #FFF;
+}
+.tel_num{
+	display: block;
+	padding-left: 14.5rem;
+	line-height: 4.5rem;
+	border-bottom: 1px solid #e5e5e5;
+	font-size: 1.8rem;
+	background: url(https://static.ncmimg.com/51pain/mobile/img/phonenum.png) no-repeat 10.65rem center;
+	background-size: 2.6rem 2.6rem;
+	color: #767676;
+}
+.index_content_02 p{
+	height: 6.75rem;
+	padding-top: 2.25rem;
+	font-size: 1.1rem;
+	line-height: 2.1rem;
+	text-align: center;
+	color: #4d4d4d;
+	font-weight: 100;
+}
+.success_box,.loading_box,.error_box{
+	position: fixed;
+	width: 15.2rem;
+	height: 3rem;
+	left: 50%;
+	top: 50%;
+	margin-left: -7.6rem;
+	margin-top: -5rem;
+	padding-top: 7rem;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #FFF;
+}
+.success_box{
+	display: none;
+	background: url(https://static.ncmimg.com/51pain/mobile/img/icon_cg_tc.png) no-repeat center;
+	background-size: 15.2rem;
+}
+.loading_box{
+	display: none;
+	background: url(https://static.ncmimg.com/51pain/mobile/img/icon_jz_tc.png) no-repeat center;
+	background-size: 15.2rem;
+}
+.error_box{
+	display: none;
+	background: url(https://static.ncmimg.com/51pain/mobile/img/icon_ts_tc.png) no-repeat center;
+	background-size: 15.2rem;
+}
+
+
+.delete_confirm_box{
+	width: 27rem;
+	height: 11.1rem;
+	border-radius: 1.25rem;
+	background: #FFF;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -5.55rem;
+	margin-left: -13.5rem;
+	border: 1px solid #e0e0e0;
+	box-sizing:border-box;
+}
+.delete_confirm_box_masking{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+.delete_confirm_box h3{
+	line-height: 6.7rem;
+	text-align: center;
+	font-size: 1.7rem;
+	font-weight: 100;
+	color: #000;
+	border-bottom: 1px solid #e0e0e0;
+}
+.delete_confirm_box .cancel{
+	float: left;
+	width: 50%;
+	box-sizing:border-box;
+	border-right: 1px solid #e0e0e0;
+	line-height: 4.35rem;
+	font-size: 1.7rem;
+	color: #347af6;
+	text-align: center;
+}
+.delete_confirm_box .yes{
+	float: left;
+	width: 50%;
+	line-height: 4.35rem;
+	font-size: 1.7rem;
+	color: #347af6;
+	text-align: center;
+	box-sizing:border-box;
+}
+#swiper-button-next{
+	width: 2.5rem;
+	height: 4.5rem;
+	margin-top: -8rem;
+	background: url('https://static.ncmimg.com/51pain/mobile/img/index_arr_next.png') no-repeat center;
+	background-size: 2.5rem;
+}
+#swiper-button-prev{
+	width: 2.5rem;
+	height: 4.5rem;
+	margin-top: -8rem;
+	background: url('https://static.ncmimg.com/51pain/mobile/img/index_arr_prev.png') no-repeat center;
+	background-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

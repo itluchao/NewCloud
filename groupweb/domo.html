@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-1.7.2.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#uplist td").each(function(index, el) {
+				$(this).click(function(event) {
+					alert($(this).html())
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<table >
+		<thead>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+		</thead>
+		<tbody id="uplist">
+			<tr>
+				<td>111</td>
+				<td>222</td>
+				<td>333</td>
+			</tr>
+			<tr>
+				<td>111</td>
+				<td>222</td>
+				<td>333</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

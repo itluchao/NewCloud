@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<title>Document</title>
+    <link rel="stylesheet" type="text/css"  href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/confirm_order.css" />
+	<script src="js/jquery-1.7.2.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$(".show_box").each(function(index, el) {
+    			$(this).toggle(function() {
+    				$(".show_box b").eq(index).css({
+    					"WebkitTransition":".5s all ease",
+    					"WebkitTransform":"rotate(180deg)"
+    				})
+    				$(".hide_box").eq(index).slideDown('fast');
+    			}, function() {
+    				$(".show_box b").eq(index).css({
+    					"WebkitTransition":".5s all ease",
+    					"WebkitTransform":"rotate(0deg)"
+    				})
+    				$(".hide_box").eq(index).slideUp('fast');
+    			});
+    		});
+    		$(".express .hide_box input").each(function(index, el){
+    			$(this).on("touchstart",function(){
+    				$(this).addClass('on').siblings('input').removeClass('on');
+    				$(".express .show_box span").html($(this).val());
+    				$(".express .show_box input").val($(this).val())
+    			})
+    		})
+    		$(".invoice .hide_box input").each(function(index, el){
+    			$(this).on("touchstart",function(){
+    				$(this).addClass('on').siblings('input').removeClass('on');
+    				$(".invoice .show_box span").html($(this).val());
+    				$(".invoice .show_box input").val($(this).val())
+    			})
+    		})
+    		$(".invoice_header .hide_box input").blur(function(){
+    			$(".invoice_header .show_box span").html($(this).val());
+				$(".invoice_header .show_box input").val($(this).val())
+    		})
+    		$(".usable_coupon b").each(function(index, el){
+    			$(this).on("touchstart",function(){
+    				$(".usable_coupon").eq(index).addClass('selected').siblings('div').removeClass('selected');
+    			})
+    		})
+    		$('.payment_method_box > div').each(function(index, el){
+    			$(this).on('touchstart',function(){
+	    			$(this).addClass('selected').siblings('div').removeClass('selected');
+	    			$('.payment_method_box > input').val(index);
+	    		})
+    		})
+    	});
+    </script>
+</head>
+<body>
+	<div class="head clearfix">
+		<b class="menu fl"></b> 
+		<a href="javascript:;" class="personal fr"></a>
+		<div class="menu_box">
+			<div class="product_menu">
+				<h2>产品列表</h2>
+				<ul>
+					<li>
+						<span class="product_img">
+							<img src="img/product_menu_01.png" alt="">
+						</span>
+						<div>
+							<a href="javascript:;">智能云贴=lite型</a>
+						</div>
+					</li>
+					<li>
+						<span class="product_img">
+							<img src="img/product_menu_01.png" alt="">
+						</span>
+						<div>
+							<a href="javascript:;">智能云贴贴片智能云贴贴片智能云贴贴片</a>
+						</div>
+					</li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+	<div class="head_masking"></div>
+	<!--head-->
+	<div class="content">
+		<div class="content_head clearfix">
+			<a href=""></a>
+			<h3>确认订单</h3>
+		</div>
+		<div class="empty_address_box clearfix">
+			<a href=""></a>
+			<span>您还没有收货地址，点击添加</span>
+		</div>
+		<a href="" class="address_link_box show">
+			<div class="address_box">
+				<div class="msg_box clearfix">
+					<div class="name fl">
+						<span>收货人：</span>
+						<span>张三</span>
+					</div>
+					<div class="tel fr">
+						<span>13810312345</span>
+					</div>
+				</div>
+				<div class="address_msg_box">
+					<p>河北张家口市张北河北张家口市张北河北张家口市张北河北张家口市张北河北张家</p>
+				</div>
+			</div>
+		</a>
+		<div class="border_box"></div>
+		<ul class="product_box">
+			<li>
+				<div class="pro_img_box fl">
+					<img src="img/buy_img_01.png" alt="">
+				</div>
+				<div class="pro_msg_box fl">
+					<h4>智能云贴=lite型</h4>
+					<p>颜色分类：这那的（啥啊）</p>
+					<div class="price_number clearfix">
+						<div class="price fl">￥<span>399.00</span></div>
+						<div class="number fr">x<span>1</span></div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="pro_img_box fl">
+					<img src="img/buy_img_01.png" alt="">
+				</div>
+				<div class="pro_msg_box fl">
+					<h4>智能云贴=lite型</h4>
+					<p>颜色分类：这那的（啥啊）</p>
+					<div class="price_number clearfix">
+						<div class="price fl">￥<span>399.00</span></div>
+						<div class="number fr">x<span>1</span></div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<ul class="option_box">
+			<li class="express">
+				<div class="show_box clearfix">
+					<p>快递配送（免运费）</p>
+					<b></b>
+					<span>不限时间</span>
+					<input type="hidden" name="">
+				</div>
+				<div class="hide_box clearfix">
+					<input type="button" value="不限时间" class="on">
+					<input type="button" value="工作日">
+					<input type="button" value="休息或节假日">
+				</div>
+			</li>
+			<li class="invoice">
+				<div class="show_box clearfix">
+					<p>发票类型</p>
+					<b></b>
+					<span>不要发票</span>
+					<input type="hidden" name="">
+				</div>
+				<div class="hide_box clearfix">
+					<input type="button" value="不要发票" class="on">
+					<input type="button" value="普通发票">
+				</div>
+			</li>
+			<li class="invoice_header">
+				<div class="show_box clearfix">
+					<p>发票抬头</p>
+					<b></b>
+					<span></span>
+					<input type="hidden" name="">
+				</div>
+				<div class="hide_box clearfix">
+					<input type="text" placeholder="抬头名称" name="" id="">
+					<input type="text" placeholder="纳税人识别号" name="" id="" class="nsr">
+				</div>
+			</li>
+			<li class="coupon">
+				<div class="show_box clearfix">
+					<p>优惠券</p>
+					<b></b>
+					<span>无</span>
+				</div>
+				<div class="hide_box clearfix">
+					<div class="empty_coupon_box">无优惠券可用</div>
+					<div class="coupon_box">
+						<div class="usable_coupon selected">
+							<b></b>
+							<span></span>
+							<div class="expiry_date">
+								<p>满200元使用</p>
+								<span>有效期：2017-09-01</span>
+							</div>
+						</div>
+						<div class="usable_coupon">
+							<b></b>
+							<span></span>
+							<div class="expiry_date">
+								<p>满200元使用</p>
+								<span>有效期：2017-09-01</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<div class="price_detailed_box">
+			<div class="detailed_box">
+				<div class="totle_box clearfix">
+					<p>商品总价</p>
+					<span>399.00</span>
+					<b>￥ </b>
+				</div>
+				<div class="freight_box clearfix">
+					<p>运费（快递）</p>
+					<span>0.00</span>
+					<b>￥ </b>
+				</div>
+				<div class="derate_box clearfix">
+					<p>优惠</p>
+					<span>0.00</span>
+					<b>￥ </b>
+				</div>
+			</div>	
+			<div class="totle_price_box clearfix">
+				<p>实付款</p>
+				<span>0.00</span>
+				<b>￥ </b>
+				<strong></strong>
+			</div>	
+		</div>
+		<div class="banner_middle"></div>
+		<div class="payment_method_box">
+			<input type="hidden" name="" value="0">
+			<div class="weixin clearfix selected">
+				<p>微信支付</p>
+			</div>
+			<div class="zhifubao clearfix">
+				<p>支付宝支付</p>
+			</div>
+			<div class="yinlian clearfix">
+				<p>银联支付</p>
+			</div>
+		</div>
+	</div>
+	<!--content-->
+	<div class="foot_submit clearfix">
+		<div class="foot_totle_box fl clearfix">
+			<span>399.00</span>
+			<b>￥</b>
+			<p>合计：</p>
+		</div>
+		<input type="button" value="提交订单">
+	</div>
+</body>
+</html>

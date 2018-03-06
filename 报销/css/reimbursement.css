@@ -1,0 +1,335 @@
+body{
+	background: #eaeeef !important;
+	font-size: 20px;
+	width: 37.5rem;
+	overflow-x: hidden;
+}
+.mart20{ 
+	margin-top: 1rem; 
+}
+.marb20{ 
+	margin-bottom: 1rem; 
+}
+.content_box{
+	width: 37.5rem;
+	box-sizing: border-box;
+}
+.input_box{
+	border-top: 1px solid #cacbcc;
+	border-bottom: 1px solid #cacbcc;
+	padding-left: 1.5rem;
+	background: #FFF;
+}
+.content_box .input_box li{
+	height: 5.5rem;
+	border-bottom: 1px solid #e7e7e7;
+	padding-right: 1.5rem;
+}
+.content_box .input_box li:nth-last-child(1){
+	border: none;
+}
+.content_box .input_box span{
+	float: left;
+	font-size: 1.6rem;
+	line-height: 5.5rem;
+	color: #545454;
+}
+.content_box .input_box p{
+	float: right;
+	font-size: 1.3rem;
+	line-height: 5.5rem;
+	color: #a2a2a2;
+}
+.content_box .input_box input{
+	float: right;
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	color: #a2a2a2;
+	padding-top: 2.1rem;
+	border: none;
+	background: #FFF;
+	text-align: right;
+}
+.textarea_box{
+	background: #FFF;
+	padding-left: 1.5rem;
+	border-top: 1px solid #cacbcc;
+	border-bottom: 1px solid #cacbcc;
+}
+.textarea_box h4{
+	color: #3f3f3f;
+	font-size: 1.6rem;
+	line-height: 5.5rem;
+}
+.textarea_box textarea{
+	box-sizing: border-box;
+	width: 34.5rem;
+	height: 10.3rem;
+	padding: 0.7rem 1rem;
+	font-size: 1.3rem;
+	line-height: 2rem;
+	color: #a4a4a4;
+	margin-bottom: 2rem;
+}
+.textarea_box p{
+	padding-right: 1.5rem;
+	font-size: 1.3rem;
+	color: #a2a2a2;
+	line-height: 2.4rem;
+	padding: 1rem 1.5rem 1.5rem 0;
+	border-top: 1px solid #e7e7e7;
+}
+:-moz-placeholder { 
+    color: #a4a4a4;  
+}
+
+::-moz-placeholder { 
+    color: #a4a4a4;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #a4a4a4;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #a4a4a4;
+}
+.position_submit_btn{
+	display: block;
+	width: 37.5rem;
+	text-align: center;
+	height: 5rem;
+	line-height: 5rem;
+	background: #5977a6;
+	color: #FFF;
+	font-size: 1.8rem;
+	margin-top: 12.5rem;
+}
+.approved_box{
+	padding-left: 1.5rem;
+	background: #FFF;
+	border-top: 1px solid #cacbcc;
+	border-bottom: 1px solid #cacbcc;
+}
+.approved_box li{
+	border-bottom: 1px solid #e7e7e7;
+	padding-right: 1.5rem;
+}
+.approved_box li:nth-last-child(1){
+	border-bottom: none;
+}
+.approved_box h4{
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	float: left;
+	margin-top: 1.5rem;
+	margin-bottom: 1.3rem;
+	color: #545454;
+}
+.approved_box span{
+	font-size: 1.3rem;
+	line-height: 1.6rem;
+	float: right;
+	margin-top: 1.5rem;
+	margin-bottom: 1.3rem;
+}
+.approved_box p{
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	float: left;
+	margin-bottom: 1.5rem;
+	color: #a2a2a2;
+}
+.approved_box b{
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	float: right;
+	margin-bottom: 1.5rem;
+	color: #a2a2a2;
+}
+.approved_box .pass{
+	color: #13ac49;
+}
+.approved_box .nopass{
+	color: #cc2600;
+}
+.approved_box .wait_audited{
+	color: #efa831;
+}
+.examine_submit_box a{
+	float: left;
+	width: 50%;
+	font-size: 1.5rem;
+	line-height: 5rem;
+	height: 5rem;
+	color: #FFF;
+	text-align: center;
+}
+.refuse{
+	background: #656565;
+}
+.accept{
+	background: #efa831;
+}
+.examine_list_box{
+	padding-bottom: 8rem;
+}
+.examine_list_box li{
+	margin-top: 1rem;
+	border-top: 1px solid #cacbcc;
+	border-bottom: 1px solid #cacbcc;
+	background: #FFF;
+	padding: 1rem 1.5rem;
+}
+.nav_bar a{
+	float: left;
+	width: 33.3%;
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	text-align: center;
+	color: #545454;
+	border-bottom: 1px solid #cacbcc;
+	padding-top: 1.35rem;
+	padding-bottom: 1.35rem;
+	background: #FFF;
+}
+.nav_bar .active{
+	border-bottom: 3px solid #5977a6;
+	color: #5977a6;
+	padding-bottom: 1.3rem;
+}
+.new_examine_box{
+	position: fixed;
+	width: 37.5rem;
+	bottom: 0;
+	left: 0;
+	transform: translate3d(0, 0, 0);
+}
+.new_examine_box a{
+	float: left;
+	width: 33.2%;
+	box-sizing: border-box;
+	font-size: 1.3rem;
+	line-height: 5rem;
+	height: 5rem;
+	color: #FFF;
+}
+.ordinary{
+	background: #efa831;
+	background-image: url(https://static.ncmimg.com/crm/img/ordinary.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 4.65rem;
+}
+.travel{
+	background: #5977a6;
+	background-image: url(https://static.ncmimg.com/crm/img/travel.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 4.55rem;
+}
+.expenditure{
+	background: #606060;
+	background-image: url(https://static.ncmimg.com/crm/img/expenditure.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 4.65rem;
+}
+.entertain{
+	background: #38ad8d;
+	background-image: url(https://static.ncmimg.com/crm/img/entertain.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 4.7rem;
+}
+.examine_list_box div{
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+	overflow: hidden;
+}
+.examine_list_box span{
+	float: left;
+	color: #545454;
+}
+.examine_list_box p{
+	float: left;
+	color: #a2a2a2;
+	max-width: 26.5rem;
+}
+
+.add_trip_btn{
+	width: 9.7rem;
+	height: 2.1rem;
+	line-height: 2.1rem;
+	font-size: 1.6rem;
+	color: #5977a6;
+	background: url('https://static.ncmimg.com/crm/img/add_icon.png') no-repeat left center;
+	background-size: 2.1rem;
+	text-align: right;
+	margin: 2rem auto;
+}
+.trip_box{
+	display: none;
+}
+.content_box .examine{
+	padding: 1rem 0;
+}
+.content_box .examine li{
+	border: none;
+	height: 2.9rem;
+	padding-left: 1.5rem;
+	box-sizing: border-box;
+}
+.content_box .examine li span{
+	line-height: 2.9rem;
+	color: #a2a2a2;
+	font-size: 1.6rem;
+	padding: 0;
+	text-align: left;
+	width: 8rem;
+}
+.content_box .examine li p{
+	line-height: 2.9rem;
+	color: #545454;
+	font-size: 1.6rem;
+	float: left;
+	margin-left: 1.5rem;
+	padding: 0;
+	text-align: left;
+}
+#total_box{
+	height: 4rem;
+	border-top: 1px solid #e7e7e7;
+	width: 36rem;
+	margin-left: 1.5rem;
+	padding: 0;
+	margin-top: 1rem;
+}
+#total_box span{
+	float: left;
+	padding-top: 1rem;
+	font-size: 1.6rem; 
+	line-height: 3rem;
+	font-weight: bold;
+	color: #545454;
+}
+#total_box p{
+	float: left;
+	padding-top: 1rem;
+	font-size: 2rem; 
+	line-height: 3rem;
+	color: #ed7500;
+	margin-left: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title>信息统计</title>
+    <link rel="stylesheet" type="text/css" href="https://static.ncmimg.com/crm/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="https://static.ncmimg.com/crm/css/customer.css" />
+    <link rel="stylesheet" href="css/customer.css">
+    <link rel="stylesheet" type="text/css" href="css/information.css">
+    <script src="https://static.ncmimg.com/crm/js/jquery-1.7.2.js"></script>
+    <script src="https://static.ncmimg.com/crm/js/index.js"></script>
+</head>
+<body ontouchstart>
+    <div class="tab_bar_box">
+        <a href="javascript:;" class="tab_one active">首页</a>
+        <a href="javascript:;" class="tab_two">待拜访</a>
+        <a href="javascript:;" class="tab_three">其他</a>
+    </div>
+    <div class="tab_content_box">
+        <div class="content_one_box show">
+            <div>
+                <div class="statistics_hospitalx_box">
+                    <h3 class="statistics_title hospital">客户统计-医院</h3>
+                    <ul class="statistic_list_box clearfix">
+                        <li>
+                            <p>3897</p>
+                            <span>医院总数</span>
+                        </li>
+                        <li>
+                            <p>3897</p>
+                            <span>完成医院</span>
+                        </li>
+                        <li>
+                            <p>3897</p>
+                            <span>公共医院</span>
+                        </li>
+                        <li>
+                            <p>3897</p>
+                            <span>再谈医院</span>
+                        </li>
+                        <li>
+                            <p>3897</p>
+                            <span>废弃医院</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="statistics_hospitalx_box">
+                    <h3 class="statistics_title customer">客户统计-代理商</h3>
+                    <ul class="statistic_list_box clearfix">
+                        <li>
+                            <p>3897</p>
+                            <span>公共代理商</span>
+                        </li>
+                        <li>
+                            <p>3897</p>
+                            <span>代理商总数</span>
+                        </li>
+                        <li>
+                            <p>3897</p>
+                            <span>再谈代理商</span>
+                        </li>
+                        <li>
+                            <p>3897</p>
+                            <span>废弃代理商</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wait_visit">
+            <div class="nav_bar_box clearfix">
+                <a href="javascript:;" class="now">待拜访医院客户</a>
+                <a href="javascript:;">待拜访代理商客户</a>
+            </div>
+            <div class="wait_visit_content_box">
+                <div class="show">
+                    <div class="visit_empty_content">
+                        <img src="img/no_data_bg.png" alt="">
+                        <p>暂无数据</p>
+                    </div>
+                    <ul class="visit_list">
+                        <li>
+                            <a href="javascript:;">
+                                <p>华中科技大学同济医学院附属协和医院附属协和医院</p>
+                                <span>2017-12-06</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <p>华中科技大学同济医学院附属协和医院附</p>
+                                <span>2017-12-06</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="visit_empty_content show">
+                        <img src="img/no_data_bg.png" alt="">
+                        <p>暂无数据</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="other">
+            <h3>入口</h3>
+            <ul class="other_link_box">
+                <li>
+                    <a href="javascipt:;">
+                        <p>我的医院客户</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascipt:;">
+                        <p>我的代理商户</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascipt:;">
+                        <p>我的医院资料</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascipt:;">
+                        <p>我的代理商资料</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascipt:;">
+                        <p>我的协助医院客户</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascipt:;">
+                        <p>我的协助代理商户</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(".tab_bar_box a").each(function(index, el) {
+        $(this).click(function(event) {
+            $(this).addClass('active').siblings('a').removeClass('active');
+            $(".tab_content_box > div").eq(index).addClass('show').siblings('div').removeClass('show');
+        });
+    });
+    $(".nav_bar_box > a").each(function(index, el) {
+        $(this).click(function(event) {
+            $(this).addClass('now').siblings('a').removeClass('now');
+            $(".wait_visit_content_box > div").eq(index).addClass('show').siblings('div').removeClass('show');
+        });
+    });
+    /*function scrollLoading(){
+        if ($(document).height() == $(window).scrollTop()+$(window).height()) {
+            alert(1)
+        }
+    }
+    $(window).scroll(function(){
+        scrollLoading();
+    })*/
+
+</script>

@@ -1,0 +1,116 @@
+body{
+	background: #f0f0f0;
+}
+.con_header{
+	height: 4.95rem;
+	background: #FFF;
+	border-bottom: 1px solid #dadada;
+}
+.con_header a{
+	float: left;
+	margin-left: 1.6rem;
+	margin-top: 1.6rem;
+	width: 0.95rem;
+	height: 1.75rem;
+	background: url('../img/back_btn.png') no-repeat center;
+	background-size: cover;
+}
+.con_header h3{
+	float: left;
+	line-height: 4.95rem;
+	font-size: 1.8rem;
+	color: #363636;
+	margin-left: 14.45rem;
+}
+.form_box{
+	padding: 4.55rem 1.5rem;
+}
+.form_box  > div{
+	position: relative;
+	width: 34.55rem;
+	height: 4.6rem;
+	background: #FFF;
+	margin-bottom: 1.75rem;
+}
+.form_box  > div:nth-last-child(2){
+	margin-bottom: 5rem;
+}
+.error_msg,#error_msg{
+	line-height: 2.5rem;
+	padding-left: 3.55rem;
+	font-size: 1.2rem;
+	color: #ff3722;
+	font-family: "宋体";
+	background: url('../img/icon_ts.png') no-repeat 1.6rem center;
+	background-size: 1.2rem;
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
+}
+.form_box input{
+	font-size: 1.3rem;
+	height: 4.6rem;
+	border: none;
+	width: 25.8rem;
+	padding-left: 8.75rem;
+}
+.form_box  > div span{
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: 4.6rem;
+	font-size: 1.3rem;
+	color: #363636;
+	padding-left: 1.6rem;
+}
+.zhuce_repassword_box p{
+	line-height:4.6rem;
+	font-size:1.3rem;
+	color:#363636;
+	padding-left:1.3rem;
+}
+.form_box .identifying_btn{
+	width: 12.35rem;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: #3b88ee;
+	color: #FFF;
+	padding: 0;
+}
+.form_box .submit_btn{
+	width: 34.55rem;
+	height: 4.5rem;
+	padding: 0;
+	background: #3b88ee;
+	color: #FFF;
+	text-align: center;
+	font-size: 1.8rem;
+}
+.new_password_box input,.new_repassword_box input{
+	padding-left: 10.75rem;
+	font-size: 1.3rem;
+	width: 23.8rem;
+}
+.con_header .repassword{
+	margin-left: 12.5rem;
+}
+.con_header .bind_new_tel{
+	margin-left: 11rem;
+}
+.con_header .bind_safe_tel{
+	margin-left: 13.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

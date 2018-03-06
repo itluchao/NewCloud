@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title>我的代理商</title>
+    <link rel="stylesheet" type="text/css"  href="https://static.ncmimg.com/crm/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="https://static.ncmimg.com/crm/css/customer.css" />
+    <link rel="stylesheet" href="https://static.ncmimg.com/crm/css/weui.css"/>
+    <link rel="stylesheet" href="https://static.ncmimg.com/crm/css/example.css"/>
+    <script src="https://static.ncmimg.com/crm/js/jquery-1.7.2.js"></script>
+    <script src="https://static.ncmimg.com/crm/js/index.js"></script>
+    <script src="js/crm_area.js"></script>
+    <script type="text/javascript" src="https://static.ncmimg.com/crm/js/zepto.min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+    <script type="text/javascript" src="https://static.ncmimg.com/crm/js/example.js"></script>
+</head>
+<body ontouchstart>
+    <div class="add_new_msg">
+        <div class="title_box">
+            <h3 class="one_title">代理商信息</h3>
+        </div>
+        <ul class="add_new_list">
+            <li>
+                <span class="required">客户名称</span>
+                <input type="text" placeholder="请输入客户名称">
+            </li>
+            <li>
+                <span>客户公司名称</span>
+                <input type="text" placeholder="请输入客户公司名称">
+            </li>
+            <li>
+                <span>重要程度</span>
+                <select name="">
+                    <option value="请选择">请选择</option>
+                    <option value="基本代理商">基本代理商</option>
+                    <option value="一般代理商">一般代理商</option>
+                    <option value="重要代理商">重要代理商</option>
+                    <option value="无效代理商">无效代理商</option>
+                </select>
+            </li>
+            <li>
+                <span>代理商等级</span>
+                <select name="">
+                    <option value="请选择">请选择</option>
+                    <option value="县级代理商">县级代理商</option>
+                    <option value="市级代理商">市级代理商</option>
+                    <option value="省级代理商">省级代理商</option>
+                </select>
+            </li>
+            <li>
+                <span>代理商类型</span>
+                <select name="">
+                    <option value="请选择">请选择</option>
+                    <option value="个人">个人</option>
+                    <option value="公司">公司</option>
+                </select>
+            </li>
+            <li>
+                <span>代理商种类</span>
+                <select name="">
+                    <option value="请选择">请选择</option>
+                    <option value="全职">全职</option>
+                    <option value="兼职">兼职</option>
+                </select>
+            </li>
+            <li>
+                <span>地区-省</span>
+                <select name="" id="111" data_value="0"></select>
+            </li>
+            <li>
+                <span>地区-市</span>
+                <select name="" id="222" data_value="0"></select>
+            </li>
+            <li>
+                <span>地区-县</span>
+                <select name="" id="333" data_value="0"></select>
+            </li>
+            <li>
+                <span>地址</span>
+                <input type="text" placeholder="请输入地址">
+            </li>
+        </ul>
+    </div>
+    <div class="add_new_msg">
+        <div class="title_box">
+            <h3 class="two_title">联系人信息</h3>
+        </div>
+        <ul class="add_new_list">
+            <li>
+                <span class="required">姓名</span>
+                <input type="text" placeholder="请输入姓名">
+            </li>
+            <li>
+                <span class="required">手机号</span>
+                <input type="tel" placeholder="请输入手机号">
+            </li>
+            <li>
+                <span>电话</span>
+                <input type="tel" placeholder="请输入电话">
+            </li>
+            <li>
+                <span>微信</span>
+                <input type="text" placeholder="请输入微信">
+            </li>
+            <li>
+                <span>QQ</span>
+                <input type="number" placeholder="请输入QQ">
+            </li>
+            <li>
+                <span>邮箱</span>
+                <input type="email" placeholder="请输入邮箱">
+            </li>
+            <li>
+                <span>爱好</span>
+                <input type="text" placeholder="请输入爱好">
+            </li>
+            
+        </ul>
+    </div>
+    <div class="add_new_msg">
+        <div class="title_box">
+            <h3 class="four_title">下次拜访时间</h3>
+        </div>
+        <ul class="add_new_list">
+            <li>
+                <span>下次拜访时间</span>
+                <a href="javascript:;" id="showDatePicker" class="showDatePicker">请选择 ></a>
+            </li>
+        </ul>
+    </div>
+    <a href="javascript:;" class="new_customer_save_btn">保存</a>
+</body>
+</html>
+<script>
+    var area = new areaFn({
+        provinceName:'#111',
+        cityName:'#222',
+        areaName:'#333'
+    });
+
+    $('#showDatePicker').on('click', function () {
+        weui.datePicker({
+            start: new Date().getFullYear(),
+            end: new Date().getFullYear()+1,
+            onConfirm: function (result) {
+                $('#showDatePicker').html(result[0]+'-'+result[1]+'-'+result[2])
+            }
+        });
+    });
+
+    
+</script>

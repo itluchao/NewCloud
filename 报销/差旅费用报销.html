@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title>差旅费用报销</title>
+    <link rel="stylesheet" type="text/css"  href="https://static.ncmimg.com/crm/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="https://static.ncmimg.com/crm/css/customer.css" />
+    <link rel="stylesheet" type="text/css" href="https://static.ncmimg.com/crm/css/reimbursement.css" />
+    <script src="https://static.ncmimg.com/crm/js/jquery-1.7.2.js"></script>
+    <script src="https://static.ncmimg.com/crm/js/index.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css">
+	<link rel="stylesheet" href="css/jquery-weui.min.css">
+
+	<!-- body 最后 -->
+	<script src="https://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/jquery-weui.min.js"></script>
+
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/swiper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.2.0/js/city-picker.min.js"></script>
+</head>
+<body ontouchstart>
+    <div class="add_new_msg">
+        <ul class="add_new_list">
+            <li>
+                <span>部门</span>
+                <p>营销一部</p>
+            </li>
+            <li>
+                <span>姓名</span>
+                <p>张三</p>
+            </li>
+            <li>
+                <span>出差事由</span>
+                <input type="text" placeholder="请填写您的事由" style="width: 21rem;">
+            </li>
+        </ul>
+    </div>
+    <div class="add_new_msg trip_box show">
+        <ul class="add_new_list">
+            <li>
+                <span>出发地点</span>
+                <input type="text" placeholder="请输入地点">
+            </li>
+            <li>
+                <span>出发时间</span>
+                <input type="datetime-local" placeholder="请选择 >" class="datetime-picker">
+            </li>
+            <li>
+                <span>到达地点</span>
+                <input type="text" placeholder="请输入地点">
+            </li>
+            <li>
+                <span>到达时间</span>
+                <input type="datetime-local" placeholder="请选择 >" class="datetime-picker">
+            </li>
+            <li>
+                <span>交通类型</span>
+                <select name="">
+                    <option value="请选择">请选择</option>
+                    <option value="汽车">汽车</option>
+                    <option value="火车">火车</option>
+                    <option value="高铁">高铁</option>
+                    <option value="飞机">飞机</option>
+                </select>
+            </li>
+            <li>
+                <span>交通费用</span>
+                <input type="number" placeholder="请填写您的报销金额"  style="width: 21rem;">
+            </li>
+        </ul>
+    </div>
+    <div class="add_trip_btn">添加行程</div>
+    <div class="add_new_msg">
+        <ul class="add_new_list">
+            <li>
+                <span>市内交通</span>
+                <input type="number" placeholder="请填写您的报销金额"  style="width: 21rem;">
+            </li>
+            <li>
+                <span>住宿费用</span>
+                <input type="number" placeholder="请填写您的报销金额"  style="width: 21rem;">
+            </li>
+            <li>
+                <span>其他费用</span>
+                <input type="number" placeholder="请填写您的报销金额"  style="width: 21rem;">
+            </li>
+        </ul>
+    </div>
+    <div class="add_new_msg">
+        <ul class="add_new_list">
+            <li>
+                <span>出差天数</span>
+                <p>0</p>
+            </li>
+            <li>
+                <span>补助金额</span>
+                <p>0</p>
+            </li>
+            <li>
+                <span>合计</span>
+                <p class="total">123</p>
+            </li>
+        </ul>
+    </div>
+    <a href="javascript:;" class="new_customer_save_btn">保存</a>
+</body>
+</html>
+<script>
+    
+    var oTrip_eq = 0;
+    $(".add_trip_btn").click(function(event) {
+        oTrip_eq++;
+        $(".trip_box").eq(oTrip_eq).show()
+        if (oTrip_eq >= 5) {
+            $(".add_trip_btn").hide();
+        }
+    });
+</script>

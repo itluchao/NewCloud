@@ -1,0 +1,325 @@
+.tab_bar_box{
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	width: 37.5rem;
+	height: 5rem;
+	border-top: 1px solid #e6e6e6;
+	background: #FFF;
+}
+.tab_bar_box a{
+	float: left;
+	width: 33.3%;
+	padding-top: 3.2rem;
+	text-align: center;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+}
+.tab_one{
+	background: url('https://static.ncmimg.com/crm/img/tab_one.png') no-repeat center 0.65rem;
+	background-size: 2.05rem;
+}
+.tab_one.active{
+	background: url('https://static.ncmimg.com/crm/img/tab_one_activie.png') no-repeat center 0.65rem;
+	background-size: 2.05rem;
+}
+.tab_two{
+	background: url('https://static.ncmimg.com/crm/img/tab_two.png') no-repeat center 0.55rem;
+	background-size: 2.05rem;
+}
+.tab_two.active{
+	background: url('https://static.ncmimg.com/crm/img/tab_two_activie.png') no-repeat center 0.55rem;
+	background-size: 2.05rem;
+}
+.tab_three{
+	background: url('https://static.ncmimg.com/crm/img/tab_three.png') no-repeat center 0.6rem;
+	background-size: 2.05rem;
+}
+.tab_three.active{
+	background: url('https://static.ncmimg.com/crm/img/tab_three_activie.png') no-repeat center 0.6rem;
+	background-size: 2.05rem;
+}
+.tab_content_box > div{
+	display: none;
+}
+.content_one_box > div{
+	margin-top: 1rem;
+	background: #FFF;
+}
+.statistics_hospitalx_box{
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}
+.statistics_title{
+	padding-left: 14.4rem;
+	line-height: 5.5rem;
+	font-size: 1.8rem;
+	color: #627fab;
+}
+.statistics_title.hospital{
+	background: url('https://static.ncmimg.com/crm/img/tj_hospital.png') no-repeat  11.2rem center ;
+	background-size: 2.3rem;
+}
+.statistics_title.customer{
+	background: url('https://static.ncmimg.com/crm/img/tj_kehu.png') no-repeat  11.2rem center ;
+	background-size: 2.3rem;
+}
+.statistic_list_box{
+	width: 37.5rem;
+	padding: 0 1.5rem;
+	border-top: 1px solid #f3f3f3;
+}
+.statistic_list_box li{
+	float: left;
+	width: 17.25rem;
+	box-sizing: border-box;
+	text-align: center;
+	border-bottom: 1px solid #f3f3f3;
+}
+.statistic_list_box li:nth-child(odd){
+	border-right: 1px solid #f3f3f3;
+}
+.statistic_list_box li p{
+	color: #e78c50;
+	font-size: 3rem;
+	line-height: 4rem;
+	padding-top: 1rem;
+}
+.statistic_list_box li span{
+	color: #a4a4a4;
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	padding-bottom: 2rem;
+	display: block;
+}
+.wait_visit_content_box{
+	margin-bottom: 12.5rem;
+}
+.nav_bar_box{
+	width: 37.5rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+.nav_bar_box a{
+	float: left;
+	width: 50%;
+	background: #FFF;
+	color: #373737;
+	font-size: 1.8rem;
+	line-height: 5rem;
+	text-align: center;
+}
+.nav_bar_box .now{
+	background: #7196d0;
+	color: #FFF;
+}
+.visit_empty_content{
+	text-align: center;
+	padding-top: 13rem;
+	display: none;
+}
+.visit_empty_content img{
+	width: 10.35rem;
+	cbcbcb
+}
+.visit_empty_content p{
+	color: #cbcbcb;
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+	margin-top: 1.8rem;
+}
+.wait_visit_content_box > div{
+	display: none;
+}
+.visit_list{
+	margin-top: 1rem;
+	padding: 0 1.5rem;
+	border-top: #e6e6e6;
+	border-bottom: #e6e6e6;
+	background: #FFF;
+}
+.visit_list a{
+	display: block;
+	padding-right: 2.8rem;
+	width: 31.7rem;
+	border-bottom: 1px solid #f3f3f3;
+	background: url('https://static.ncmimg.com/crm/img/arr_right.png') no-repeat right center;
+	background-size: 1.4rem;
+	height: 
+}
+.visit_list a p{
+	color: #373737;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	padding-top: 1.6rem;
+	margin-bottom: 0.8rem;	
+}
+.visit_list a span{
+	display: block;
+	color: #373737;
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	padding-bottom: 1.6rem;	
+}
+.other{
+	margin-top: 1rem;
+	background: #FFF;
+	margin-bottom: 12.5rem;
+}
+.other h3{
+	height: 5.5rem;
+	line-height: 5.5rem;
+	padding-left: 18.75rem;
+	font-size: 1.8rem;
+	color: #627fab;
+	background: url('https://static.ncmimg.com/crm/img/rukou.png') no-repeat 15.5rem center;
+	background-size: 2.3rem;
+	border-top: 1px solid #e6e6e6;
+}
+.other_link_box{
+	border-top: 1px solid #f3f3f3;
+	border-bottom: 1px solid #f3f3f3;
+	padding: 0 1.5rem;
+}
+.other_link_box li{
+	border-bottom: 1px solid #f3f3f3;
+}
+.other_link_box li:nth-last-child(1){
+	border: none;
+}
+.other_link_box p{
+	box-sizing: border-box;
+	width: 34.5rem;
+	line-height: 5.5rem;
+	font-size: 1.8rem;
+	color: #373737;
+	background: url('https://static.ncmimg.com/crm/img/arr_right.png') no-repeat right center;
+	background-size: 0.7rem;
+}
+.no_hospital_msg_box{
+	padding-top: 12.4rem;
+	display: none;
+	text-align: center;
+}
+.no_hospital_msg_box img{
+	width: 7.65rem;
+}
+.no_hospital_msg_box p{
+	font-size: 1.8rem;
+	line-height: 6.3rem;
+	color: #cbcbcb;
+	margin-bottom: 1.75rem;
+}
+.no_hospital_msg_box a{
+	font-size: 1.5rem;
+	line-height: 4.1rem;
+	color: #5977a6;
+	display: block;
+	width: 12.1rem;
+	height: 4.1rem;
+	border: 2px solid #5977a6;
+	border-radius: 0.5rem;
+	margin: 0 auto;
+}
+.my_custormer_box li{
+	background: #FFF;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.hospital_name_box p{
+	float: left;
+	width: 23rem;
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	color: #373737;
+	margin-top: 1rem;
+}
+.hospital_name_box span{
+	float: right;
+	padding: 0 0.75rem;
+	margin-top: 1.2rem;
+	font-size: 1.3rem;
+	line-height: 2.4rem;
+	color: #fdb12c;
+	border: 1px solid #fdb12c;
+	border-radius: 0.5rem;
+	text-align: center;
+}
+.hospital_add_box{
+	margin-bottom: 1rem;
+}
+.hospital_add_box span{
+	float: left;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	margin-top: 1.4rem;
+	color: #a4a4a4;
+	margin-right: 1.8rem;
+}
+.hospital_add_box b{
+	float: left;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	margin-top: 1.4rem;
+}
+.hospital_add_box .passed{
+	color: #fdb12c;
+}
+.hospital_add_box .not_passed{
+	color: #009307;
+}
+.hospital_add_box{
+	border: none;
+}
+.area_box{
+	padding: 1rem 0 ;
+	border-top: 1px solid #f3f3f3;
+}
+.area_box span{
+	float: left;
+	width: 6.5rem;
+	font-size: 1.3rem;
+	line-height: 2rem;
+	color: #a4a4a4;
+}
+.area_box p{
+	float: left;
+	width: 28rem;
+	font-size: 1.3rem;
+	line-height: 2rem;
+	color: #a4a4a4;
+}
+.add_new_custormer{
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	height: 5rem;
+	line-height: 5rem;
+	text-align: center;
+	display: block;
+	width: 37.5rem;
+	background: #5977a6;
+	color: #FFF;
+	font-size: 1.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

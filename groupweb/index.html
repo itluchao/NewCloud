@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://static.ncmimg.com/taasweb/css/base.css">
+	<link rel="stylesheet" href="https://static.ncmimg.com/taasweb/css/homepage.css">
+	<link rel="stylesheet" href="https://static.ncmimg.com/taasweb/css/swiper.css">
+	<script src="https://static.ncmimg.com/taasweb/js/jquery-1.7.2.js"></script>
+	<script src="https://static.ncmimg.com/taasweb/js/index.js"></script>
+	<script src="https://static.ncmimg.com/taasweb/js/swiper.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			var mySwiper = new Swiper ('.swiper-container', {
+			  loop: true,
+			  autoplay: 5000,
+			  // 如果需要分页器
+			  pagination: {
+			    el: '.swiper-pagination',
+			  }
+			});  
+			$(".advantage_title_box").each(function(index, el) {
+				$(this).click(function(event) {
+					$(".advantage_text_box").slideUp('fast');
+					if ($(".advantage_text_box").eq(index).css('display') == 'none') {
+						$(".advantage_text_box").eq(index).slideDown('fast');
+					}else {
+						$(".advantage_text_box").eq(index).slideUp('fast');
+					}
+					
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="web_frame">
+		<div class="logo_head">
+			<img src="https://static.ncmimg.com/taasweb/img/logo.png" alt="">
+		</div>
+		<div class="banner_box">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+						<img src="https://static.ncmimg.com/taasweb/img/banner_3.jpg">
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="https://static.ncmimg.com/taasweb/img/banner_1.jpg">
+			        </div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div class="content_one content_box">
+			<h3>人工智能系统</h3>
+			<p>首创人工智能，大数据以及深度学习，结合智能硬件产<br>品，解决医疗资源配置问题，最终改善疼痛患者的生活质量。</p>
+			<ul class="clearfix">
+				<li>
+					<div class="img_box">
+						<img src="https://static.ncmimg.com/taasweb/img/content_one_img_01.png" alt="">
+					</div>
+					<span>全方位管理</span>
+				</li>
+				<li>
+					<div class="img_box">
+						<img src="https://static.ncmimg.com/taasweb/img/content_one_img_02.png" alt="">
+					</div>
+					<span>大数据学习</span>
+				</li>
+				<li>
+					<div class="img_box">
+						<img src="https://static.ncmimg.com/taasweb/img/content_one_img_03.png" alt="">
+					</div>
+					<span>专业且专注</span>
+				</li>
+			</ul>
+		</div>
+		<div class="content_two content_box">
+			<h3>已连接服务</h3>	
+			<img src="https://static.ncmimg.com/taasweb/img/service.png" alt="">
+		</div>
+		<div class="content_three content_box">
+			<h3>疼痛医联体</h3>
+			<p>中日医院疼痛科-国内公认的起步较早、<br>治疗手段最全、培训疼痛人才最多的疼痛科。 </p>
+			<ul>
+				<li>
+					<h4>责任，能力</h4>
+					<p>提升能力、惠及百姓、促进医改、造福社会</p>
+				</li>
+				<li>
+					<h4>专业，专注</h4>
+					<p>学术交流、科研合作、专家教学，医患互信</p>
+				</li>
+				<li>
+					<h4>便捷，权威</h4>
+					<p>便捷就诊，快速就医，权威诊断，医保控费</p>
+				</li>
+			</ul>
+		</div>
+		<div class="content_four content_box">
+			<h3>我们的优势</h3>
+			<p>一流疼痛科汇聚的医联体，大数据共享,<br>人工智能分析，平台化信息互通，专业而卓越。</p>
+			<ul>
+				<li>
+					<div class="advantage_title_box">
+						<h4>医联体圈子</h4>
+					</div>
+					<div class="advantage_text_box">
+						<p>中日医院疼痛科是我国首批建立的疼痛科，是目前国内公认的起步较早、治疗手段最全、培训疼痛人才最多的疼痛科。中日医院疼痛科与全国近200家医疗机构联合成立疼痛专科医联体后，将联合各地学术与技术实力较强的医院作为协作单位。</p>
+					</div>
+				</li>
+				<li>
+					<div class="advantage_title_box">
+						<h4>大数据平台</h4>
+					</div>
+					<div class="advantage_text_box">
+						<p>作为疼痛专科医联体的运营商，承载着加入医联体的众多医院数据。在连接医联体和众多医院疼痛科的基础之上，凭借自身优势成为聚集疼痛数据的大数据平台，打破传统医疗数据封闭不流动的特性，让数据在医学研究和诊疗过程中发挥更大的价值。</p>
+					</div>
+				</li>
+				<li>
+					<div class="advantage_title_box">
+						<h4>智慧科室建设</h4>
+					</div>
+					<div class="advantage_text_box">
+						<p>利用自身互联网优势，将传统医疗科室智能化，在疼痛专科医联体的辐射范围内，大力发展建设智慧科室。</p>
+					</div>
+				</li>
+				<li>
+					<div class="advantage_title_box">
+						<h4>信息互联互通</h4>
+					</div>
+					<div class="advantage_text_box">
+						<p>在疼痛专科医联体的基础上，建设信息互联互通制度，让病患信息在医院之间流通起来，即使是跨省也可以看到病患之前的疼痛情况，化繁为简，将全国医院的疼痛科连接在一起。</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="content_five content_box">
+			<h3>我们的客户</h3>
+			<img src="https://static.ncmimg.com/taasweb/img/partner.jpg" alt="">
+		</div>
+		<div class="footer">
+			<p>京石食药监械经营备20160135号<br>北京新云医疗科技有限公司<br>Copyright © 2016 - 2017 New Cloud. All Rights Reserved.</p>
+		</div>
+	</div>	
+</body>
+</html>

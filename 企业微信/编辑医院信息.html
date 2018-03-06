@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title>编辑医院信息</title>
+    <link rel="stylesheet" type="text/css"  href="https://static.ncmimg.com/crm/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="https://static.ncmimg.com/crm/css/customer.css" />
+    <link rel="stylesheet" href="https://static.ncmimg.com/crm/css/weui.css"/>
+    <link rel="stylesheet" href="https://static.ncmimg.com/crm/css/example.css"/>
+    <script src="https://static.ncmimg.com/crm/js/jquery-1.7.2.js"></script>
+    <script src="https://static.ncmimg.com/crm/js/index.js"></script>
+    <script src="https://static.ncmimg.com/crm/js/crm_area.js"></script>
+    <script type="text/javascript" src="https://static.ncmimg.com/crm/js/zepto.min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+    <script type="text/javascript" src="https://static.ncmimg.com/crm/js/example.js"></script>
+</head>
+<body ontouchstart>
+    <div class="add_new_msg">
+        <div class="title_box">
+            <h3 class="one_title">医院客户信息</h3>
+        </div>
+        <ul class="add_new_list">
+            <li class="ban">
+                <span>名称</span>
+                <input type="text" placeholder="请输入名称">
+            </li>
+            <li class="ban">
+                <span>代理商</span>
+                <select name="">
+                    <option value="请选择">请选择</option>
+                </select>
+            </li>
+            <li>
+                <span>重要程度</span>
+                <select name="">
+                    <option value="请选择">请选择</option>
+                    <option value="基础客户">基础客户</option>
+                    <option value="发资料客户">发资料客户</option>
+                    <option value="意向客户">意向客户</option>
+                    <option value="来京客户">来京客户</option>
+                    <option value="重点客户">重点客户</option>
+                    <option value="准客户">准客户</option>
+                    <option value="保留客户">保留客户</option>
+                    <option value="已加盟客户">已加盟客户</option>
+                    <option value="无效客户">无效客户</option>
+                </select>
+            </li>
+            <li>
+                <span>医院等级</span>
+                <select name="">
+                    <option value="请选择">请选择</option>
+                    <option value="三级甲等">三级甲等</option>
+                    <option value="二级甲等">二级甲等</option>
+                    <option value="一级甲等">一级甲等</option>
+                    <option value="三级乙等">三级乙等</option>
+                    <option value="二级乙等">二级乙等</option>
+                    <option value="一级乙等">一级乙等</option>
+                    <option value="三级丙等">三级丙等</option>
+                    <option value="二级丙等">二级丙等</option>
+                    <option value="一级丙等">一级丙等</option>
+                </select>
+            </li>
+            <li class="ban">
+                <span>地区-省</span>
+                <select name="" id="111"></select>
+            </li>
+            <li class="ban">
+                <span>地区-市</span>
+                <select name="" id="222"></select>
+            </li>
+            <li class="ban">
+                <span>地区-县</span>
+                <select name="" id="333"></select>
+            </li>
+            <li>
+                <span>地址</span>
+                <input type="text" placeholder="请输入地址">
+            </li>
+        </ul>
+    </div>
+    <div class="add_new_msg">
+        <div class="title_box">
+            <h3 class="two_title">联系人信息</h3>
+        </div>
+        <ul class="add_new_list">
+            <li class="ban">
+                <span>姓名</span>
+                <input type="text" placeholder="请输入姓名">
+            </li>
+            <li>
+                <span>职务</span>
+                <input type="text" placeholder="请输入职务">
+            </li>
+            <li>
+                <span>手机号</span>
+                <input type="tel" placeholder="请输入手机号">
+            </li>
+            <li>
+                <span>电话</span>
+                <input type="tel" placeholder="请输入电话">
+            </li>
+            <li>
+                <span>微信</span>
+                <input type="text" placeholder="请输入微信">
+            </li>
+            <li>
+                <span>QQ</span>
+                <input type="number" placeholder="请输入QQ">
+            </li>
+            <li>
+                <span>邮箱</span>
+                <input type="email" placeholder="请输入邮箱">
+            </li>
+            <li>
+                <span>爱好</span>
+                <input type="text" placeholder="请输入爱好">
+            </li>
+            
+        </ul>
+    </div>
+    <div class="add_new_msg">
+        <div class="title_box">
+            <h3 class="three_title">领导信息</h3>
+        </div>
+        <ul class="add_new_list">
+            <li>
+                <span>姓名</span>
+                <input type="text" placeholder="请输入姓名">
+            </li>
+            <li>
+                <span>职务</span>
+                <input type="text" placeholder="请输入职务">
+            </li>
+            <li>
+                <span>手机号</span>
+                <input type="tel" placeholder="请输入手机号">
+            </li>
+            <li>
+                <span>电话</span>
+                <input type="tel" placeholder="请输入电话">
+            </li>
+            <li>
+                <span>爱好</span>
+                <input type="text" placeholder="请输入爱好">
+            </li>
+            
+        </ul>
+    </div>
+    <div class="add_new_msg">
+        <div class="title_box">
+            <h3 class="four_title">下次拜访时间</h3>
+        </div>
+        <ul class="add_new_list">
+            <li>
+                <span>下次拜访时间</span>
+                <a href="javascript:;" id="showDatePicker" class="showDatePicker">请选择 ></a>
+            </li>
+        </ul>
+    </div>
+    <a href="javascript:;" class="new_customer_save_btn">保存</a>
+</body>
+</html>
+<script>
+    $(".ban select").attr('disabled', 'disabled');
+    $(".ban input").attr('readonly', 'readonly');
+    var area = new areaFn({
+        provinceName:'#111',
+        cityName:'#222',
+        areaName:'#333'
+    });
+
+    $('#showDatePicker').on('click', function () {
+        weui.datePicker({
+            start: new Date().getFullYear(),
+            end: new Date().getFullYear()+1,
+            onConfirm: function (result) {
+                $('#showDatePicker').html(result[0]+'-'+result[1]+'-'+result[2])
+            }
+        });
+    });
+</script>

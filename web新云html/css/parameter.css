@@ -1,0 +1,560 @@
+.content_head
+{
+    width: 100%;
+    height: 4.95rem;
+
+    border-bottom: 1px solid #dadada;
+}
+.content_head > a
+{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+
+    float: left;
+
+    margin-top: 1.65rem;
+}
+.content_head .on
+{
+    position: relative;
+
+    color: #3b88ee;
+}
+.content_head .on > b
+{
+    position: absolute;
+    top: 3.1rem;
+    left: 50%;
+
+    display: block;
+
+    width: 2rem;
+    height: .25rem;
+    margin-left: -1rem;
+
+    background: #3b88ee;
+}
+.back_home_page
+{
+    width: .95rem;
+    height: 1.75rem;
+    margin: 1.6rem 11rem 0 1.6rem;
+
+    background: url(../img/back_btn.png) no-repeat center;
+    background-size: cover;
+}
+.parameter_page_btn
+{
+    margin-left: 3.3rem;
+}
+
+.content_box
+{
+    display: none;
+    padding-left: 2.9rem;
+}
+.content_box h3
+{
+    font-size: 1.5rem;
+
+    position: relative;
+
+    width: 31.65rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+
+    color: #5e5e5e;
+}
+.content_01
+{
+    overflow: hidden;
+
+    box-sizing: border-box;
+    width: 31.65rem;
+    height: 12.25rem;
+
+    border: 1px solid #dbdbdb;
+}
+.content_01 li
+{
+    overflow: hidden;
+
+    height: 3rem;
+
+    border-bottom: 1px solid #dbdbdb;
+}
+.content_01 span
+{
+    font-size: 1.3rem;
+    line-height: 3rem;
+
+    float: left;
+
+    color: #8d8c8c;
+}
+.content_01 .left
+{
+    width: 8.45rem;
+    height: 100%;
+    padding-left: 1.8rem;
+
+    border-right: 1px solid #dbdbdb;
+}
+.content_01 .right
+{
+    padding-left: 2.45rem;
+}
+.content_02,
+.content_03
+{
+    width: 31.55rem;
+
+    border: 1px solid #dbdbdb;
+    border-bottom: none;
+}
+.content_02 li,
+.content_03 li
+{
+    font-size: 1.3rem;
+    line-height: 3rem;
+
+    height: 3rem;
+    padding-left: 1.8rem;
+
+    color: #8d8c8c;
+    border-bottom: 1px solid #dbdbdb;
+}
+.content_04
+{
+    width: 28.7rem;
+    padding: 1.4rem 1.45rem .9rem;
+    padding-left: 1.45rem;
+
+    border: 1px solid #dbdbdb;
+}
+.content_04 p
+{
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+
+    color: #8d8c8c;
+}
+.hidden_arr_btn
+{
+    position: absolute;
+    top: 2.75rem;
+    right: .45rem;
+
+    width: 2.05rem;
+    height: 1.1rem;
+
+    background: url(../img/arr_down_btn.png) no-repeat center;
+    background-size: cover;
+}
+.content_05,
+.content_06
+{
+    overflow: hidden;
+
+    width: 31.65rem;
+
+    border-top: 1px solid #dbdbdb;
+}
+.content_06
+{
+    margin-bottom: 2.5rem;
+}
+.content_05 > div,
+.content_06 > div
+{
+    display: none;
+
+    padding-top: .65rem;
+}
+.content_05 p,
+.content_06 p
+{
+    font-size: 1.3rem;
+    line-height: 3rem;
+
+    color: #8d8c8c;
+}
+.buy_now_btn
+{
+    font-size: 1.5rem;
+    line-height: 5rem;
+    font-weight: 300;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 37.5rem;
+    height: 5rem;
+
+    text-align: center;
+    z-index: 3;
+
+    color: #fff;
+    background: #d95638;
+}
+.bottom_mask
+{
+    height: 5rem;
+}
+.foot_buy
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+
+    display: none;
+}
+.shopcar_buynow_btn_box{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #d3d3d3;
+}
+.shopping_car_link{
+    width: 9.3rem;
+    height: 2rem;
+    background: #FFF;
+    background-image: url('../img/shopping_car.png');
+    background-repeat: no-repeat;
+    background-size: 2.3rem;
+    background-position:3.3rem 0.75rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+.shopping_car_link b{
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #3c3c3c;
+}
+.add_shopcar
+{
+    font-size: 1.5rem;
+    line-height: 5rem;
+
+    width: 14.1rem;
+    height: 5rem;
+
+    text-align: center;
+
+    color: #fff;
+    border: none;
+    background: #f6b61d;
+}
+.buy_now
+{
+    font-size: 1.5rem;
+    line-height: 5rem;
+
+    width: 14.1rem;
+    height: 5rem;
+
+    text-align: center;
+
+    color: #fff;
+    border: none;
+    background: #d95638;
+}
+.sure_btn{
+    display: block;
+    width: 37.5rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    color: #FFF;
+    background: #d95638;
+    font-size: 1.5rem;
+}
+.masking
+{
+    background: rgba(146,146,146,.5);
+}
+.buy_option_box
+{
+    position: fixed;
+    bottom: 5rem;
+    left: 0;
+    z-index: 3;
+
+    width: 37.5rem;
+    height: 37.8rem;
+
+    background: #fff;
+}
+.product_img_box
+{
+    position: absolute;
+    top: -4.6rem;
+    left: 2rem;
+
+    width: 8.95rem;
+    height: 8.95rem;
+
+    text-align: center;
+
+    border: 1px solid #d1d1d1;
+    border-radius: .35rem;
+    background: #fff;
+}
+.product_img_box img
+{
+    width: 7.95rem;
+    margin-top: .8rem;
+}
+.buy_option_box .price
+{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+
+    height: 3.1rem;
+    padding-top: 2.95rem;
+    padding-left: 12.85rem;
+
+    color: #d30000;
+    border-bottom: 1px solid #f0f0f0;
+}
+.buy_option_box .close_btn
+{
+    position: absolute;
+    top: 1.65rem;
+    right: 1.5rem;
+
+    width: 1.1rem;
+    height: 1.1rem;
+
+    background: url(../img/close_btn.png) no-repeat center;
+    background-size: cover;
+}
+.zhuji_color
+{
+    font-size: 1.3rem;
+    line-height: 3.7rem;
+
+    margin-top: .95rem;
+    padding-left: 2.25rem;
+
+    color: #5d5d5d;
+}
+.zhuji_color_box,
+.tiepian_color_box
+{
+    padding-left: 2.25rem;
+}
+.zhuji_color_box span
+{
+    font-size: 1.3rem;
+    line-height: 3rem;
+
+    float: left;
+
+    width: 9.3rem;
+    height: 3rem;
+    margin-right: 1.75rem;
+    margin-bottom: 1.3rem;
+
+    text-align: center;
+
+    color: #393939;
+    border: 1px solid #c8c8c8;
+}
+.zhuji_color_box .on,
+.tiepian_color_box .on
+{
+    color: #d30000;
+    border: 1px solid #d30000;
+}
+.tiepian_color
+{
+    font-size: 1.3rem;
+    line-height: 3.7rem;
+
+    padding-left: 2.25rem;
+
+    color: #5d5d5d;
+}
+.tiepian_color_box span
+{
+    font-size: 1.3rem;
+    line-height: 3rem;
+
+    float: left;
+
+    width: 9.3rem;
+    height: 3rem;
+    margin-right: 1.75rem;
+    margin-bottom: 1.3rem;
+
+    text-align: center;
+
+    color: #393939;
+    border: 1px solid #c8c8c8;
+}
+.tiepian_color_box .cancel{
+    border: 1px dashed #c8c8c8;
+}
+.num_box
+{
+    margin-top: 1.05rem;
+    padding-left: 2.25rem;
+}
+.num_box p
+{
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+
+    float: left;
+
+    margin-right: 18.7rem;
+
+    color: #5d5d5d;
+}
+.num_box .num
+{
+    float: left;
+
+    width: 10.3rem;
+    height: 2.3rem;
+
+    border: 1px solid #505050;
+    border-radius: .25rem;
+}
+.num .minus
+{
+    float: left;
+
+    width: 2.7rem;
+    height: 2.3rem;
+
+    border-right: 1px solid #505050;
+    background: url(../img/red_bkd.png) no-repeat center;
+    background-size: 1.3rem .2rem;
+    box-sizing: border-box;
+}
+.num .add
+{
+    float: left;
+
+    width: 2.7rem;
+    height: 2.3rem;
+
+    border-left: 1px solid #505050;
+    background: url(../img/add_kd.png) no-repeat center;
+    background-size: 1.25rem 1.25rem;
+    box-sizing: border-box;
+}
+.num .count
+{
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+
+    float: left;
+
+    width: 4.7rem;
+
+    text-align: center;
+}
+.add_shoppingcar_sucss{
+    position: absolute;
+    top: 4.35rem;
+    left: 11.15rem;
+    width: 15.25rem;
+    height: 10rem;
+    border-radius: 0.25rem;
+    background: rgba(51, 51, 51, 0.7);
+    text-align: center;
+}
+.add_shoppingcar_sucss img{
+    width: 4.2rem;
+    height: 4.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.add_shoppingcar_sucss p{
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: #FFF;
+}
+.img_box img{
+    width: 37.5rem;
+}
+
+.content_head h3{
+    font-size: 1.8rem;
+    line-height: 4.95rem;
+    margin-left: 10.75rem;
+}
+.buy_option_box .price_box
+{
+    height: 6.1rem;
+    padding-left: 12.85rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+.buy_option_box .price_box .old_price {
+    float: left;
+    padding-top: 3rem;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: #929292;
+    margin-right: 1.2rem;
+}
+.buy_option_box .price_box .suprise{
+    float: left;
+    padding-top: 3rem;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: #da3737;
+}
+.buy_option_box .price_box .suprise_price{
+    float: left;
+    padding-top: 2.7rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: #da3737;
+}
+.empty_btn{
+    width: 100%;
+    height: 100%;
+}
+.hide_video_box{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 999;
+    display: none;
+}
+.video_box{
+    width: 100%;
+    margin-top: 20rem;
+}
+.close_video{
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    padding: 0;
+}
+.close_video img{
+    width: 50%;
+    height: 50%;
+}
+.tiepian_pro_img_box{
+    text-align: center;
+    padding-bottom: 8rem;
+}
+.tiepian_pro_img_box img{
+    width: 31.5rem;
+    margin-top: 1.5rem;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <title>添加拜访记录</title>
+    <link rel="stylesheet" type="text/css"  href="https://static.ncmimg.com/crm/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="https://static.ncmimg.com/crm/css/customer.css" />
+    <link rel="stylesheet" href="https://static.ncmimg.com/crm/css/weui.css"/>
+    <link rel="stylesheet" href="https://static.ncmimg.com/crm/css/example.css"/>
+    <script src="https://static.ncmimg.com/crm/js/jquery-1.7.2.js"></script>
+    <script src="https://static.ncmimg.com/crm/js/index.js"></script>
+    <script type="text/javascript" src="https://static.ncmimg.com/crm/js/zepto.min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+    <script type="text/javascript" src="https://static.ncmimg.com/crm/js/example.js"></script>
+</head>
+<body ontouchstart>
+    <div class="add_new_msg">
+        <ul class="add_new_list">
+            <li class="visit_choice choice">
+                <span>上门拜访</span>
+            </li>
+            <li class="visit_choice">
+                <span>电话联系</span>
+            </li>
+            <li>
+                <input type="hidden" id="visit_mode" value="上门拜访">
+            </li>
+        </ul>
+    </div>
+    <div class="add_new_msg">
+        <ul class="add_new_list">
+            <li>
+                <span>拜访时间</span>
+                <input type="text">
+                <a href="javascript:;" id="showDatePicker1" class="showDatePicker">请选择 ></a>
+            </li>
+            <li>
+                <span>备注</span>
+                <textarea name="" placeholder="请输入备注内容"></textarea>
+            </li>
+            <li>
+                <span>下次拜访时间</span>
+                <a href="javascript:;" id="showDatePicker2" class="showDatePicker">请选择 ></a>
+            </li>
+        </ul>
+    </div>
+    <div class="add_new_msg">
+        <h3 class="add_pic_title">附加图片</h3>
+        <div class="weui-uploader__bd add_pic_box">
+            <div class="weui-uploader__input-box">
+                <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple/>
+            </div>
+        </div>
+    </div>
+    
+    <a href="javascript:;" class="new_customer_save_btn">保存</a>
+</body>
+</html>
+<script>
+    $(".visit_choice").click(function(event) {
+        $(this).addClass('choice').siblings('.visit_choice').removeClass('choice');
+        $("#visit_mode").val($(".choice span").html())
+    });
+    $('#showDatePicker1').on('click', function () {
+        weui.datePicker({
+            start: new Date().getFullYear(),
+            end: new Date().getFullYear()+1,
+            onConfirm: function (result) {
+                $('#showDatePicker1').html(result[0]+'-'+result[1]+'-'+result[2])
+            }
+        });
+    });
+    $('#showDatePicker2').on('click', function () {
+        weui.datePicker({
+            start: new Date().getFullYear(),
+            end: new Date().getFullYear()+1,
+            onConfirm: function (result) {
+                $('#showDatePicker2').html(result[0]+'-'+result[1]+'-'+result[2])
+            }
+        });
+    });
+    $(function(){
+        var tmpl = '<li class="weui-uploader__file" style="background-image:url(#url#)"></li>',
+            $gallery = $("#gallery"), $galleryImg = $("#galleryImg"),
+            $uploaderInput = $("#uploaderInput"),
+            $uploaderFiles = $("#uploaderFiles")
+            ;
+
+        $uploaderInput.on("change", function(e){
+            var src, url = window.URL || window.webkitURL || window.mozURL, files = e.target.files;
+            for (var i = 0, len = files.length; i < len; ++i) {
+                var file = files[i];
+
+                if (url) {
+                    src = url.createObjectURL(file);
+                } else {
+                    src = e.target.result;
+                }
+
+                $uploaderFiles.append($(tmpl.replace('#url#', src)));
+            }
+        });
+        $uploaderFiles.on("click", "li", function(){
+            $galleryImg.attr("style", this.getAttribute("style"));
+            $gallery.fadeIn(100);
+        });
+        $gallery.on("click", function(){
+            $gallery.fadeOut(100);
+        });
+    });
+</script>

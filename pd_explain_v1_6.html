@@ -1,0 +1,73 @@
+ <html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Pragma" contect="no-cache">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<title>page</title>
+<style>
+	*{
+		margin: 0px;padding: 0;
+	}
+	body{
+		font-size: 20px;
+		width: 37.5rem;
+		overflow-x: hidden;
+	}
+	.content img{
+		width: 100%;
+		display: inline-block;
+		margin-top: -1px;
+		vertical-align: middle;
+	}
+	.video_box{
+		width: 37.5rem;
+		text-align: center;
+		position: relative;
+	}
+	.video_box video{
+		width: 37.5rem;
+		height: 26.4rem;
+		margin-bottom: 1rem;
+	}
+	.play{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 37.5rem;
+		height: 26.4rem;
+		z-index: 999;
+	}
+</style>
+<script>
+	;(function(win,doc){
+		function change (){
+			doc.documentElement.style.fontSize = 20*doc.documentElement.clientWidth/750+'px';
+		}
+		change();
+		win.addEventListener('resize',change,false);
+	})(window,document);
+	window.onload = function (){
+		var oV = document.querySelector('video');
+		var oPlay = document.querySelector('.play');
+		oPlay.onclick=function(){
+			oPlay.style.display = 'none';
+			oV.play();
+		};
+	}
+</script>
+</head>
+<body>
+	<div class="video_box">
+		<img src="https://static.ncmimg.com/app_static/img/video_bg.jpg" alt="" class="play">
+		<video controls src="https://static.ncmimg.com/app_static/video/help_connect_2.mp4"></video>
+	</div>
+	<div class = "content">
+		<img src="https://static.ncmimg.com/app_static/img/sysm_img_01.jpg"/>
+		<img src="https://static.ncmimg.com/app_static/img/sysm_img_02.jpg"/>
+		<img src="https://static.ncmimg.com/app_static/img/sysm_img_03.jpg"/>
+		<img src="https://static.ncmimg.com/app_static/img/sysm_img_04.jpg"/>
+		<img src="https://static.ncmimg.com/app_static/img/sysm_img_05.jpg"/>
+	</div>
+</body>
+</html>

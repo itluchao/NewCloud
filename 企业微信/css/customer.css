@@ -1,0 +1,500 @@
+body{
+	width: 37.5rem;
+	overflow-x: hidden;
+	background: #f3f3f3;
+}
+.no_custormer_box{
+	padding-top: 12.4rem;
+	display: none;
+	text-align: center;
+}
+.no_custormer_box img{
+	width: 7.65rem;
+}
+.no_custormer_box p{
+	font-size: 1.8rem;
+	line-height: 6.3rem;
+	color: #cbcbcb;
+	margin-bottom: 1.75rem;
+}
+.no_custormer_box a{
+	font-size: 1.5rem;
+	line-height: 4.1rem;
+	color: #5977a6;
+	display: block;
+	width: 12.1rem;
+	height: 4.1rem;
+	border: 2px solid #5977a6;
+	border-radius: 0.5rem;
+	margin: 0 auto;
+}
+.my_custormer_box ul a{
+	display: block;
+	background: #FFF;
+	padding: 0 1.5rem;
+	width: 34.5rem;
+}
+.my_custormer_box li{
+	margin-top: 1rem;
+} 
+.custormer_msg_box{
+	border-bottom: 1px solid #f3f3f3;
+}
+.hospital_name_box{
+	padding-top: 1.2rem;
+}
+.hospital_name_box p{
+	width: 23.5rem;
+	float: left;
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	color: #373737;
+}
+.hospital_name_box span{
+	width: 7.7rem;
+	float: right;
+	font-size: 1.3rem;
+	line-height: 2.4rem;
+	color: #fdb12c;
+	border: 1px solid #fdb12c;
+	border-radius: 0.5rem;
+	text-align: center;
+}
+.hospital_add_box{
+	padding-top: 1rem;
+	padding-bottom: 1.9rem;
+	border-bottom: 1px solid #f3f3f3;
+}
+.hospital_add_box span{
+	float: left;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	color: #a4a4a4;
+	margin-right: 1.8rem;
+}
+.hospital_add_box b{
+	float: left;
+	font-size: 1.3rem;
+	font-weight: normal;
+	line-height: 1.5rem;
+	color: #a4a4a4;
+}
+.name_tel_box{
+	width: 50%;
+	float: left;
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	color: #a4a4a4;
+	padding-top: 1rem;
+}
+.name_tel_box span{
+	display: block;
+}
+.name_tel_box b{
+	display: block;
+	font-weight: normal;
+}
+.expire_box{
+	padding-top: 0.6rem;
+}
+.expire_box span{
+	font-size: 1.3rem;
+	line-height: 5.3rem;
+}
+.expire_box .not_expire{
+	color: #fdb12c;
+}
+.expire_box .expire{
+	color: #cecece;
+}
+.add_new_custormer{
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	display: block;
+	background: #5977a6;
+	line-height: 5rem;
+	height: 5rem;
+	width: 37.5rem;
+	text-align: center;
+	font-size: 1.8rem;
+	color: #FFF;
+}
+/* 添加新用户 */
+.add_new_msg{
+	background: #FFF;
+	margin-top: 1rem;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+}
+.title_box{
+	padding: 0 1.5rem;
+}
+.title_box h3{
+	font-size: 1.5rem;
+	line-height: 5.3rem;
+	color: #5977a6;
+	padding-left: 3.5rem;
+}
+.one_title{
+	background: url('https://static.ncmimg.com/crm/img/kehuxinxi.png') no-repeat left center;
+	background-size: 2.35rem;
+}
+.two_title{
+	background: url('https://static.ncmimg.com/crm/img/lianxiren.jpg') no-repeat left center;
+	background-size: 2.35rem;
+}
+.three_title{
+	background: url('https://static.ncmimg.com/crm/img/lingdao.jpg') no-repeat left center;
+	background-size: 2.35rem;
+}
+.four_title{
+	background: url('https://static.ncmimg.com/crm/img/xiacibaifang.jpg') no-repeat left center;
+	background-size: 2.35rem;
+}
+.add_new_list{
+	padding: 0 1.5rem;
+}
+.add_new_list li{
+	border-bottom: 1px solid #f3f3f3;
+	overflow: hidden;
+}
+.add_new_list li:nth-last-child(1){
+	border: none;
+}
+.add_new_list li span{
+	float: left;
+	width: 13.5rem;
+	line-height: 5.5rem;
+	font-size: 1.8rem;
+	color: #3f3f3f;
+}
+.add_new_list li .required{
+	color: #d80000;
+}
+.add_new_list li input{
+	float: right;
+	line-height: 2.6rem;
+	padding: 1.6rem 0;
+	max-width: 21rem;
+	font-size: 1.3rem;
+	color: #3f3f3f;
+	border: none;
+	text-align: right;
+	color: #a4a4a4;
+	background: #FFF;
+}
+.add_new_list li select{
+	background: #FFF;
+	float: right;
+	line-height: 2.6rem;
+	padding: 1.6rem 0;
+	font-size: 1.3rem;
+	color: #3f3f3f;
+	border: none;
+	color: #a4a4a4;
+	-webkit-appearance:none;
+	border: none;
+	text-align: right;
+	direction: rtl;
+}
+.add_new_list li p{
+	float: right;
+	line-height: 2.6rem;
+	padding: 1.6rem 0;
+	max-width: 21rem;
+	font-size: 1.3rem;
+	color: #3f3f3f;
+	border: none;
+	color: #a4a4a4;
+	-webkit-appearance:none;
+	border: none;
+	text-align: right;
+}
+.add_new_list li b{
+	float: right;
+	font-weight: normal;
+	line-height: 2.6rem;
+	padding: 1.6rem 0;
+	font-size: 1.3rem;
+	color: #3f3f3f;
+	border: none;
+	color: #a4a4a4;
+	-webkit-appearance:none;
+	border: none;
+	text-align: right;
+	margin-left: 0.5rem;
+}
+.add_new_list li .valid{
+	color: #fdb12c;
+}
+.add_new_list li textarea{
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid #f3f3f3;
+	color: #a4a4a4;
+	min-height: 6.75rem;
+	font-size: 1.3rem;
+	line-height: 2.6rem;
+	padding: 0.4rem 1rem;
+	-webkit-appearance: none;
+}
+.showDatePicker{
+	float: right;
+	line-height: 2.6rem;
+	padding: 1.6rem 0;
+	width: 21rem;
+	font-size: 1.3rem;
+	color: #3f3f3f;
+	border: none;
+	color: #a4a4a4;
+	border: none;
+	text-align: right;
+}
+.add_pic_title{
+	margin-left: 1.5rem;
+	line-height: 4.6rem;
+	font-size: 1.6rem;
+	color: #373737;
+}
+.add_pic_box{
+	padding:1.5rem;
+}
+.new_customer_save_btn{
+	margin-top: 1rem;
+	width: 37.5rem;
+	height: 5rem;
+	line-height: 5rem;
+	background: #5977a6;
+	color: #FFF;
+	font-size: 1.8rem;
+	display: block;
+	text-align: center;
+}
+
+
+/* 医院信息 */
+.page_box a{
+	float: left;
+	height: 5rem;
+	line-height: 5rem;
+	width: 33.3%;
+	text-align: center;
+	background: #FFF;
+	color: #5f5f5f;
+	font-size: 1.5rem;
+}
+.page_box .active{
+	background: #7196d0;
+	color: #FFF;
+}
+.add_box{
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+}
+.edit_msg_link{
+	float: left;
+	width: 12rem;
+	height: 5rem;
+	line-height: 5rem;
+	background: #efa831;
+	color: #FFF;
+	padding-left: 6.75rem;
+	font-size: 1.3rem;
+	background-image: url('https://static.ncmimg.com/crm/img/edit_msg_link.png');
+	background-repeat: no-repeat;
+	background-size: 1.7rem;
+	background-position: 4.3rem center;
+}
+.add_msg_link{
+	float: left;
+	width: 13.25rem;
+	height: 5rem;
+	line-height: 5rem;
+	background: #5977a6;
+	color: #FFF;
+	padding-left: 5.5rem;
+	font-size: 1.3rem;
+	background-image: url('https://static.ncmimg.com/crm/img/add_msg_link.png');
+	background-repeat: no-repeat;
+	background-size: 1.5rem;
+	background-position: 2.9rem center;
+}
+.content_box > ul > li{
+	display: none;
+}
+.content_box > .showul > li{
+	display: block;
+}
+.visit_msg_box li{
+	padding: 0 1.5rem;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	background: #FFF;
+	margin-top: 1rem;
+}
+.name_date_box{
+	padding-top: 1.5rem;	
+}
+.visit_name_box{
+	height: 7.4rem;
+	border-bottom: 1px solid #f3f3f3;
+}
+.name_date_box p{
+	font-size: 1.8rem;
+	line-height: 2rem;
+	margin-bottom: 0.75rem;
+	color: #373737;
+}
+.name_date_box b{
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	color: #a4a4a4;
+	font-weight: normal;
+}
+.visit_name_box .type{
+	float: right;
+	width: 7.7rem;
+	line-height: 2.5rem;
+	font-size: 1.3rem;
+	margin-top: 2.2rem;
+	border: 1px solid #fdb12c;
+	color: #fdb12c;
+	border-radius: 0.5rem;
+	text-align: center;
+}
+.remarks_box h5{
+	font-size: 1.2rem;
+	color: #5c5c5c;
+	line-height: 1.2rem;
+	padding-top: 1.6rem;
+	margin-bottom: 2rem;
+}
+.remarks_msg{
+	padding-bottom: 2rem;
+}
+.remarks_msg span{
+	float: left;
+	font-size: 1.2rem;
+	color: #a4a4a4;
+	line-height: 1.6rem;
+}
+.remarks_msg p{
+	float: left;
+	width: 30rem;
+	font-size: 1.2rem;
+	color: #a4a4a4;
+	line-height: 1.6rem;
+}
+.add_visit_link{
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	width: 37.5rem;
+	height: 5rem;
+	line-height: 5rem;
+	text-align: center;
+	font-size: 1.8rem;
+	background: #5977a6;
+	color: #FFF;
+}
+.contacts p{
+	padding-right: 2rem !important;
+	background: url('https://static.ncmimg.com/crm/img/arr_right.png') no-repeat right center;
+	background-size: 0.8rem;
+}
+.ban span{
+	color: #c3c3c3 !important;
+}
+.ban select{
+	color: #cbcbcb !important;
+	background: #FFF;
+}
+.ban input{
+	color: #cbcbcb !important;
+	background: #FFF;
+}
+.add_new_list .choice{
+	background: url('https://static.ncmimg.com/crm/img/choice.png') no-repeat right center;
+	background-size: 1.85rem;
+}
+.visit_img_box {
+	width: 35rem;
+}
+.visit_img_box li{
+	float: left;
+	width: 11rem;
+	height: 11rem;
+	margin-right: 0.5rem;
+	margin-bottom: 0.5rem;
+	background: #ccc;
+	line-height: 11rem;
+	text-align: center;
+}
+.visit_img_box li img{
+	max-width: 11rem;
+	max-height: 11rem;
+}
+#gender_box b{
+	float: left;
+	width: 3.7rem;
+	line-height: 5.5rem;
+	font-size: 1.3rem;
+	color: #a4a4a4;
+	margin-left: 2rem;
+	padding: 0;
+	background: url('https://static.ncmimg.com/crm/img/gender_no_choice.png') no-repeat left center;
+	background-size: 1.7rem;
+}
+#gender_box .gender{
+	background: url('https://static.ncmimg.com/crm/img/gender_choice.png') no-repeat left center;
+	background-size: 1.7rem;
+}
+.title_img_box{
+	padding-top: 5.8rem;
+	text-align: center;
+}
+.title_img_box img{
+	width: 9.35rem;
+}
+
+.indexes_box{
+	position: relative;
+}
+.indexes{
+	position: absolute;
+	width: 34.5rem;
+	top: 5.5rem;
+	left: 50%;
+	margin-left: -17.25rem;
+	z-index: 10;
+	background: #FFF;
+	border: 1px solid #a9a9a9a9 !important;
+}
+.indexes span{
+	float: none !important;
+	width: 100% !important;
+	display: block;
+	background: #FFF;
+	padding: 0 1.5rem;
+	line-height: 2.4rem !important;
+	font-size: 1.2rem !important;
+	color: #a9a9a9 !important;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+

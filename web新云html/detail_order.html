@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<title>Document</title>
+    <link rel="stylesheet" type="text/css"  href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/detail_order.css" />
+	<script src="js/jquery-1.7.2.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$(".payment_box .cancel").on('touchstart', function(event) {
+    			$(".delete_confirm_box").css('display','block');
+    			return false;
+    		});
+    		$(".confirm div").on('touchstart', function(event) {
+    			$(".delete_confirm_box").css('display','none');
+    			return false;
+    		});
+    	});
+    </script>
+</head>
+<body>
+	<div class="head clearfix">
+		<b class="menu fl"></b> 
+		<a href="javascript:;" class="personal fr"></a>
+		<div class="menu_box">
+			<div class="product_menu">
+				<h2>产品列表</h2>
+				<ul>
+					<li>
+						<span class="product_img">
+							<img src="img/product_menu_01.png" alt="">
+						</span>
+						<div>
+							<a href="javascript:;">智能云贴=lite型</a>
+						</div>
+					</li>
+					<li>
+						<span class="product_img">
+							<img src="img/product_menu_01.png" alt="">
+						</span>
+						<div>
+							<a href="javascript:;">智能云贴贴片智能云贴贴片智能云贴贴片</a>
+						</div>
+					</li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+	<div class="head_masking"></div>
+	<!--head-->
+	<div class="content">
+		<div class="content_head">
+			<a href=""></a>
+			<h3>订单详情</h3>
+		</div>
+		<div class="order_date_num_box clearfix">
+			<div class="order_date_num fl">
+				<div class="order_num clearfix">
+					<p>订单编号：</p>
+					<span>09987654</span>
+				</div>
+				<div class="order_date clearfix">
+					<p>订单日期：</p>
+					<span>2017-06-07</span>
+				</div>
+				<p class="close_time">注：请在30分内完成支付, 超时后将取消订单 </p>
+			</div>
+			<div class="state fr">已收货</div>
+		</div>
+		<div class="order_number_box clearfix">
+			<span>圆通快递：</span>
+			<b>123456789</b>
+		</div>
+		<ul class="product_msg_box">
+			<li>
+				<div class="pro_img_box fl">
+					<img src="img/buy_img_01.png" alt="">
+				</div>
+				<div class="pro_msg fl">
+					<h4>智能云贴=lite型</h4>
+					<p>颜色分类：这那的（啥啊）</p>
+				</div>
+				<div class="pro_price fr">
+					<p class="now_price">￥399.00</p>
+					<p class="old_price">￥499.00</p>
+					<p class="number">x1</p>
+				</div>
+			</li>
+			<li>
+				<div class="pro_img_box fl">
+					<img src="img/buy_img_01.png" alt="">
+				</div>
+				<div class="pro_msg fl">
+					<h4>智能云贴=lite型</h4>
+					<p>颜色分类：这那的（啥啊）</p>
+				</div>
+				<div class="pro_price fr">
+					<p class="now_price">￥399.00</p>
+					<p class="old_price">￥499.00</p>
+					<p class="number">x1</p>
+				</div>
+			</li>
+		</ul>
+		<div class="price_detailed_box">
+			<div class="detailed_box">
+				<div class="totle_box clearfix">
+					<p>商品总价</p>
+					<span>399.00</span>
+					<b>￥ </b>
+				</div>
+				<div class="freight_box clearfix">
+					<p>运费（快递）</p>
+					<span>0.00</span>
+					<b>￥ </b>
+				</div>
+				<div class="derate_box clearfix">
+					<p>优惠</p>
+					<span>0.00</span>
+					<b>￥ </b>
+				</div>
+			</div>	
+			<div class="totle_price_box clearfix">
+				<p>实付款</p>
+				<span>0.00</span>
+				<b>￥ </b>
+				<strong></strong>
+			</div>	
+		</div>
+		<div class="address_box">
+			<div class="msg_box clearfix">
+				<div class="name fl">
+					<span>收货人：</span>
+					<span>张三</span>
+				</div>
+				<div class="tel fr">
+					<span>13810312345</span>
+				</div>
+			</div>
+			<div class="address_msg_box">
+				<p>河北张家口市张北河北张家口市张北河北张家口市张北河北张家口市张北河北张家</p>
+			</div>
+		</div>
+		<div class="payment_msg_box">
+			<div class="payment_mode_box clearfix">
+				<p>支付方式</p>
+				<span>支付宝</span>
+			</div>
+			<div class="invoice_mode_box clearfix">
+				<p>发票类型</p>
+				<span>不要发票</span>
+			</div>
+			<div class="invoice_head_mode_box clearfix">
+				<p>发票抬头</p>
+				<span></span>
+			</div>
+		</div>
+		<div class="payment_box clearfix show">
+			<span class="cancel">取消订单</span>
+			<span class="pay">立即支付</span>
+		</div>
+		<div class="delete_confirm_box">
+			<h3>是否确认删除</h3>
+			<div class="confirm clearfix">
+				<div class="cancel">否</div>
+				<div class="yes">是</div>
+			</div>
+		</div>
+	</div>
+	<!--content-->
+	
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<title>Document</title>
+    <link rel="stylesheet" type="text/css"  href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="https://static.ncmimg.com/51pain/mobile/css/swiper.min.css">
+	<script src="js/jquery-1.7.2.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://static.ncmimg.com/51pain/mobile/js/swiper.min.js"></script>
+</head>
+<body>
+	<div class="head clearfix">
+		<b class="menu fl"></b>
+        <a href="javascript:;" class="index_link fl"></a>
+		<a href="javascript:;" class="personal fr"></a>
+		<div class="menu_box">
+			<div class="product_menu">
+				<h2>产品列表</h2>
+				<ul>
+					<li>
+						<a href="javascript:;" class="clearfix">
+							<span class="product_img fl">
+								<img src="https://static.ncmimg.com/51pain/mobile/img/yuntie_pro.png" alt="" style="width: 3rem; height: 3.6rem;">
+							</span>
+							<p class="fl">智能云贴PRO</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="clearfix">
+							<span class="product_img fl">
+								<img src="https://static.ncmimg.com/51pain/mobile/img/tiepian_pro.png" alt="" style="width: 4.1rem; height: 3.85rem;">
+							</span>
+							<p class="fl">云贴贴片PRO</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="clearfix">
+							<span class="product_img fl">
+								<img src="https://static.ncmimg.com/51pain/mobile/img/yuntie.png" alt="" style="width: 3.15rem; height: 3.1rem;">
+							</span>
+							<p class="fl">智能云贴(智能型-Lite)</p>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;" class="clearfix">
+							<span class="product_img fl">
+								<img src="https://static.ncmimg.com/51pain/mobile/img/tiepian.png" alt="" style="width: 3.6rem; height: 3.85rem;">
+							</span>
+							<p class="fl">云贴贴片</p>
+						</a>
+					</li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+	<div class="head_masking"></div>
+	<!--head-->
+	<div class="content">
+		<div class="index_content_01">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+				    <div class="swiper-slide product1">
+						<h4>智能云贴 Pro</h4>
+						<p>跨越时间与空间的界限</p>
+						<a href="javascript:;">立即购买</a>
+				    </div>
+				    <div class="swiper-slide product2 stop-swiping">
+				      	<h4>智能云贴(智能型-Lite)</h4>
+				      	<p>一款可穿戴的智能缓痛设备，懂疼痛会学习</p>
+				      	<div class="product_price clearfix">
+				      		<span>售价：</span>
+				      		<p>¥399</p>
+				      	</div>
+				      	<div class="original_cost">
+				      		<p>售价：499</p>
+				      	</div>
+				      	<a href="details.html">立即购买</a>
+				    </div>	
+			    </div>
+			    <!-- Add Pagination -->
+			    <div class="swiper-button-next" id="swiper-button-next"></div>
+			    <div class="swiper-button-prev" id="swiper-button-prev"></div>
+		    </div>
+			
+		</div>
+		<div class="index_content_02">
+			<span class="tel_num">400-898-6678</span>
+			<p>北京新云医疗科技有限公司<br/>Copyright © 2016 - 2017 New Cloud. All Rights Reserved.</p>
+		</div>
+	</div>
+	<!--content-->
+	<div class="foot clearfix">
+		<div class="home_page fl">
+			<a href="index.html" class="on">首页</a>
+		</div>
+		<div class="shopping_car fl">
+			<a href="javascript:;" class="">购物车</a>
+		</div>
+		<div class="mine fl">
+			<a href="javascript:;" class="">我的</a>
+		</div>
+	</div>
+	<div class="foot_masking"></div>
+	<!--foot-->
+	<div class="loading_box">
+		请稍等
+	</div>
+	<!--Loading_box-->
+	<div class="success_box">
+		成功
+	</div>
+	<!--success_box-->
+	<div class="error_box">
+		错误
+	</div>
+	<!--Error_box-->
+</body>
+</html>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+	  	navigation: {
+	      nextEl: '.swiper-button-next',
+	      prevEl: '.swiper-button-prev',
+	    },
+    });
+</script>

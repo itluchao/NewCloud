@@ -1,0 +1,19 @@
+*{ padding:0; margin:0;font-family: 'PingFang','Microsoft Yahei'; font-weight: normal;}
+body{ font-size: 20px;}
+h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:normal;}
+ol, ul{ list-style:none;}
+table{ cellspacing:0; cellpadding:0; border-collapse:collapse;}
+th{ text-align:left; font-weight:normal;}
+input,textarea{ outline: none; }
+textarea{ resize:none; }
+img{ vertical-align:middle; border:none;}
+fieldset{ border:none;}
+a{ color:#333; text-decoration:none;  }
+a:hover {text-decoration:none;}
+button::-moz-focus-inner{ border:0; padding:0; margin:0; }
+input{ -webkit-appearance:none; border-radius: 0;}
+/*清浮动*/
+.clearfix:after{ content:''; display:block; clear:both;} 
+.fl{float:left;}
+.fr{float:right;}
+.show{ display: block !important; }

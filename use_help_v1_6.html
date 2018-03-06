@@ -1,0 +1,204 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="Pragma" contect="no-cache">
+<script src="https://static.ncmimg.com/app_static/js/jquery-1.7.2.js"></script>
+<title>page</title>
+<style>
+	*{
+		margin: 0px;padding: 0;
+		font-family: "PingFangSC-Regular","微软雅黑";
+	}
+	body{
+		font-size: 20px;
+		width: 37.5rem;
+		background: #eaeeef;
+	}
+	.content{
+		background: #FFF; 
+		border-top: 1px solid #e0e0e0;
+		padding: 1.2rem 1.5rem;
+		margin-bottom: 1rem;
+	}
+	.title{
+		padding-left: 3.15rem;
+		padding-right: 3rem;
+		background: url('https://static.ncmimg.com/app_static/css/question.png') no-repeat left 0.6rem;
+		background-size: 3.15rem;
+		font-size: 1.3rem;
+		line-height: 2.5rem;
+		color: #4b4b4b;
+	}
+	.dec{
+		position: relative;
+	}
+	.dec .toggle_btn{
+		width: 2.2rem;
+		height: 1.75rem;
+		position: absolute;
+		right: 0;
+		top: 0.6rem;
+		background: url('https://static.ncmimg.com/app_static/css/arr.png') no-repeat center bottom;
+		background-size: cover;
+	}
+	.open{
+		transform-origin: 50% 0%;;
+		-webkit-transform: rotate(-180deg);
+		-ms-transform: rotate(-180deg);
+		-o-transform: rotate(-180deg);
+		transform: rotate(-180deg);
+		transition: transform .3s;
+	}
+	.close{
+		transform-origin: 50% 0%;;
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+		transition: transform .3s;
+	}
+	.dec p{
+		padding-left: 3.15rem;
+		padding-right: 3rem;
+		font-size: 1.3rem;
+		line-height: 2.5rem;
+		color: #9f9f9f;
+		
+	}
+	.hide p{
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.show p{
+		overflow: visible;
+		text-overflow: string;
+		white-space: normal;
+	}
+	.dec > p{
+		background: url('https://static.ncmimg.com/app_static/css/answer.png') no-repeat left 0.6rem;
+		background-size: 3.15rem;
+		
+	}
+	.dec_box{
+		display: none;
+	}
+</style>
+<script>
+	;(function(win,doc){
+		function change (){
+			doc.documentElement.style.fontSize = 20*doc.documentElement.clientWidth/750+'px';
+		}
+		change();
+		win.addEventListener('resize',change,false);
+	})(window,document);
+</script>
+</head>
+<body>
+	<section>
+		<div class="content">
+			<div class="title active">云贴App无法搜索到设备</div>
+			<div class="dec hide">
+				<p>确认手机的蓝牙为打开状态，并确认云贴为开机状态。如果两者状态正常仍然搜索不到设备，则按下列步骤进行操作</p>
+				<b class="toggle_btn close"></b>
+				<div class="dec_box">
+					<p>1.退出手机应用程序</p>
+					<p>2.关闭设备，5秒后重启云贴</p>
+					<p>3.重新打开手机蓝牙和应用程序</p>
+					<p>4.搜索并连接设备</p>
+					<p>若还是无法搜索到设备，请再次尝试步骤1~4；若仍无法解决，请联系售后客服</p>
+					<br>
+					<p>安卓系统手机能搜索到设备，但无法连接</p>
+					<p>安卓系统的手机需要打开GPS定位功能</p>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="title active">设备自动断开连接是什么原因？</div>
+			<div class="dec hide">
+				<p>手机和设备的距离过远或之间有障碍物</p>
+				<b class="toggle_btn close"></b>
+				<div class="dec_box">
+					<p>设备电量不足</p>
+					<p>周围有大功率的蓝牙设备干扰</p>
+					<p>您需要</p>
+					<p>手机和设备的距离不应超过10米并且中间没有墙壁或大面积金属类的障碍物</p>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="title active">什么情况下不能使用云贴？</div>
+			<div class="dec hide">
+				<p>体内装有心脏起搏器或其他电子产品的病人严禁使用；</p>
+				<b class="toggle_btn close"></b>
+				<div class="dec_box">
+					<p>心力衰竭及心脏病病人严禁使用；</p>
+					<p>皮肤感染或出现皮疹的病人严禁使用；</p>
+					<p>疑似或确诊为癫痫的病人严禁使用；</p>
+					<p>急性炎症、化脓性疾病的病人严禁使用；</p>
+					<p>孕妇及12岁以下儿童禁用。</p>
+				</div>
+				
+			</div>
+		</div>
+		<div class="content">
+			<div class="title active">设备强度为什么减弱？</div>
+			<div class="dec hide">
+				<p>请保证电极片与皮肤贴合平整，如果电极片粘性不够，请立即更换。</p>
+				<b class="toggle_btn close"></b>
+				<div class="dec_box">
+					
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="title active">电极片能使用多少次？</div>
+			<div class="dec hide">
+				<p>每贴自粘性电极片可重复使用10次，贴片粘度降低后会影响使用效果，当电极片不再具有粘性时请立即更换；</p>
+				<b class="toggle_btn close"></b>
+				<div class="dec_box">
+					
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="title active">设备应该怎样保管存放？</div>
+			<div class="dec hide">
+				<p>电极片保护膜应保留，待使用后贴回电极片处。云贴设备应存放在温度为10℃到30℃的环境中，避免阳光直射。</p>
+				<b class="toggle_btn close"></b>
+				<div class="dec_box">
+					
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="title active">云贴无法开机怎么办？</div>
+			<div class="dec hide">
+				<p>尝试给设备充电，若仍无反应，可以用针状物插入复位孔进行复位。若仍无法解决，请联系售后客服。</p>
+				<b class="toggle_btn close"></b>
+				<div class="dec_box">
+					
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
+<script>
+	$(document).ready(function() {
+		$(".toggle_btn").each(function(index, el) {
+			$(this).click(function(event) {
+				if ($(this).hasClass('close')) {
+					$(this).removeClass('close').addClass('open');
+					$('.dec_box').eq(index).show('fast');
+					$(this).parent().removeClass('hide').addClass('show');
+				}else {
+					$(this).removeClass('open').addClass('close');
+					$('.dec_box').eq(index).hide('fast');
+					$(this).parent().removeClass('show').addClass('hide');
+				}
+			});
+		});
+	});
+</script>

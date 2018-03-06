@@ -1,0 +1,199 @@
+body{
+	background: #f0f0f0;
+}
+.content{
+	min-height: 51.45rem;
+	padding-bottom: 3.95rem;
+}
+.content_head{
+	height: 4.95rem;
+	border-bottom: 1px solid #dadada;
+	background: #FFF;
+}
+.content_head a {
+	float: left;
+	width: 0.95rem;
+	height: 1.75rem;
+	background: url('../img/back_btn.png') no-repeat center;
+	background-size: cover;
+	margin-left: 1.6rem;
+	margin-top: 1.6rem;
+}
+.content_head h3 {
+	float: left;
+	margin-left: 13.5rem;
+	line-height: 4.95rem;
+	font-size: 1.8rem;
+	color: #363636;
+}
+.foot_shopcar{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.price_totle{
+	border-top: 1px solid #c4c4c4;
+	width: 14.9rem;
+	height: 3.9rem;
+	background: #FFF;
+}
+.price_totle p{
+	float: left;
+	margin-left: 1.5rem;
+	margin-top: 1.9rem;
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	color: #545454;
+}
+.price_totle b,.price_totle span{
+	float: left;
+	font-weight: normal;
+	line-height: 1.8rem;
+	font-size: 1.8rem;
+	color: #d30000;
+	margin-top: 1.4rem;
+}
+.foot_shopcar input{
+	float: left;
+	height: 3.95rem;
+	width: 11.3rem;
+	border: none;
+	color: #FFF;
+	font-size: 1.5rem;
+}
+.foot_shopcar input:nth-child(2){
+	background: #f6b61d;
+}
+.foot_shopcar input:nth-child(3){
+	background: #d95638;
+}
+.pro_box{
+	overflow: hidden;
+}
+.pro_box li{
+	width: 45.15rem;
+	background: #FFF;
+	height: 9.85rem;
+	margin-top: 1rem;
+	position: relative;
+}
+.right_delete_box{
+	position: absolute;
+	top: 0;
+	right: -7.65rem;
+	width: 7.65rem;
+	height: 9.85rem;
+	line-height: 9.85rem;
+	background: #d95638;
+	color: #FFF;
+	font-size: 1.8rem;
+	text-align: center;
+}
+.left_content_box{
+	width: 37.5rem;
+	height: 9.85rem;
+}
+.img_box{
+	width: 5.6rem;
+	height: 5.6rem;
+	border: 1px solid #d1d1d1;
+	border-radius: 0.3rem;
+	margin-top: 2.05rem;
+	margin-left: 1.55rem;
+}
+.img_box img{
+	width: 3.8rem;
+	margin-left: 0.9rem;
+	margin-top: 0.5rem;
+}
+.msg_box{
+	width: 16.75rem;
+	margin-left: 1.6rem;
+}
+.msg_box h4{
+	margin-top: 2.35rem;
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	color: #252525;
+}
+.msg_box p{
+	margin-top: 0.6rem;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	color: #959595;
+}
+.msg_box > div{
+	margin-top: 1rem;
+	overflow: hidden;
+}
+.msg_box > div span{
+	float: left;
+	font-size: 1rem;
+	line-height: 1rem;
+	color: #d95638;
+}
+.msg_box > div span b{
+	font-weight: normal;
+}
+.msg_box > div .old_price{
+	color: #ababab;
+	margin-left: 1.9rem;
+	text-decoration: line-through;
+}
+.pro_number_box{
+	width: 10.3rem;
+	height: 2.3rem;
+	border: 1px solid #505050;
+	border-radius: 0.25rem;
+	margin-top: 3.75rem;
+}
+.pro_number_box .minus{
+	float: left;
+	width: 2.7rem;
+	height: 2.3rem;
+	border-right: 1px solid #c8c8c8;
+	background: url('../img/red_bkd.png') no-repeat center;
+	background-size: 1.3rem;
+}
+.pro_number_box .add{
+	float: left;
+	width: 2.7rem;
+	height: 2.3rem;
+	border-left: 1px solid #c8c8c8;
+	background: url('../img/add_kd.png') no-repeat center;
+	background-size: 1.3rem;
+}
+.pro_number_box input{
+	border: none;
+	float: left;
+	width: 4.65rem;
+	font-size: 1.3rem;
+	line-height: 2.3rem;
+	height: 2.3rem;
+	text-align: center;
+}
+
+.empty_shoppingcar_box{
+	display: block;
+	height: 7.15rem;
+	padding-top: 15.55rem;
+	background: url('../img/icon_kc.png') no-repeat 12.05rem 4.55rem;
+	background-size: 13.4rem;
+	text-align: center;
+	font-size: 1.5rem;
+	line-height: 7.5rem;
+	color: #787878;
+}
+
+
+
+
+
+
+
+
+
+
+
+

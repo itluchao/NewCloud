@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no,email=no">
+	<title>Document</title>
+    <link rel="stylesheet" type="text/css"  href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/choice_address.css" />
+	<script src="js/jquery-1.7.2.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+    	$(document).ready(function() {
+    		$(".my_address_box li").each(function(index, el) {
+    			$(this).on('touchstart',function(){
+    				$(this).addClass('selected').siblings('li').removeClass('selected');
+    			})
+    		});
+    	});
+    </script>
+</head>
+<body>
+	<div class="head clearfix">
+		<b class="menu fl"></b> 
+		<a href="javascript:;" class="personal fr"></a>
+		<div class="menu_box">
+			<div class="product_menu">
+				<h2>产品列表</h2>
+				<ul>
+					<li>
+						<span class="product_img">
+							<img src="img/product_menu_01.png" alt="">
+						</span>
+						<div>
+							<a href="javascript:;">智能云贴=lite型</a>
+						</div>
+					</li>
+					<li>
+						<span class="product_img">
+							<img src="img/product_menu_01.png" alt="">
+						</span>
+						<div>
+							<a href="javascript:;">智能云贴贴片智能云贴贴片智能云贴贴片</a>
+						</div>
+					</li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+	<div class="head_masking"></div>
+	<!--head-->
+	<div class="content">
+		<div class="content_head clearfix">
+			<a href=""></a>
+			<h3>收货地址</h3>
+		</div>
+		<div class="my_address_box">
+			<a href="add_new_address.html" class="add_new_btn">添加新地址</a>
+			<ul>
+			  	<li class="selected">
+			  		<div class="user_msg clearfix">
+			  			<span>用户名：</span>
+			  			<span class="name">张三</span>
+			  			<span class="tel">13810312345</span>
+			  		</div>
+			  		<p><span>[默认地址]</span>河北张家口市张北河北张家口市张北河北张家口市张北河北张家口市张北河北张家</p>
+			  	</li>
+			  	<li class="">
+			  		<div class="user_msg clearfix">
+			  			<span>用户名：</span>
+			  			<span class="name">张三</span>
+			  			<span class="tel">13810312345</span>
+			  		</div>
+			  		<p><span>[默认地址]</span>河北张家口市张北河北张家口市张北河北张家口市张北河北张家口市张北河北张家</p>
+			  	</li>
+			  </ul>
+		</div>
+	</div>
+	<!--content-->
+</body>
+</html>
