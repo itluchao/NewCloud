@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/jquery.slideBox.css" type="text/css" />
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/jquery.slideBox.js" type="text/javascript"></script>
+	<script>
+		$(document).ready(function() {
+			$('#demo3').slideBox({
+
+				duration : 0.3,//滚动持续时间，单位：秒
+
+				easing : 'linear',//swing,linear//滚动特效
+
+				delay : 3,//滚动延迟时间，单位：秒
+
+				hideClickBar : false,//不自动隐藏点选按键
+
+				clickBarRadius : 10
+
+			});
+			var timer = null;
+			$(".advantage_box > div").each(function(index, el) {
+				var top_pos = 398;
+				var timer = null;
+				$(this).mouseover(function(event) {
+					clearInterval(timer);
+					timer = setInterval(function(){
+						top_pos-=20;
+						if (top_pos<=0) {
+							top_pos = 0;
+							clearInterval(timer);
+						}
+						$(".choice_advantage").eq(index).css('top', top_pos+'px');
+					},16)
+				});
+				$(this).mouseout(function(event) {
+					clearInterval(timer);
+					timer = setInterval(function(){
+						top_pos+=20;
+						if (top_pos>=398) {
+							top_pos = 398;
+							clearInterval(timer);
+						}
+						$(".choice_advantage").eq(index).css('top', top_pos+'px');
+					},16)
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="head">
+		<div class="conwidth clearfix">
+			<div class="head_title fl">TaaS疼痛云平台</div>
+			<div class="logo_box fr clearfix">
+				<a href="javascript:;" class="login">登录</a>
+				<a href="javascript:;" class="logon">注册</a>
+			</div>
+			<div class="denglu_box fr clearfix">
+				<a href="javascript:;">
+					<img src="img/moren_touxiang.png" alt="">
+				</a>
+				<span>您好，中日医院</span>
+			</div>
+		</div>
+	</div>
+	<div class="banner_box">
+		<div id="demo3" class="slideBox">
+		  <ul class="items">
+		    <li><a href="javascript:;" title="" id="banner_pic"><img src="img/banner_img_01.jpg"></a></li>
+		    <li><a href="www.baidu.com" title=""><img src="img/banner_img_02.jpg"></a></li>
+		  </ul>
+		</div>	
+		<!-- <div class="banner_page_box clearfix">
+			<span class="on"></span>
+			<span></span>
+		</div>  -->
+		<!-- <div class="banner_img_box clearfix">
+			<a href="">
+				<img src="img/banner_img_01.jpg" alt="">
+			</a>
+			<a href="">
+				<img src="img/banner_img_02.jpg" alt="">
+			</a>
+			<a href="">
+				<img src="img/banner_img_01.jpg" alt="">
+			</a>
+		</div>
+		-->
+	</div>
+	<div class="content_01_box">
+		<div class="content_01 conwidth">
+			<h3>TaaS —— 全球首款基于人工智能服务疼痛科室建设的系统</h3>
+			<p>北京新云医院管理有限公司专注于利用人工智能，大数据以及深度学习，结合智能硬件产品以及软件管理系统解决医院疼痛科室建设，<br>病人疼痛疾病的治疗和院后病人康复护理等一系列与疼痛相关的问题；新云人一个共同的追求，减少疼痛患者的数量，<br>打造快速缓减疼痛的可穿戴设备，并以改善疼痛患者的生活质量为己任，达到解决医疗资源配置不合理，医院管理缺失等问题。</p>
+			<div class="zongjie_box clearfix">
+				<div class="one fl">
+					<img src="img/zongjie_icon_01.jpg" alt="">
+					<p>院前、院中、院后、全方位<br>智能管理</p>
+				</div>
+				<div class="two fl">
+					<img src="img/zongjie_icon_02.jpg" alt="">
+					<p>基于疼痛大数据建模并达到<br>深度学习，不断修正</p>
+				</div>
+				<div class="three fl">
+					<img src="img/zongjie_icon_03.jpg" alt="">
+					<p>专业一体化解决医疗资源<br>配置，管理缺失等问题</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content_02_box">
+		<div class="content_02 conwidth">
+			<img src="img/main_2.jpg" alt="">
+		</div>
+	</div>
+	<div class="content_03_box">
+		<div class="content_03 conwidth">
+			<h3>疼痛医联体</h3>
+			<p>基于慢性疼痛疾病是我国常见、多发、重大疾病，疾病负担巨大，造成的社会损失难以估量的严峻现实，迫切需求构建国内疼痛专科医联体。<br>中日医院疼痛科是我国首批建立的疼痛科，是目前国内公认的起步较早、治疗手段最全、培训疼痛人才最多的疼痛科。<br>中日医院作为中国疼痛科的领头羊，在国家卫生计生委的支持下，由中日医院牵头，联合国内部分大型三甲医院协作，并与国内其他医疗单位共计400余家医院合作，共同组建“国家临床重点专科·中日医院疼痛专科医联体(Medical Cluster for Pain Disorders，MCPD)”，简称疼痛专科医联体。</p>
+			<div class="window_box clearfix">
+				<div>
+					<img src="img/window_box_01.jpg" alt="">
+					<span>提升能力、惠及百姓、促进医改、造福社会</span>
+				</div>
+				<div class="middle_window">
+					<img src="img/window_box_02.jpg" alt="">
+					<span>学术交流、科研合作、专家教学，医患互信</span>
+				</div>
+				<div>
+					<img src="img/window_box_03.jpg" alt="">
+					<span>便捷就诊，快速就医，权威诊断，医保控费</span>
+				</div>
+			</div>
+			<a href="javascript:;" class="more_msg_btn">查看更多</a>
+		</div>
+	</div>
+	<div class="content_04_box">
+		<div class="content_04 conwidth">
+			<h3>我们的优势</h3>
+			<div class="advantage_box clearfix conwidth">
+				<div class="advantage_01">
+					<div class="advantage">
+						<h4>医联体圈子</h4>
+						<b></b>
+					</div>
+					<div class="choice_advantage">
+						<h4>医联体圈子</h4>
+						<b></b>
+						<p>中日医院疼痛科是我国首批建立的疼痛科，是目前国内公认的起步较早、治疗手段最全、培训疼痛人才最多的疼痛科。中日医院疼痛科与全国近200家医疗机构联合成立疼痛专科医联体后，将联合各地学术与技术实力较强的医院作为协作单位。</p>
+					</div>
+				</div>
+				<div class="advantage_02">
+					<div class="advantage">
+						<h4>大数据平台</h4>
+						<b></b>
+					</div>
+					<div class="choice_advantage">
+						<h4>大数据平台</h4>
+						<b></b>
+						<p>作为疼痛专科医联体的运营商，承载着加入医联体的众多医院数据。在连接医联体和众多医院疼痛科的基础之上，凭借自身优势成为聚集疼痛数据的大数据平台，打破传统医疗数据封闭不流动的特性，让数据在医学研究和诊疗过程中发挥更大的价值。</p>
+					</div>
+				</div>
+				<div class="advantage_03">
+					<div class="advantage">
+						<h4>智慧科室建设</h4>
+						<b></b>
+					</div>
+					<div class="choice_advantage">
+						<h4>智慧科室建设</h4>
+						<b></b>
+						<p>利用自身互联网优势，将传统医疗科室智能化，在疼痛专科医联体的辐射范围内，大力发展建设智慧科室。</p>
+					</div>
+				</div>
+				<div class="advantage_04">
+					<div class="advantage">
+						<h4>信息互联互通</h4>
+						<b></b>
+					</div>
+					<div class="choice_advantage">
+						<h4>信息互联互通</h4>
+						<b></b>
+						<p>在疼痛专科医联体的基础上，建设信息互联互通制度，让病患信息在医院之间流通起来，即使是跨省也可以看到病患之前的疼痛情况，化繁为简，将全国医院的疼痛科连接在一起。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content_05_box">
+		<div class="content_05 conwidth">
+			<h3>我们的客户</h3>
+			<div class="hispital_box clearfix">
+				<div>
+					<img src="img/logo_1.jpg" alt="">
+					<span>第三军医大学新桥医院</span>
+				</div>
+				<div>
+					<img src="img/logo_3.jpg" alt="">
+					<span>中日友好医院</span>
+				</div>
+				<div>
+					<img src="img/logo_2.jpg" alt="">
+					<span>首都医科大学宣武医院</span>
+				</div>
+				<div>
+					<img src="img/logo_4.jpg" alt="">
+					<span>天镇县中医医院</span>
+				</div>
+				<div>
+					<img src="img/logo_5.jpg" alt="">
+					<span>菜西市中医医院</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="foot_content_box_01">
+			<div class="clearfix conwidth">
+				<div class="left_box fl">
+					<h3><img src="img/foot_tit.png" alt=""></h3>
+					<p>北京新云医院管理有限公司是新云医疗集团旗下的专业医院管理公司，是国家临床重点专科·中日医院疼痛专科医联体（简称“疼痛专科医联体”）运营方。</p>
+					<p>新云医疗愿为提升中国疼痛患者的生活品质这一伟大使命而不断努力。</p>
+				</div>
+				<span class="border_line"></span>
+				<div class="middle_box fl">
+					<div class="company_name">
+						<p>公司名称：<br> 北京新云医院管理有限公司</p>
+					</div>
+					<div class="work_time">
+						<p>工作时间：<br> 周一到周五    9:00-18:00 </p>
+					</div>
+					<div class="company_add">
+						<p>公司地址：<br> 北京市昌平区回龙观东大街338号 </p>
+					</div>
+				</div>
+				<span class="border_line"></span>
+				<div class="right_box fl">
+					<img src="img/foot_ewm.jpg" alt="">
+					<p>扫码关注微信公众号</p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="foot_content_box_02">
+			<p>京石食药监械经营备20160135号<br>北京新云医疗科技有限公司<br>Copyright © 2016 - 2017 New Cloud. All Rights Reserved.</p>
+		</div>
+	</div>
+</body>
+</html>

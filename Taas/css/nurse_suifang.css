@@ -1,0 +1,306 @@
+/*护士随访*/
+.nurse_content_box{
+	width: 100%;
+	background: #f8f3ef;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.nurse_title_box{
+	width: 98%;
+	margin: 0 auto;
+	height: 46px;
+	background: #FFF;
+	margin-bottom: 15px;
+}
+.nurse_title_box h3{
+	float: left;
+	line-height: 46px;
+	font-size: 16px;
+	padding-left: 27px;
+	margin-left: 28px;
+	background: url(https://oj8y27rzn.qnssl.com/taas/img/home_page_logo.png) no-repeat left center;
+	margin-right: 105px;
+}
+.nurse_title_box a{
+	float: left;
+	font-size: 16px;
+	line-height: 46px;
+	color: #157de8;
+	margin-right: 30px;
+}
+.nurse_work_msg_box{
+	width: 98%;
+	margin:0 auto;
+}
+.nurse_today_reminder{
+	width:38.7%;
+	background:#FFF;
+	padding-top: 28px;
+	padding-bottom: 56px;
+}
+.nurse_today_reminder h3{
+	box-sizing: border-box;
+	width: 84.8%;
+	font-size: 24px;
+	line-height: 24px;
+	color :#393939;
+	border-left: 4px solid #2d8ff3;
+	padding-left: 15px;
+	margin: 0 auto;
+	margin-bottom: 55px;
+}
+.nurse_today_reminder table{
+	box-sizing: border-box;
+	width: 84.8%;
+	border: 1px solid #dedede;
+	margin: 0 auto;
+	text-align: center;
+}
+.nurse_today_reminder th{
+	box-sizing: border-box;
+	width: 50%;
+	text-align: center;
+	border-right: 1px solid #dedede;
+	font-size: 14px;
+	color: #222121;
+	line-height: 40px;;
+}
+.nurse_today_reminder tr{
+	box-sizing: border-box;
+	width: 50%;
+	text-align: center;
+	font-size: 14px;
+	color: #222121;
+	line-height: 40px;
+}
+.nurse_today_reminder tr a{
+	color: #2d8ff3;
+}
+.nurse_work_msg_box .odd{
+	background: #f7f7f7;
+}
+.nurse_work_count_box{
+	width: 60%;
+	background: #FFF;
+	padding-bottom: 25px;
+}
+.work_count_title_box{
+	width:94%;
+	padding-top: 25px;
+	margin:0 auto;
+	margin-bottom: 35px;
+}
+.work_count_title_box h3{
+	float: left;
+	font-size: 24px;
+	line-height: 24px;
+	color :#393939;
+	border-left: 4px solid #2d8ff3;
+	padding-left: 15px;
+	margin: 3px 25px 3px 0px;
+}
+.nurse_content_box .check_box input{
+	float: left;
+	width: 79px; 
+	padding-left: 5px;
+	height: 28px;
+	border: 1px solid #bdbdbd;
+	font-size: 12px;
+	line-height: 12px;
+}
+.nurse_content_box .check_box span{
+	float: left;
+	width: 42px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	color: #222121;
+	text-align: center;
+}
+.nurse_content_box .check_box a{
+	float: left;
+	line-height: 30px;
+	font-size: 14px;
+	color: #2d8ff3;
+	margin-right: 15px;
+}
+.nurse_content_box .check_box .submit{
+	width: 70px;
+	height: 30px;
+	border: none;
+	text-align: center;
+	line-height: 30px;
+	font-size: 16px;
+	color: #FFF;
+	background: #2d8ff3;
+	padding: 0;
+	cursor: pointer;
+	margin-left: 20px;
+	margin-right: 40px;
+}
+.nurse_work_count_box table{
+	width:94%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	border: 1px solid #dedede;
+}
+.nurse_work_count_box th{
+	box-sizing: border-box;
+	width: 50%;
+	text-align: center;
+	font-size: 14px;
+	line-height: 40px;
+	color: #222121;
+	border-right: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+}
+.nurse_work_count_box tr{
+	box-sizing: border-box;
+	width: 50%;
+	text-align: center;
+	font-size: 14px;
+	line-height: 40px;
+	color: #222121;
+	border-bottom: 1px solid #dedede;
+}
+.nurse_work_count_box tr a{
+	font-size: 14px;
+	line-height: 40px;
+	color: #2d8ff3;
+}
+.nurse_work_count_box tr b{
+	font-size: 14px;
+	line-height: 40px;
+	color: #2d8ff3;
+}
+.work_msg_two_box{
+	margin-top: 15px;
+}
+.shifang_count_box{
+	width: 38.7%;
+	background: #FFF;
+	padding-top: 28px;
+	padding-bottom: 20px;
+}
+.shifang_title_box{
+	width: 84.8%;
+	margin:0 auto;
+	margin-bottom: 25px;
+}
+.work_msg_two_box h3{
+	float: left;
+	font-size: 24px;
+	line-height: 24px;
+	padding-left: 15px;
+	border-left: 4px solid #2d8ff3;
+	color: #222121;
+}
+.work_msg_two_box .daochu_box a{
+	float: left;
+	color: #2d8ff3;
+	font-size: 14px;
+	line-height: 24px;
+	margin-left: 15px;
+}
+.shifang_count_box .check_box{
+	width: 84.8%;
+	margin: 0 auto;
+}
+.shifang_count_box table{
+	box-sizing: border-box;
+	width: 84.8%;
+	border: 1px solid #dedede;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 33px;
+}
+.shifang_count_box th{
+	box-sizing: border-box;
+	width: 50%;
+	text-align: center;
+	border-right: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	font-size: 14px;
+	color: #222121;
+	line-height: 40px;;
+}
+.shifang_count_box tr{
+	box-sizing: border-box;
+	width: 50%;
+	text-align: center;
+	font-size: 14px;
+	color: #222121;
+	line-height: 40px;
+	border-bottom: 1px solid #dedede;
+}
+.shifang_count_box tr a{
+	color: #2d8ff3;
+}
+.type_care_box{
+	width: 60%;
+}
+.type_box{
+	background: #FFF;
+	width: 53.5%;
+	box-sizing: border-box;
+	padding: 28px 26px 84px	26px;
+}
+.type_box table	{
+	box-sizing: border-box;
+	border: 1px solid #dedede;
+	width:100%;
+	margin-top: 30px;
+
+}
+.type_box th{
+	width: 50%;
+	text-align: center;
+	border-right: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	font-size: 14px;
+	color: #222121;
+	line-height: 95px;;
+}
+.type_box td{
+	width: 50%;
+	text-align: center;
+	border-bottom: 1px solid #dedede;
+	font-size: 14px;
+	color: #222121;
+	line-height: 95px;;
+}
+.type_box table a{
+	color: #2d8ff3;
+}
+.care_box{
+	box-sizing: border-box;
+	height: 406px;
+	width: 44.1%;
+	background:#FFF;
+	padding: 28px 26px 0px 26px;
+}
+.birthdays_box {
+	margin-top: 30px;
+}
+.birthdays_box li{
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.birthdays_box	b{
+	float: left;
+	width: 14px;	
+	height: 14px;
+	text-align: center;
+	line-height: 14px;
+	font-size: 12px;
+	color :#FFF;
+	background: #ee7857;
+	margin:1px;
+}
+.birthdays_box p{
+	float: left;
+	margin-left: 15px;
+	width: 84%;
+	font-size: 14px;
+	line-height: 16px;
+}

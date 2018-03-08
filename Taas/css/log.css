@@ -1,0 +1,282 @@
+.log_header{
+	width: 100%;
+	height: 80px;
+	background: #333744;
+}
+.log_header h1{
+	color: #FFF;
+	line-height: 80px;
+	font-size: 24px;
+	padding-left: 64px;
+	background: url(../img/log_bg.png) no-repeat left center;
+}
+.login_content_box{
+	width: 100%;
+	height: 716px;
+	background: #161c2e;
+}
+.login_content{
+	height: 100%;
+	position: relative;
+}
+.login_content .login_content_imgbg_01{
+	position: absolute;
+	left: -165px;
+	top: 64px;
+}
+.login_msg_box{
+	position: absolute;
+	top: 100px;
+	right: 100px;
+	width: 400px;
+	height: 410px;
+	background: #FFF;
+	border-radius: 5px;
+}
+.login_msg_box h2{
+	padding-top: 6px;
+	line-height: 110px;
+	font-size: 30px;
+	color: #6fb3ff;
+	text-align: center;
+}
+.login_msg_box .send_msg_input{
+	margin-left: 39px;
+	width: 300px;
+	padding-left: 20px;
+	height: 44px;
+	font-size: 14px;
+	line-height: 14px;
+	color: #333
+}
+.login_msg_box .hover_input{
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+.login_msg_box .hover_input:hover{
+	border: 1px solid #b1b1b1;
+}
+.login_msg_box .login_info_box{
+	height: 30px;
+}
+.login_msg_box .id_info_msg,.login_msg_box .password_info_msg{
+	line-height: 30px;
+	font-size: 12px;
+	color: #f55;
+	padding-left: 39px;
+}
+.login_entry_btn{
+	display: block;
+	width: 322px;
+	height: 50px;
+	margin-left: 39px;
+	background: #69abf4;
+	text-align: center;
+	line-height: 50px;
+	font-size: 24px;
+	text-align: center;
+	color: #FFF;
+	border-radius: 3px;
+	margin-bottom: 14px;
+}
+.rem_msg_btn{
+	margin-left: 57px;
+	padding-left: 26px;
+	line-height: 16px;
+	font-size: 14px;
+	color: #999;
+	cursor: pointer;
+	-webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.rem_msg_btn.off{
+	background: url(../img/rem_off.png) no-repeat left center;
+}
+.rem_msg_btn.on{
+	background: url(../img/rem_on.png) no-repeat left center;
+}
+.link_reg_btn{
+	margin-right: 54px;
+	line-height: 16px;
+	font-size: 14px;
+	color: #999;
+}
+.log_footer{
+	width: 100%;
+	height: 153px;
+	background: #242937;
+	text-align: center;
+}
+.log_footer p{
+	line-height: 18px;
+	font-size: 12px;
+	color: #777;
+	padding-top: 49px;
+}
+
+/*---------------------------------------------logon css-----------------------------------*/
+.logon_content_box{
+	height: 750px;
+	padding-top: 60px;
+	width: 100%;
+	background: #f5f5f5;
+	position: relative;
+}
+.logon_content{
+	width: 700px;
+	padding-left: 300px;
+	height: 680px;
+	background: #FFF;
+	margin: 0 auto;	
+}
+.logon_content h2{
+	padding-left: 142px;
+	padding-top: 73px;
+	font-size: 30px;
+	line-height: 30px;
+	color: #6fb3ff;
+	margin-bottom: 40px;
+}
+.logon_content .long_input{
+	display: block;
+	width: 379px; 
+	height: 44px;
+	border: 1px solid #ccc;
+	padding-left: 19px;
+	border-radius: 3px;
+	font-size: 14px;
+	line-height: 14px;
+
+}
+.long_input:hover,.logon_yanzheng:hover{
+	border: 1px solid #b1b1b1;
+}
+.yanzheng_box{
+	width: 400px;
+}
+.logon_yanzheng{
+	width: 219px;
+	padding-left: 19px;
+	height: 44px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+.send_yanzheng_btn{
+	width: 138px; 
+	height: 44px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	cursor: pointer;
+	box-sizing: content-box;
+	color: #333;
+}
+.logon_info_box{
+	height: 30px;
+}
+.logon_info_box p{
+	line-height: 30px;
+	font-size: 12px;
+	color: #999;
+}
+.logon_info_box .error{
+	color: #f55;
+}
+.submit_btn{
+	width: 400px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 24px;
+	color: #FFF;
+	background: #6fb3ff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.login_btn_box span{
+	padding-top: 20px;
+	line-height: 14px;
+	font-size: 14px;
+	color: #999;
+	margin-left: 120px;
+	margin-right: 30px;
+}
+.login_btn_box a{
+	padding-top: 20px;
+	line-height: 14px;
+	font-size: 14px;
+	color: #6fb3ff;
+}
+.login_btn_box a:hover{
+	color: #4d8cd2;
+}
+.sucss_msk_box{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.2)
+}
+.sucss_msk{
+	position: absolute;
+	left: 50%;
+	top: 147px;
+	width: 400px;
+	height: 450px;
+	margin-left: -200px;
+	background: #FFF;
+	border-radius: 5px;
+}
+.top_bg_box{
+	background: #7bbaff;
+	background-image: url(../img/log_suc_bg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 210px;
+	border-radius: 5px 5px 0 0;
+}
+.sucss_msk .close{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 14px;
+	height: 14px;
+	background: url(../img/log_close_btn.png) no-repeat center;
+}
+.sucss_msk p{
+	line-height: 160px;
+	font-size: 30px;
+	text-align: center;
+}
+.sucss_msk .back_login{
+	width: 200px;
+	line-height: 79px;
+	font-size: 18px;
+	color: #69abf4;
+	text-align: center;
+	border-top: 1px solid #eee;
+}
+.sucss_msk .back_index{
+	width: 199px;
+	line-height: 79px;
+	font-size: 18px;
+	color: #999;
+	text-align: center;
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee;
+}
+
+
+
+
+
+
+
+
+
+

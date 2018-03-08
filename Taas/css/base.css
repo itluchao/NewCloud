@@ -1,0 +1,29 @@
+/*清零*/
+*{ padding:0; margin:0;}
+body{ 
+ font:12px/150% "PingFangSC-Regular","sans-serif","STHeitiSC-Light","微软雅黑","Microsoft YaHei"; color:#333; background:#fff;}
+html, body, div, span, applet, object, iframe,h1, h2, h3,h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i,center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td{ margin:0px; padding:0px; border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent; }
+address,caption,cite,code,dfn,em,var,em,cite,strong,i,b{font-style:normal;font-weight:normal;}
+html{margin:0; *overflow-x:hidden;}
+h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:normal;}
+ol, ul,li{ list-style:none;}
+table{ cellspacing:0; cellpadding:0; border-collapse:collapse;}
+th{ text-align:left; font-weight:normal;}
+input,textarea{ outline: none; }
+textarea{ resize:none; }
+img{ vertical-align:middle; border:none;}
+fieldset{ border:none;}
+a{ color:#333; text-decoration:none;  }
+a:hover {text-decoration:none;}
+button::-moz-focus-inner{ border:0; padding:0; margin:0; }/* 
+input{ -webkit-appearance:textfield; -webkit-rtl-ordering:logical;} */
+/*清浮动*/
+.clearfix:after {visibility:hidden;display: block;font-size: 0;content: " ";clear: both;}
+.clearfix:after {display:table;content: "";clear: both;}/*更好*/
+.clearfix{*zoom:1; }
+.fl{float:left !important;}
+.fr{float:right !important;}
+
+.conwidth{ width:1200px; margin:0 auto; min-width:1200px;}
+.conWidth{ width:1200px; margin:0 auto; min-width:1200px;}
+.show{ display: block !important;}

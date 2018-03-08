@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="Shortcut Icon" href="https://oj8y27rzn.qnssl.com/taas/images/xinyunicon.png"/>
+	<link rel="stylesheet" href="https://oj8y27rzn.qnssl.com/taas/css/base.css">
+	<link rel="stylesheet" href="https://oj8y27rzn.qnssl.com/taas/css/system.css">
+	<link rel="stylesheet" href="https://oj8y27rzn.qnssl.com/taas/css/doctor_suifang.css">
+	<script src="https://oj8y27rzn.qnssl.com/taas/js/jquery-1.7.2.js"></script>
+	<script src="https://oj8y27rzn.qnssl.com/taas/js/index.js"></script>
+	<script src="https://oj8y27rzn.qnssl.com/taas/js/highcharts.js"></script>
+	<script src="https://oj8y27rzn.qnssl.com/taas/js/exporting.js"></script>
+</head>
+<body>
+	<div class="system_head clearfix">
+		<div class="logo_box fl"></div>
+		<div class="head_title_box fl clearfix">
+			<h3>TaaS疼痛云平台</h3>
+			<p>提升疼痛患者生活品质</p>
+		</div>
+		<div class="head_msg_box fr clearfix">
+			<a href="javascript:;" class="exit_btn fr">退出</a>
+			<div class="head_personal_box fr clearfix">
+				<b></b>
+				<a href="javascript:;">靖县安定门医院（全国疼痛分级诊疗云平台成员）</a>
+			</div>
+			<div class="head_my_msg_box fr">
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+	</div>
+	<div class="system_content clearfix">
+		<div class="system_sidebar_box fl">
+			<a href="javascript:;" class="home_page_link">首页</a>
+			<div class="discovery parent_div">发现</div>
+			<a href="javascript:;" class="href_btn">预约专家</a>
+		    <div class="my_center parent_div">我的</div>
+		    <a href="javascript:;" class="href_btn now">医院信息</a>
+		    <a href="javascript:;" class="href_btn">我的消息</a>
+		    <a href="javascript:;" class="href_btn">我的预约</a>
+		    <a href="javascript:;" class="href_btn">账户设置</a>
+		</div>
+		<!--变更内容框体-->
+		<div class="system_content_box">
+			<div class="doctor_suifang_content_box">
+				<div class="doctor_link_box clearfix">
+					<a href="javascript:;">
+						<img src="https://oj8y27rzn.qnssl.com/taas/img/docter_link_bg_01.jpg" alt="">
+					</a>
+					<a href="javascript:;">
+						<img src="https://oj8y27rzn.qnssl.com/taas/img/docter_link_bg_02.jpg" alt="">
+					</a>
+					<a href="javascript:;">
+						<img src="https://oj8y27rzn.qnssl.com/taas/img/docter_link_bg_03.jpg" alt="">
+					</a>
+					<a href="javascript:;">
+						<img src="https://oj8y27rzn.qnssl.com/taas/img/docter_link_bg_04.jpg" alt="">
+					</a>
+				</div>
+				<div class="doctor_tongji_box clearfix">
+					<div class="graph_box fl">
+						<div class="graph_title_box clearfix">
+							<h3>工作站</h3>
+							<select name="" id="">
+								<option value="过去7天">过去7天</option>
+								<option value="过去30天">过去30天</option>
+							</select>
+						</div>
+						<div class="graph" id="container"></div>
+					</div>
+					<div class="work_count_box fr">
+						<div class="work_count_title_box clearfix">
+							<h3>工作统计</h3>
+							<select name="" id="">
+								<option value="本周">本周</option>
+								<option value="本周">本月</option>
+								<option value="本周">本年</option>
+							</select>
+							<div class="check_box fr">
+								<input type="text" placeholder="2017.06.06">
+								<span>至</span>
+								<input type="text" placeholder="2017.06.06">
+								<input type="submit" class="submit">
+							</div>
+						</div>
+						<table>
+							<tr>
+								<th>建档人数</th>
+								<th>正在随访人数</th>
+								<th>失访人数</th>
+							</tr>
+							<tr>
+								<td>
+									<a href="javascript:;">12</a>
+								</td>
+								<td>
+									<a href="javascript:;">12</a>
+								</td>
+								<td>
+									<a href="javascript:;">12</a>
+								</td>
+							</tr>
+						</table>
+						<table>
+							<tr>
+								<th>癌痛</th>
+								<th>非癌痛</th>
+								<th>再次入院</th>
+							</tr>
+							<tr>
+								<td>
+									<a href="javascript:;">12</a>
+								</td>
+								<td>
+									<a href="javascript:;">12</a>
+								</td>
+								<td>
+									<a href="javascript:;">12</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="dynamic_box">
+					<h3>本院动态</h3>
+					<div class="dynamic_content_box clearfix">
+						<div class="nurse_dynamic_box fl">
+							<ul>
+								<li class="clearfix">
+									<p>护士对患者王三贵已经进行了第一阶段“一周随访”工作；</p>
+									<span>2017.09.21</span>
+								</li>
+								<li class="clearfix">
+									<p>护士对患者王三贵已经进行了第一阶段“一周随访”工作；</p>
+									<span>2017.09.21</span>
+								</li>
+								<li class="clearfix">
+									<p>护士对患者王三贵已经进行了第一阶段“一周随访”工作；</p>
+									<span>2017.09.21</span>
+								</li>
+								<li class="clearfix">
+									<p>护士对患者王三贵已经进行了第一阶段“一周随访”工作；</p>
+									<span>2017.09.21</span>
+								</li>
+								<li class="clearfix">
+									<p>护士对患者王三贵已经进行了第一阶段“一周随访”工作；</p>
+									<span>2017.09.21</span>
+								</li>
+								<li class="clearfix">
+									<p>护士对患者王三贵已经进行了第一阶段“一周随访”工作；</p>
+									<span>2017.09.21</span>
+								</li>
+								<li class="clearfix">
+									<p>护士对患者王三贵已经进行了第一阶段“一周随访”工作；</p>
+									<span>2017.09.21</span>
+								</li>
+							</ul>
+						</div>
+						<div class="nurse_dynamic_box doctor_dynamic_box fl">
+							<ul>
+								<li class="clearfix">
+									<p>医生李三家新建了患者王文革的档案；</p>
+									<span>2017.09.21</span>
+								</li>
+								<li class="clearfix">
+									<p>医生李三家新建了患者王文革的档案；</p>
+									<span>2017.09.21</span>
+								</li>
+								<li class="clearfix">
+									<p>医生李三家新建了患者王文革的档案；</p>
+									<span>2017.09.21</span>
+								</li>
+								<li class="clearfix">
+									<p>医生李三家新建了患者王文革的档案；</p>
+									<span>2017.09.21</span>
+								</li>
+								<li class="clearfix">
+									<p>医生李三家新建了患者王文革的档案；</p>
+									<span>2017.09.21</span>
+								</li>
+								<li class="clearfix">
+									<p>医生李三家新建了患者王文革的档案；</p>
+									<span>2017.09.21</span>
+								</li>
+								<li class="clearfix">
+									<p>医生李三家新建了患者王文革的档案；</p>
+									<span>2017.09.21</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--变更内容框体-->
+	</div>
+</body>
+</html>
+<script>
+	$(document).ready(function() {
+		
+		Highcharts.chart('container', {
+		    chart: {
+		        type: 'line'
+		    },
+		    title: {
+		        text: ''
+		    },
+		    subtitle: {
+		        text: ''
+		    },
+		    xAxis: {
+		    	labels:{
+		    		style:{
+		    			fontSize:'16px'
+		    		}
+		    	},
+		        categories: ['10.15', '10.15', '10.15', '10.15', '10.15', '10.15', '10.15']
+		    },
+		    yAxis: {
+		    	labels:{
+		    		style:{
+		    			fontSize:'16px'
+		    		}
+		    	},
+		        title: {
+		            text: '人数'
+		        }
+		    },credits: {
+				enabled:false
+			},exporting: {
+				enabled:false
+			},
+		    plotOptions: {
+		        line: {
+		            dataLabels: {
+		                enabled: true
+		            },
+		            enableMouseTracking: false
+		        }
+		    },
+		    series: [{
+		        name: '过去7天',
+		        data: [7,8,9,5,6,3,4]
+		    }]
+		});
+	});
+</script>

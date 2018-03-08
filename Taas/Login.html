@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="Shortcut Icon" href="http://www.newcloudgroup.cn/templets/yiyuan/img/xinyunicon.png"/>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/log.css">
+	<script src="js/jquery-1.7.2.js"></script>
+</head>
+<body>
+	<div class="log_header">
+		<div class="conwidth">
+			<a href="javascript:;">
+				<h1>TaaS疼痛云平台</h1>
+			</a>
+		</div>
+	</div>
+	<div class="login_content_box">
+		<div class="login_content conwidth">
+			<img src="img/lg_bg_01.png" alt="" class="login_content_imgbg_01">
+			<div class="login_msg_box">
+				<h2>用户登录</h2>
+				<input type="text" placeholder="ID／手机号／账号" class="send_id_input send_msg_input hover_input"/ >
+				<div class="login_info_box">
+					<p class="id_info_msg"></p>
+				</div>
+				<input type="password" placeholder="登录密码" class="send_password_input send_msg_input hover_input"/ >
+				<div class="login_info_box">
+					<p class="password_info_msg"></p>
+				</div>
+				<a href="javascript:;" class="login_entry_btn">登录</a>
+				<div class="clearfix">
+					<span class="rem_msg_btn on fl">记住我</span>
+					<input type="hidden" value="" name="" class="login_rem_msg">
+					<a href="javascript:;" class="link_reg_btn fr">免费注册</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="log_footer">
+		<p>京石食药监械经营备20160135号<br>北京新云医疗科技有限公司<br>Copyright © 2016 - 2017 New Cloud. All Rights Reserved.</p>
+	</div>
+</body>
+</html>
+<script>
+	$(document).ready(function() {
+		$(".send_msg_input").focus(function(event) {
+			$(this).css('border','1px solid #6fb3ff')
+		});
+		$(".send_msg_input").blur(function(event) {
+			$(this).css('border','1px solid #ccc')
+		});
+		$(".rem_msg_btn").click(function(event) {
+			if ($(this).hasClass('off')) {
+				$(this).removeClass('off').addClass('on');
+				$('.login_rem_msg').val('on');
+			}else {
+				$(this).removeClass('on').addClass('off');
+				$('.login_rem_msg').val('off');
+			}
+		});
+		$(".link_reg_btn").mouseover(function(event) {
+			$(this).css('color','#6fb3ff')
+		});
+		$(".link_reg_btn").mouseout(function(event) {
+			$(this).css('color','#999')
+		});
+		$(".login_entry_btn").click(function(event) {
+			if($(".send_id_input").val() == ''){
+				$(".id_info_msg").html('');
+				$(".password_info_msg").html('');
+				$(".id_info_msg").html('请输入ID／手机号／账号');
+			}else if ($(".send_password_input").val() == '') {
+				$(".id_info_msg").html('');
+				$(".password_info_msg").html('');
+				$(".password_info_msg").html('请输入密码');
+			}else{
+				$(".id_info_msg").html('');
+				$(".password_info_msg").html('');
+			}
+		});
+	});
+</script>

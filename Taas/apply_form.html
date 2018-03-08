@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="Shortcut Icon" href="http://www.newcloudgroup.cn/templets/yiyuan/img/xinyunicon.png"/>
+	<link rel="stylesheet" href="https://oj8y27rzn.qnssl.com/taas/css/base.css">
+	<link rel="stylesheet" href="https://oj8y27rzn.qnssl.com/taas/css/system.css">
+	<link rel="stylesheet" href="css/docter_appoint.css">
+	<link rel="stylesheet" href="https://oj8y27rzn.qnssl.com/taas/css/calendar-pro2.css" />
+	<script src="https://oj8y27rzn.qnssl.com/taas/js/jquery-1.7.2.js"></script>
+	<script src="https://oj8y27rzn.qnssl.com/taas/js/index.js"></script>
+	<script src="https://oj8y27rzn.qnssl.com/taas/js/calendar-pro.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.calendar-box').calendar({
+				ele : '.demo-box', //依附
+				title : '选择预约时间',
+				data : [
+					{date:'2017-9-07',data:'可预约'},
+					{date:'2017-9-08',data:'可预约'},
+					{date:'2017-9-09',data:'可预约'}
+				]
+			});
+
+			$(".yuyue_data_btn").click(function(event) {
+				$(".calendar-box").show();
+			});
+			$(".calendar-box .canel").click(function(event) {
+				$(".calendar-box").hide();
+			});
+			
+			$(".calendar-box .confirm").click(function(event) {
+				/*var data = $('.calendar-box').calendarGetActive();*/
+				var strData = $(".arrData_input").val();
+				var arrData = strData.split(",");
+				for(var i=0;i<arrData.length;i++){
+					if(arrData[i].split("-")[1]<10){
+						arrData[i] = arrData[i].split("-")[0]+'-0'+arrData[i].split("-")[1]+'-'+arrData[i].split("-")[2];
+					}
+				}
+				for(var i=0;i<arrData.length;i++){
+					if(arrData[i].split("-")[2]<10){
+						arrData[i] = arrData[i].split("-")[0]+'-'+arrData[i].split("-")[1]+'-0'+arrData[i].split("-")[2];
+					}
+				}
+				arrData = arrData.sort();
+				$(".date_choice_box").html('');
+				$(".trip_box ul").html('');
+				$.each(arrData, function(index, val) {
+					$(".date_choice_box").append('<div>'+arrData[index]+'</div>')
+					$(".trip_box ul").append('<li class="clearfix"><div class="am_box fl clearfix"><span><b>'+arrData[index]+'</b>上午：</span><textarea name="" id="" ></textarea></div><div class="pm_box fl clearfix"><span><b>'+arrData[index]+'</b>下午：</span><textarea name="" id="" ></textarea></div></li>');
+				});
+				/*$(".ht-rili-td-active").each(function(index, el) {
+					$(".date_choice_box").append('<div>'+$(this).attr('data-date')+'</div>')
+					$(".trip_box ul").append('<li class="clearfix"><div class="am_box fl clearfix"><span><b>'+$(this).attr('data-date')+'</b>上午：</span><textarea name="" id="" ></textarea></div><div class="pm_box fl clearfix"><span><b>'+$(this).attr('data-date')+'</b>下午：</span><textarea name="" id="" ></textarea></div></li>');
+				});*/
+				/*$('.ht-rili-onclick').each(function(index, el) {
+					$(this).removeClass('ht-rili-td-active')
+				});*/
+				$(".calendar-box").hide();
+			});
+
+			/*判断checkbox选中对应显示的表单*/
+			$(".operation_checkbox").click(function(){
+				if ($(this).is(':checked')) {
+					$(".operation_num_box,.operation_describe_box").show()
+				}else{
+					$(".operation_num_box,.operation_describe_box").hide()
+				}
+			})	
+			$(".patient_checkbox").click(function(){
+				if ($(this).is(':checked')) {
+					$(".patient_num_box").show()
+				}else{
+					$(".patient_num_box").hide()
+				}
+			})	
+			$(".teach_checkbox").click(function(){
+				if ($(this).is(':checked')) {
+					$(".teach_someting_box").show()
+				}else{
+					$(".teach_someting_box").hide()
+				}
+			})	
+			$(".clinic_checkbox").click(function(){
+				if ($(this).is(':checked')) {
+					$(".clinic_box").show()
+				}else{
+					$(".clinic_box").hide()
+				}
+			})		
+		});
+	</script>
+</head>
+<body>
+	<div class="system_head clearfix">
+		<div class="logo_box fl"></div>
+		<div class="head_title_box fl clearfix">
+			<h3>TaaS疼痛云平台</h3>
+			<p>提升疼痛患者生活品质</p>
+		</div>
+		<div class="head_msg_box fr clearfix">
+			<a href="javascript:;" class="exit_btn fr">退出</a>
+			<div class="head_personal_box fr clearfix">
+				<b></b>
+				<a href="javascript:;">靖县安定门医院（全国疼痛分级诊疗云平台成员）</a>
+			</div>
+			<div class="head_my_msg_box fr">
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+	</div>
+	<div class="system_content clearfix">
+		<div class="system_sidebar_box fl">
+			<a href="javascript:;" class="home_page_link">首页</a>
+			<div class="discovery parent_div">发现</div>
+			<a href="javascript:;" class="href_btn">预约专家</a>
+		    <div class="my_center parent_div">我的</div>
+		    <a href="javascript:;" class="href_btn now">医院信息</a>
+		    <a href="javascript:;" class="href_btn">我的消息</a>
+		    <a href="javascript:;" class="href_btn">我的预约</a>
+		    <a href="javascript:;" class="href_btn">账户设置</a>
+		</div>
+		<!--变更内容框体-->
+		<div class="system_content_box">
+			<div class="apply_form_box">
+				<h2>预约申请</h2>
+				<div class="ask_box">
+					<h3><span>洪文学</span>&nbsp大夫预约要求</h3>
+					<p>接受预约范围：北京周边;<br>出诊接受预约人数30人以上、手术接受预约台数2台以上；讲课接受疼痛预约课程45分钟-120分钟之间;<br>医院要求： 二级医院及以上;<br>疾病要求：踝关节炎或踝关节创伤患者，特别是需要做关节置换的;</p>
+				</div>
+				<div class="yuyue_date_box clearfix">
+					<span>您预约日期：</span>
+					<div class="yuyue_data_choice_box fl">
+						<div class="date_choice_box fl clearfix"></div>
+						<span class="yuyue_data_btn fl">可预约时间</span>
+						<div class="calendar-box demo-box"></div>
+					</div>
+					
+				</div>
+				<div class="shenqing_msg_box ">
+					<div class="clearfix">
+						<span>申请医院：</span>
+						<input type="text" placeholder="请填写申请医院名称">
+						<span>申请人：</span>
+						<input type="text" placeholder="请填写申请人姓名">
+					</div>
+					<div class="clearfix">
+						<span>所在医院职称：</span>
+						<input type="text" placeholder="请填写申请医院名称">
+						<span>预计预约费用：</span>
+						<input type="text" placeholder="请填写申请医院名称">
+					</div>
+				</div>
+				<div class="expect_docter_detailed_box clearfix">
+					<span>期望专家：</span>
+					<div class="fl">
+						<div class="expect_do_check clearfix">
+							<input type="checkbox" value="手术" class="operation_checkbox"><span>手术</span>
+							<input type="checkbox" value="出诊" class="patient_checkbox"><span>出诊</span>
+							<input type="checkbox" value="讲课" class="teach_checkbox"><span>讲课</span>
+							<input type="checkbox" value="义诊" class="clinic_checkbox"><span>义诊</span>
+						</div> <!-- 
+						<div class="checked_box classify_expect clearfix">
+							<span class="show">手术</span>
+							<span>出诊</span>
+							<span>讲课</span>
+							<span>义诊</span>	
+						</div> -->
+						<div class="operation_num_box classify_expect clearfix">
+							<span>手术数量：</span>
+							<input type="text" >
+						</div>
+						<div class="operation_describe_box classify_expect clearfix">
+							<span>手术描述：</span>
+							<textarea name="" id="" placeholder="描述"></textarea>
+						</div>
+						<div class="patient_num_box classify_expect clearfix">
+							<span>看诊人数：</span>
+							<input type="text" >
+						</div>
+						<div class="teach_someting_box classify_expect clearfix">
+							<span>期望讲课内容：</span>
+							<input type="text" >
+						</div>
+						<div class="clinic_box classify_expect clearfix">
+							<span>义诊活动简介：</span>
+							<input type="text" >
+						</div>
+					</div>
+				</div>
+				<div class="trip_msg_box clearfix">
+					<span>行程安排:</span>
+					<div class="trip_box fl clearfix">
+						<ul>
+							<!-- <li class="clearfix">
+								<div class="am_box fl clearfix">	
+									<span><b>2017-07-29</b>上午：</span>	
+									<textarea name="" id="" ></textarea>	
+								</div>
+								<div class="pm_box fl clearfix">
+									<span><b>2017-07-29</b>下午：</span>	
+									<textarea name="" id="" ></textarea>
+								</div>
+							</li> -->
+						</ul>
+						<div class="supplement_box clearfix">
+							<span>补充：</span>
+							<textarea name="" id="" ></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="submit_box clearfix">
+					<a href="javascript:;" class="send_msg_btn">提交预约申请</a>
+					<a href="javascript:;" class="canel_msg_btn">取消预约申请</a>
+				</div>
+			</div>
+			
+		</div>
+		<!--变更内容框体-->
+	</div>
+</body>
+</html>

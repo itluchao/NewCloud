@@ -1,0 +1,968 @@
+.widthBox{
+	width: 1116px;
+	margin: 0 auto;
+}
+.live_index_banner_box{
+	position: relative;
+	width: 100%;
+}
+.live_index_banner_box img{
+	width: 100%;
+}
+.swiper-pagination span{
+	width: 60px;
+	height: 3px;
+	background: #74a5d5;
+	border-radius: 0;
+	opacity: 1;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+	background: #d6e9fd;
+}
+.enter_box{
+	margin-top: 20px;
+}
+.recommend_box{
+	width: 100%;
+	border: 1px solid #ebebeb;
+	margin-top: 20px;
+}
+.live_video_box .title_box{
+	height: 46px;
+	background: #f2f2f2;
+}
+.live_video_box .title_box .title{
+	font-size: 16px;
+	line-height: 46px;
+	padding-left: 50px;
+	color: #333;
+	background: url('https://static.ncmimg.com/taas/img/recommend_icon.png') no-repeat 23px center;
+	background-size: 17px;
+	margin-right: 46px;
+}
+.title_link_box a{
+	margin-right: 80px;
+	line-height: 32px;
+	font-size: 14px;
+	margin-top: 7px;
+	color: #333;
+}
+.title_link_box .active{
+	color: #2d8ff3;
+	border-bottom: 2px solid #2d8ff3;
+}
+.title_link_box .hover{
+	color: #2d8ff3;
+	border-bottom: 2px solid #2d8ff3;
+}
+.title_box .more{
+	line-height: 46px;
+	padding-right: 17px;
+	background: url('https://static.ncmimg.com/taas/img/arr_icon_02.png') no-repeat right center;
+	color: #666;
+	margin-right: 28px;
+}
+.recommend_box .video_box{
+	padding: 10px;
+}
+.recommend_box .video_box > img{
+	float: left;
+	border: 1px solid #f2f2f2;
+}
+.video_list_box{
+	width: 786px;
+	padding: 0 0 0 10px;
+}
+.video_list_box li{
+	float: left;
+	margin-left: 20px;
+	padding-bottom: 10px;
+}
+.video_link_box{
+	width: 238px;
+	height: 158px;
+	text-align: center;
+	line-height: 158px;
+	position: relative;
+	border: 1px solid #f2f2f2;
+	overflow: hidden;
+}
+.video_link_box img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.hover .link_play{
+	display: block;
+}
+.link_play{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 0, .3);
+	text-align: center;
+	line-height: 160px;
+}
+.video_list_box .name{
+	font-size: 14px;
+	color: #1c1c1c;
+	line-height: 14px;
+	padding-top: 10px;
+	float: left;
+}
+.class_follow_box span{
+	font-size: 14px;
+	line-height: 14px;
+	margin-top: 8px;
+	color: #666;
+}
+.class_follow_box .follow{
+	padding-left: 24px;
+	background: url('https://static.ncmimg.com/taas/img/follow_icon.png') no-repeat left center;
+}
+.live_video_box .title_box .popularity{
+	background: url('https://static.ncmimg.com/taas/img/hot_title_icon.png') no-repeat 23px center;
+}
+.popularity_box{
+	margin-bottom: 70px;
+}
+.popularity_list_box{
+	height: 182px;
+}
+.above_btn{
+	width: 28px;
+	height: 28px;
+	border: 1px solid #ebebeb;
+	border-radius: 50%;
+	background: url('https://static.ncmimg.com/taas/img/above_icon.png') no-repeat center;
+	margin-top: 82px;
+	margin-left: 25px;
+	cursor: pointer;
+}
+.below_btn{
+	width: 28px;
+	height: 28px;
+	border: 1px solid #ebebeb;
+	border-radius: 50%;
+	background: url('https://static.ncmimg.com/taas/img/below_icon.png') no-repeat center;
+	margin-top: 82px;
+	cursor: pointer;
+}
+.popularity_list{
+	margin: 0 35px;
+	width: 930px;
+	overflow: hidden;
+	position: relative;
+	height: 180px;
+}
+.popularity_list ul{
+	position: absolute;
+	width: 1370px;
+	top: 35px;
+	left: 0;
+}
+.popularity_list li{
+	float: left;
+	text-align: center;
+	position: relative;
+	margin-right: 35px;
+}
+.popularity_list li span{
+	font-size: 14px;
+	line-height: 34px;
+	color: #333;
+}
+.portrait_box{
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid #f2f2f2;
+	overflow: hidden;
+}
+.portrait_box img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.popularity_list li .alive{
+	display: none;
+	background: #4a9bff;
+	color: #FFF;
+	position: absolute;
+	top: 0;
+	left: 68px;
+	width: 40px;
+	height: 16px;
+	line-height: 16px;
+}
+.page_box{
+	position: absolute;
+	left: 50%;
+	bottom: 50px;
+}
+.page_box li{
+	float: left;
+	margin-right: 10px;
+	width: 38px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+}
+.page_box li a{
+	box-sizing: border-box;
+	display: block;
+	width: 38px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color: #373737;
+	border: 1px solid #e8e8e8;
+}
+.page_box .next_page{
+	width: 70px;
+	margin-right: 0;
+}
+.page_box .next_page a{
+	width: 70px;
+}
+.page_box .now{
+	border: none;
+	background: #2d8ff3;
+	color: #FFF;
+}
+.my_video_list_box{
+	width: 1066px;
+	padding: 25px;
+	margin: 0 auto;
+	padding-bottom: 150px;
+}
+.my_video_list_title_box{
+	height: 42px;
+	border-bottom: 1px solid #DDD;
+}
+.my_video_title{
+	padding-left: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	background: url('https://static.ncmimg.com/taas/img/my_video_icon.png') no-repeat left center;
+	margin-right: 30px;
+}
+.zhibo{
+	background: url('https://static.ncmimg.com/taas/img/zhibo_icon.png') no-repeat left center;
+}
+.shipin{
+	background: url('https://static.ncmimg.com/taas/img/shipin_icon.png') no-repeat left center;
+}
+.my_follow{
+	background: url('https://static.ncmimg.com/taas/img/my_follow_icon.png') no-repeat left center;
+}
+.rounds{
+	background: url('https://static.ncmimg.com/taas/img/rounds_title_icon.png') no-repeat left center;
+}
+.my_video_list_title_box > a{
+	float: left;
+	width: 80px;
+	height: 22px;
+	border: 1px solid #bababa;
+	border-radius: 11px;
+	text-align: center;
+	line-height: 22px;
+	font-size: 14px; 
+	color: #666;
+	margin-right: 18px;
+	margin-top: 4px;
+}
+.my_video_list_title_box > .now{
+	border: none;
+	color: #FFF;
+	background: #3899fb;
+}
+.my_video_list_title_box .edit_btn{
+	width: 60px;	
+	height: 26px;
+	background: #2d8ff3;
+	color: #FFF;
+	line-height: 26px;
+	text-align: center;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.my_video_list_title_box .search{
+	width: 165px;
+	padding-left: 20px;
+	padding-right: 35px;
+	height: 30px;
+	border: none;
+	background: #f5f5f5;
+	background-image: url('https://static.ncmimg.com/taas/img/serch_btn_hui.png');
+	background-repeat: no-repeat;
+	background-size: 22px;
+	background-position: 183px center;
+	border-radius: 15px;
+}
+.my_video_list_box .video_list_box{
+	padding: 0;
+	width: 1066px;
+	overflow: hidden;
+	padding-top: 20px;
+}
+.my_video_list_box .video_list_box ul{
+	width: 1101px;
+}
+.my_video_list_box .video_list_box li{
+	margin-left: 0;
+	margin-right: 35px;
+}
+.del_choice{
+	display: none;
+	float: right;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #9b9b9b;
+	border-radius: 50%;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.del_edit .del_choice{
+	display: block;
+}
+.del_choice.choice{
+	background: url('https://static.ncmimg.com/taas/img/del_choice_icon.png') no-repeat center;
+	border: none;
+	margin-top: 6px;
+	margin-bottom: 1px;
+}
+.corner{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	background: #2d8ff3;
+	color: #FFF;
+	z-index: 2;
+}
+.duration{
+	position: absolute;
+	right: 6px;
+	bottom: 6px;
+	width: 46px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 2px;
+	color: #FFF;
+	z-index: 2;
+}
+.user_exist_box{
+	display: none;
+	width: 500px;
+	height: 190px;
+	border: 1px solid #999;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	background: #f8f8f8;
+	border-radius: 10px;
+	margin-top: -95px;
+	margin-left: -250px;
+}
+.user_exist_box h3{
+	line-height: 124px;
+	font-size: 24px;
+	color :#515151;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.user_exist_box >div{
+	width: 320px;
+	margin: 0 auto;
+}
+.user_exist_box >div a{
+	float: left;
+	width: 140px;
+	height: 32px;
+	line-height: 32px;
+	color: #FFF;
+	background: #2d8ff3;
+	text-align: center;
+}
+.user_exist_box .cancel{
+	background: #999;
+}
+.initiate_rounds_box{
+	width: 1116px;
+	margin: 28px auto;
+	position: relative;
+}
+.initiate_rounds_video{
+	width: 1116px;
+	height: 622px;
+	background: #cfcfcf;
+}
+.hung_up{
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	margin-left: -50px;
+	width: 100px;
+	height: 18px;
+	padding-top: 110px;
+	background: url('https://static.ncmimg.com/taas/img/hang_up_icon.png') no-repeat top center;
+	text-align: center;
+	line-height: 18px;
+	font-size: 18px;
+}
+.follow_list_box li{
+	width: 238px;	
+	height: 305px;
+	border: 1px solid #e2e2e2;
+	position: relative;
+	text-align: center;
+}
+.follow_list_box b{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 20px;
+	text-align: center;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFF;
+	background: #2d8ff3;
+	display: none;
+}
+.alive b{
+	display: block;
+}
+.follow_list_box img{
+	display: block;
+	margin: 0 auto;
+	margin-top: 25px;
+	width: 98px;
+	height: 98px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+}
+.follow_list_box span{
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 18px;
+	line-height: 18px;
+	color: #333;
+	margin-bottom: 8px;
+}
+.follow_list_box p{
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+	height: 48px;
+	color: #666;
+	margin-bottom: 29px;
+}
+.follow_list_box a{
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	color: #FFF;
+	text-align: center;
+	background: #2d8ff3;
+	border-radius: 5px;
+	margin: 0 auto;
+}
+.rounds_list_box li {
+	overflow: hidden;
+	width: 100%;
+	padding-top: 24px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+.rounds_list_box li img{
+	float: left;
+	width: 98px;
+	height: 98px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+}
+.rounds_list_box li .lecturer_msg_box{
+	width: 805px;
+	margin-left: 30px;
+}
+.lecturer_msg_box span{
+	display: block;
+	padding-top: 12px;
+	font-size: 18px;
+	line-height: 18px;
+	color: #333;
+	margin-bottom: 10px;
+}
+.lecturer_msg_box p{
+	line-height: 24px;
+	font-size: 14px;
+	color: #666;
+}
+.rounds_list_box li a{
+	float: left;
+	margin-left: 30px;
+	width: 100px; 	
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #FFF;
+	text-align: center;
+	background: #2d8ff3;
+	margin-top: 40px;
+}
+.my_video_list_title_box .rounds_record{
+	float: right;
+	background: url('https://static.ncmimg.com/taas/img/arr_icon_02.png') no-repeat right center;
+	background-size: 15px;
+	color: #393939;
+	width: 94px;
+	border: none;
+	font-size: 18px;
+	text-align: left;
+}
+.accept_rounds_box{
+	width: 1116px;
+	height: 190px;
+	margin: 0 auto;
+}
+.accept_rounds_box img{
+	float: left;
+	margin-left: 10px;
+	margin-top: 45px;
+}
+.accept_rounds_box p{
+	float: left;
+	width: 615px;
+	margin-left: 30px;
+	line-height: 190px;
+	color: #666;
+}
+.accept_rounds_box .agree{
+	float: left;
+	width: 80px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	border-radius: 4px;
+	background: #47b94a;
+	color: #FFF;
+	margin-top: 77px;
+	margin-right: 50px;
+}
+.accept_rounds_box .refuse{
+	float: left;
+	width: 80px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	border-radius: 4px;
+	background: #d53123;
+	color: #FFF;
+	margin-top: 77px;
+}
+.rounds_box{
+	display: none;
+}
+.record_rounds_title_box{
+	width: 1116px;
+	background: #f2f2f2;
+	margin-bottom: 30px;
+}
+.record_rounds_title{
+	display: block;
+	padding-left: 27px;
+	height: 46px;
+	line-height: 46px;
+	background: url('https://static.ncmimg.com/taas/img/rounds_title_icon.png') no-repeat left center;
+	margin-left: 15px;
+}
+.record_rounds_list{
+	width: 1116px;
+	border: 1px solid #666;
+}
+.record_rounds_list th{
+	background: #CCC;
+	text-align: center;
+	border: 1px solid #666;
+	line-height: 58px;
+}
+.record_rounds_list td{
+	text-align: center;
+	height: 58px;
+	line-height: 58px;
+	color: #333;
+	font-size: 16px;
+	border: 1px solid #666;
+}
+.broadcast_box{
+	width: 1116px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.nav_box span{
+	float: left;
+	padding-left: 10px;
+	border-left: 3px solid #2d8ff3;
+	height: 16px;
+	line-height: 16px;
+	font-size: 14px;
+	color: #393939;
+}
+.nav_box a{
+	float: left;
+	line-height: 16px;
+	font-size: 14px;
+	color: #999;
+}
+.nav_box b{
+	float: left;
+	line-height: 16px;
+	font-size: 14px;
+	color: #999;
+	margin: 0 5px;
+}
+.broadcast_head_box{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.title_box h3{
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom: 10px;
+	color: #333;
+}
+.title_box p{
+	color: #999;
+	font-size: 12px;
+	line-height: 12px;
+}
+.follow_box{
+	padding-top: 10px;
+}
+.follow_box span{
+	float: left;
+	margin-right: 20px;
+}
+.follow_box .collection{
+	width: 70px;
+	height: 26px;
+	line-height: 26px;
+	color: #666;
+	text-align: center;
+	background: url('https://static.ncmimg.com/taas/img/no_collection_bg.png') no-repeat center;
+	padding-left: 70px;
+	cursor: pointer;
+}
+.follow_box .collection.yes{
+	background: url('https://static.ncmimg.com/taas/img/collection_bg.png') no-repeat center;
+}
+.follow_box .fabulous{
+	float: left;
+	width: 20px;
+	height: 26px;
+	background: url('https://static.ncmimg.com/taas/img/no_fabulous_bg.png') no-repeat center;
+	cursor: pointer;
+}
+.follow_box .fabulous.yes{
+	background: url('https://static.ncmimg.com/taas/img/fabulous_bg.png') no-repeat center;
+}
+.follow_box .follow{
+	float: left;
+	width: 22px;
+	height: 26px;
+	background: url('https://static.ncmimg.com/taas/img/no_follow_bg.png') no-repeat center;
+	cursor: pointer;
+}
+.follow_box .follow.yes{
+	background: url('https://static.ncmimg.com/taas/img/follow_bg.png') no-repeat center;
+}
+.broadcast_video_box{
+	width: 1116px;
+	height: 520px;
+	background: #CCC;
+}
+.message_notice_board_box{
+	width: 1116px;
+	margin-top: 50px;
+}
+.message_board_title_box{
+	width: 675px;
+	height: 35px;
+}
+.message_board_title_box span{
+	display: block;
+	padding-left: 30px;
+	font-size: 18px;
+	line-height: 18px;
+	color: #333;
+	background: url('https://static.ncmimg.com/taas/img/message_board_icon.png') no-repeat left center;
+}
+
+
+/* 表情 */
+#emotions{
+	left:0;
+	width: 395px;
+	font-size:12px;
+	background:#fff;
+	position:absolute;
+	border: 1px solid #E8E8E8;
+}
+#emotions a{
+	color: #9ABBC8;
+	padding:2px 7px;
+	text-decoration:none;
+}
+#emotions img{
+	border:0;
+}
+#emotions div{
+	margin:5px 10px;
+	padding:1px;
+	overflow: hidden;
+}
+#emotions #prev,
+#emotions #next
+{
+	margin-left:3px;
+	background:#eee;
+}
+#emotions .categorys{
+	color:#ccc;
+	height:23px;
+	color: #9ABBC8;
+	overflow:hidden;
+}
+#emotions .categorys a{
+	display: inline-block;
+}
+#emotions .categorys a:hover{
+	text-decoration:underline;
+}
+#emotions .categorys a.current{
+	cursor: default;
+	background: #F0F0F0;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+#emotions .container{
+	padding:1px;
+	overflow: hidden;
+}
+#emotions .container a{
+	float:left;
+	width:26px;
+	height:22px;
+	text-align:center;
+	padding: 4px 2px;
+	margin: -1px 0 0 -1px;
+	border: 1px solid #e8e8e8;
+}
+#emotions .container a:hover{
+	z-index:2;
+	position:relative;
+	border:1px solid #0095cd;
+}
+#emotions .page{
+	text-align:right;
+}
+#emotions .page a.current{
+	color: #666;
+	background-color:#fff;
+}
+#emotions .page a{
+	margin-left:3px;
+	color: #0078B6;
+	background-color:#f3f3f3;
+}
+#emotions .page a:hover{
+	background-color:#e7e7e7;
+}
+/* 表情 */
+
+.message_board  > img{
+	float: left;
+	width: 68px;
+	height: 68px;
+	border-radius: 50%;
+	border: 1px solid #e5e5e5;
+}
+.message_board{
+	padding-top: 27px;
+	padding-bottom: 30px;
+	border-top: 1px solid #EEE;
+}
+.message_textarea_box{
+	margin-left: 33px;
+}
+.message_textarea_box textarea{
+	width: 550px;
+	height: 118px;
+	border: 1px solid #e5e5e5;
+	padding: 10px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #999;
+}
+.emotion_box{
+	width: 643px;
+}
+#face{
+	float: left;
+	padding-left: 20px;
+	line-height: 18px;
+	font-size: 14px;
+	background: url('https://static.ncmimg.com/taas/img/smile_icon.png') no-repeat left center;
+	border: none;
+	margin-top: 16px;
+	cursor: pointer;
+}
+#analytic{
+	width: 90px;
+	height: 30px;
+	border-radius: 4px;
+	background: #2d8ff3;
+	color: #FFF;
+	line-height: 30px;
+	float: right;
+	border: none;
+	cursor: pointer;
+	margin-top: 13px;
+}
+.message_list_box{
+	height: 500px;
+	width: 680px;
+	padding-right: 12px;
+}
+.message_list_box ul{
+	padding-left: 30px;
+}
+.message_list_box li{
+	padding: 12px 0;
+	border-top: 1px solid #EEE;
+	overflow: hidden;
+}
+.message_list_box img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #e5e5e5;
+	margin-top: 10px;
+}
+.message_text_box{
+	width: 570px;
+	margin-left: 15px;
+	padding-top: 16px;
+}
+.message_text_box p{
+	line-height: 24px;
+	font-size: 14px;
+	color: #666;
+	word-break: break-all;
+}
+.message_text_box p span{
+	color: #2d8ff3;
+}
+.message_text_box p img{
+	width: 14px;
+	height: 14px;
+	float: none;
+}
+.message_text_box .text_date{
+	display: block;
+	width: 560px;
+	text-align: right;
+	font-size: 12px;
+	line-height: 12px;
+	color: #999;
+}
+.anchor_notice{
+	width: 338px;
+	height: 272px;
+	padding: 26px 20px 0;
+	border: 1px solid #EEE;
+	margin-left: 40px;
+	text-align: center;
+	overflow: hidden;
+}
+.broadcast_notice{
+	width: 338px;
+	height: 272px;
+	padding: 26px 20px 0;
+	border: 1px solid #EEE;
+	margin-left: 40px;
+	margin-top: 15px;
+	text-align: center;
+	overflow: hidden;
+}
+.video_notice{
+	width: 338px;
+	height: 272px;
+	padding: 26px 20px 0;
+	border: 1px solid #EEE;
+	margin-left: 40px;
+	margin-top: 15px;
+	text-align: center;
+	overflow: hidden;
+}
+.anchor_notice h3{
+	display: inline-block;
+	margin: 0 auto;
+	background: url('https://static.ncmimg.com/taas/img/anchor_icon.png') no-repeat left center;
+	padding-left: 28px;
+}
+.broadcast_notice h3{
+	display: inline-block;
+	margin: 0 auto;
+	background: url('https://static.ncmimg.com/taas/img/notice_icon.png') no-repeat left center;
+	padding-left: 28px;
+}
+.video_notice h3{
+	display: inline-block;
+	margin: 0 auto;
+	background: url('https://static.ncmimg.com/taas/img/video_icon.png') no-repeat left center;
+	padding-left: 28px;
+}
+.notice_box p{
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+	color: #666;
+	margin-top: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="Shortcut Icon" href="https://oj8y27rzn.qnssl.com/taas/images/xinyunicon.png"/>
+	<link rel="stylesheet" href="https://oj8y27rzn.qnssl.com/taas/css/base.css">
+	<link rel="stylesheet" href="https://oj8y27rzn.qnssl.com/taas/css/system.css">
+	<link rel="stylesheet" href="css/ID_guanli.css">
+	<script src="https://oj8y27rzn.qnssl.com/taas/js/jquery-1.7.2.js"></script>
+	<script src="https://oj8y27rzn.qnssl.com/taas/js/index.js"></script>
+</head>
+<body>
+	<div class="system_head clearfix">
+		<div class="logo_box fl"></div>
+		<div class="head_title_box fl clearfix">
+			<h3>TaaS疼痛云平台</h3>
+			<p>提升疼痛患者生活品质</p>
+		</div>
+		<div class="head_msg_box fr clearfix">
+			<a href="javascript:;" class="exit_btn fr">退出</a>
+			<div class="head_personal_box fr clearfix">
+				<b></b>
+				<a href="javascript:;">靖县安定门医院（全国疼痛分级诊疗云平台成员）</a>
+			</div>
+			<div class="head_my_msg_box fr">
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+	</div>
+	<div class="system_content clearfix">
+		<div class="system_sidebar_box fl">
+			<a href="javascript:;" class="home_page_link">首页</a>
+			<div class="discovery parent_div">发现</div>
+			<a href="javascript:;" class="href_btn">预约专家</a>
+		    <div class="my_center parent_div">我的</div>
+		    <a href="javascript:;" class="href_btn now">医院信息</a>
+		    <a href="javascript:;" class="href_btn">我的消息</a>
+		    <a href="javascript:;" class="href_btn">我的预约</a>
+		    <a href="javascript:;" class="href_btn">账户设置</a>
+		</div>
+		<!--变更内容框体-->
+		<div class="system_content_box">
+			<div class="id_guanli_box">
+				<div class="id_guanli_titlex_box list_title clearfix">
+					<h3>用户管理</h3>
+					<a href="javascript:;">导出</a>
+				</div>
+				<div class="check_box clearfix" style="margin-bottom: 0;">
+					<div class="fl clearfix" style="margin-bottom: 26px;">	
+						<span>随访类型：</span>
+						<div class="search_time_box fl clearfix">
+							<input type="text" placeholder="2017.06.08" style="width: 70px; margin-right: 0px;">
+							<span style="margin: 0 6px;">至</span>
+							<input type="text" placeholder="2017.06.08" style="width: 70px;">
+						</div>
+					</div>
+					<div class="fl clearfix" style="margin-bottom: 26px;">
+						<span>建档医生：</span>
+						<input type="text" class="middle" placeholder="请输入建档医生">
+					</div>
+					<div class="fl clearfix" style="margin-bottom: 26px;">
+						<span>随访护士：</span>
+						<input type="text" class="middle" placeholder="请输入随访护士">
+					</div>
+					<div class="fl clearfix" style="margin-bottom: 26px;">
+						<span>随访状态：</span>
+						<select name="" id="" style="margin-right: 40px; width: 128px;">
+							<option value="全部">全部</option>
+							<option value="第一次住院">漏访</option>
+							<option value="第二次住院">完成</option>
+						</select>
+					</div>
+				</div>
+					<div class="check_box clearfix" style="margin-bottom: 0;">
+					<div class="fl clearfix" style="margin-bottom: 26px;">
+						<span>随访类型：</span>
+						<select name="" id="" style="margin-right: 40px; width: 128px;">
+							<option value="全部">全部</option>
+							<option value="7天随访">7天随访</option>
+							<option value="一个月随访">一个月随访</option>
+							<option value="三个月随访">三个月随访</option>
+							<option value="六个月随访">六个月随访</option>
+							<option value="一年随访">一年随访</option>
+							<option value="两年随访">两年随访</option>
+						</select>
+					</div>
+					<div class="fl clearfix" style="margin-bottom: 26px;">
+						<span>住院类型：</span>
+						<select name="" id="" style="margin-right: 40px; width: 128px;">
+							<option value="全部">全部</option>
+							<option value="第一次住院">第一次住院</option>
+							<option value="第二次住院">第二次住院</option>
+							<option value="第三次住院">第三次住院</option>
+							<option value="第四次住院">第四次住院</option>
+							<option value="第五次住院">第五次住院</option>
+							<option value="第六次住院">第六次住院</option>
+							<option value="第七次住院">第七次住院</option>
+							<option value="第八次住院">第八次住院</option>
+							<option value="第九次住院">第九次住院</option>
+							<option value="第十次住院">第十次住院</option>
+							<option value="十次以上住院">十次以上住院</option>
+						</select>
+					</div>
+					<div class="fl clearfix" style="margin-bottom: 26px;">	
+						<a href="javascript:;" class="check_btn">查询</a>
+						<a href="javascript:;" class="reset_btn">重置</a>
+					</div>	
+				</div>
+				<div class="list_box">
+					<table>
+						<tr>
+							<td class="top" style="">编号</td>
+							<td class="top" style="">建档医生</td>
+							<td class="top" style="">建档时间</td>
+							<td class="top" style="">患者住院类型</td>
+							<td class="top" style="">随访护士</td>
+							<td class="top" style="">随访类型</td>
+							<td class="top" style="">计划随访时间</td>
+							<td class="top" style="">实际随访时间</td>
+							<td class="top" style="">随访状态</td>
+							<td class="top" style="">操作</td>
+						</tr>
+						<tr>
+							<td>01</td>
+							<td>宫本武藏</td>
+							<td>2017.06.31</td>
+							<td>第一次住院</td>
+							<td>陈颂</td>
+							<td>一周随访</td>
+							<td>2017.06.31</td>
+							<td>2017.06.31</td>
+							<td>漏访</td>
+							<td><a href="javascript:;">查看</a></td>
+							
+						</tr>
+					</table>
+				</div>
+				<div class="page_box">
+					<ul>
+						<li>
+							<a href="javascript:;" class="now">1</a>
+						</li>
+						<li>
+							<a href="javascript:;">2</a>
+						</li>
+						<li>
+							<a href="javascript:;">3</a>
+						</li>
+						<li>
+							<a href="javascript:;">4</a>
+						</li>
+						<li>
+							<a href="javascript:;">5</a>
+						</li>
+						<li>···</li>
+						<li>
+							<a href="javascript:;">45</a>
+						</li>
+						<li class="next_page">
+							<a href="javascript:;">下一页</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--变更内容框体-->
+	</div>
+</body>
+</html>
+<script>
+	$(document).ready(function() {
+		
+	});
+</script>

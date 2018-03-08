@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="Shortcut Icon" href="https://oj8y27rzn.qnssl.com/taas/images/xinyunicon.png"/>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="https://oj8y27rzn.qnssl.com/taas/css/system.css">
+	<link rel="stylesheet" href="css/new_hospital_msg.css">
+	<script src="https://oj8y27rzn.qnssl.com/taas/js/jquery-1.7.2.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/ajax_submit.js"></script>
+</head>
+<body>
+	<div class="system_head clearfix">
+		<div class="logo_box fl"></div>
+		<div class="head_title_box fl clearfix">
+			<h3>TaaS疼痛云平台</h3>
+			<p>提升疼痛患者生活品质</p>
+		</div>
+		<div class="head_msg_box fr clearfix">
+			<a href="javascript:;" class="exit_btn fr">退出</a>
+			<div class="head_personal_box fr clearfix">
+				<b></b>
+				<a href="javascript:;">靖县安定门医院（全国疼痛分级诊疗云平台成员）</a>
+			</div>
+			<div class="head_my_msg_box fr">
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+	</div>
+	<div class="system_content clearfix">
+		<div class="system_sidebar_box fl">
+			<a href="javascript:;" class="home_page_link">首页</a>
+			<div class="discovery parent_div">发现</div>
+			<a href="javascript:;" class="href_btn">预约专家</a>
+		    <div class="my_center parent_div">我的</div>
+		    <a href="javascript:;" class="href_btn now">医院信息</a>
+		    <a href="javascript:;" class="href_btn">我的消息</a>
+		    <a href="javascript:;" class="href_btn">我的预约</a>
+		    <a href="javascript:;" class="href_btn">账户设置</a>
+		</div>
+		<!--变更内容框体-->
+		<div class="system_content_box">
+			<div class="new_hospital_msg_box">
+				<div class="new_hospital_msg_titlex_box zhanshi_title clearfix">
+					<h3>查看用户详情</h3>
+				</div>
+				<div class="treatment_all_box">
+					<div class="treatment_title_box">
+						<h4>基本信息</h4>
+					</div>
+					<div class="chakan_patient_msg_box">
+						<div>
+							<span class="yibao">医保：</span>
+							<b>是</b>
+							<span class="binglihao">病例号：</span>
+							<b>123123123</b>
+						</div>
+						<div>
+							<span class="xingming">姓名：</span>
+							<b>王大锤</b>
+							<span class="yibao">身份证号：</span>
+							<b>111111111111111111</b>
+							<span class="xingbie">性别：</span>
+							<b>男</b>
+							<span class="nianling">年龄：</span>
+							<b>73</b>
+							<span class="tel">本人联系电话：</span>
+							<b>13811111111</b>
+						</div>
+						<div>
+							<span class="xingming">家属姓名：</span>
+							<b>赵铁柱</b>
+							<span class="guanxi">关系：</span>
+							<b>夫妻</b>
+							<span class="tel">家属电话：</span>
+							<b>13888888888</b>
+							<span class="dizhi">现住地址：</span>
+							<b>北京市昌平区回龙观</b>
+						</div>
+						<div>
+							<span class="laiyuan">病人来源：</span>
+							<b>自行就医</b>
+						</div>
+					</div>
+				</div>
+				<div class="treatment_all_box" style="margin-top: 40px;">
+					<div class="treatment_title_box">
+						<h4>入院信息</h4>
+					</div>
+					<div class="date_box clearfix">
+						<span>入院时间：</span>
+						<b>2016年12月31号</b>
+						<select name="" id="">
+							<option value="查看更多入院信息">查看更多入院信息</option>
+						</select>
+					</div>
+					<div class="treatment_box">
+						<div class="patient_msg_register_box">
+							<div class="title_link_box clearfix">
+								<a href="javascript:;" class="active">入院诊断</a>
+								<a href="javascript:;">入院治疗</a>
+								<a href="javascripy:;">出院小结</a>
+							</div>
+							<div class="patient_msg_box clearfix">
+								<ul class="clearfix">
+									<li>
+										<span>信息采集时间：</span>
+										<b>2017年8月23日</b>
+										<span  style="margin-left: 80px;">指定随访护士：</span>
+										<select name="" id="">
+											<option value="阿拉蕾">阿拉蕾</option>
+											<option value="阿拉蕾">阿拉蕾</option>
+										</select>
+									</li>
+
+									<li>
+										<span>癌痛类型：</span>
+										<div class="fl clearfix">
+											<label>
+												<input type="radio" name="aitongfou" class="radio_btn" value="癌痛"><b>癌痛</b>
+											</label>
+											<label>
+												<input type="radio" name="aitongfou" class="radio_btn" value="非癌痛"><b>非癌痛</b>
+											</label>
+										</div>
+										<span  style="margin-left: 80px;">患者住院类型：</span>
+										<b>第一次住院</b>
+									</li>
+
+									<li>
+										<span>癌痛类型：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="慢性原发性疼痛"><b>慢性原发性疼痛</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="慢性原发性疼痛"><b>慢性原发性疼痛</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="慢性原发性疼痛"><b>慢性原发性疼痛</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="慢性原发性疼痛"><b>慢性原发性疼痛</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="慢性原发性疼痛"><b>慢性原发性疼痛</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>癌痛部位：</span>
+										<b>请点击疼痛部位，依次 选择疼痛类型(疼痛、酥麻)以及疼痛值（WAS）；</b>
+									</li>
+									<li>
+										<div class="buwen_box clearfix">
+											<div class="vas_box fl">
+												<div class="set_vas_box">
+													<ul>
+														<li>
+															<span class="vas_buwei vas_buwei_name">头部：</span>
+															<label>
+																<input type="radio" name="pain_type" class="radio_btn"  img_prefix="_2" value="疼痛"><b>疼痛</b>
+															</label>
+															<label>
+																<input type="radio" name="pain_type" class="radio_btn" img_prefix="_1" value="酥麻"><b>酥麻</b>
+															</label>
+														</li>
+														<li>
+															<span class="vas_buwei">vas值：</span>
+															<i>0(无疼痛)</i>
+															<i>1</i>
+															<i>2</i>
+															<i>3</i>
+															<i>4</i>
+															<i>5</i>
+															<i>6</i>
+															<i>7</i>
+															<i>8</i>
+															<i>9</i>
+															<i>10(最大值)</i>
+														</li>
+													</ul>
+												</div>
+												<div class="set_vas_bei">
+													<ul>
+														<li>
+															<span class="vas_buwei vas_buwei_name">头部：</span>
+															<label>
+																<input type="radio" name="pain_type_bei" class="radio_btn"  img_prefix="_2" value="疼痛"><b>疼痛</b>
+															</label>
+															<label>
+																<input type="radio" name="pain_type_bei" class="radio_btn" img_prefix="_1" value="酥麻"><b>酥麻</b>
+															</label>
+														</li>
+														<li>
+															<span class="vas_buwei">vas值：</span>
+															<i>0(无疼痛)</i>
+															<i>1</i>
+															<i>2</i>
+															<i>3</i>
+															<i>4</i>
+															<i>5</i>
+															<i>6</i>
+															<i>7</i>
+															<i>8</i>
+															<i>9</i>
+															<i>10(最大值)</i>
+														</li>
+													</ul>
+												</div>
+												<div class="vas_record">
+													<table>
+														
+													</table>
+												</div>
+											</div>
+											<div class="buwei_img_box fl clearfix">
+												<div class="zhengmian_img_box">
+													<img src="img/limbs/tou.png" img_prefix="tou" alt="" class="zhengmian_tou" title="面颌">
+													<img src="img/limbs/bozi.png" img_prefix="bozi" alt="" class="zhengmian_bozi" title="脖子">
+													<img src="img/limbs/zuoxiong.png" img_prefix="zuoxiong" alt="" class="zhengmian_zuoxiong" title="左胸（前）">
+													<img src="img/limbs/youxiong.png" img_prefix="youxiong" alt="" class="zhengmian_youxiong" title="右胸（前）">
+													<img src="img/limbs/fubu.png" img_prefix="fubu" alt="" class="zhengmian_fubu" title="腹部">
+
+													<img src="img/limbs/zuoshangbi.png" img_prefix="zuoshangbi" alt="" class="zhengmian_zuo_shangbi" title="左上臂（内）">
+													<img src="img/limbs/zuozhou.png" img_prefix="zuozhou" alt="" class="zhengmian_zuo_zhou" title="左肘">
+													<img src="img/limbs/zuoxiabi.png" img_prefix="zuoxiabi" alt="" class="zhengmian_zuo_xiabi" title="左前臂（内）">
+													<img src="img/limbs/zuoshou.png" img_prefix="zuoshou" alt="" class="zhengmian_zuo_shou" title="左手">
+													
+													<img src="img/limbs/zuodatui.png" img_prefix="zuodatui" alt="" class="zhengmian__zuo_datui" title="左大腿（内）">
+													<img src="img/limbs/zuoxigai.png" img_prefix="zuoxigai" alt="" class="zhengmian__zuo_xigai" title="左膝盖">
+													<img src="img/limbs/zuoxiaotui.png" img_prefix="zuoxiaotui" alt="" class="zhengmian__zuo_xiaotui" title="左小腿（内）">
+													<img src="img/limbs/zuohuai.png" img_prefix="zuohuai" alt="" class="zhengmian__zuo_huai" title="左脚踝">
+													<img src="img/limbs/zuojiao.png" img_prefix="zuojiao" alt="" class="zhengmian__zuo_jiao" title="左脚">
+
+													<img src="img/limbs/youshangbi.png" img_prefix="youshangbi" alt="" class="zhengmian_you_shangbi" title="右上臂（内）">
+													<img src="img/limbs/youzhou.png" img_prefix="youzhou" alt="" class="zhengmian_you_zhou" title="右肘">
+													<img src="img/limbs/youxiabi.png" img_prefix="youxiabi" alt="" class="zhengmian_you_xiabi" title="右下臂（内）">
+													<img src="img/limbs/youshou.png" img_prefix="youshou" alt="" class="zhengmian_you_shou" title="右手">
+													
+														
+													<img src="img/limbs/youdatui.png" img_prefix="youdatui" alt="" class="zhengmian__you_datui" title="右大腿（内）">
+													<img src="img/limbs/youxigai.png" img_prefix="youxigai" alt="" class="zhengmian__you_xigai" title="右膝盖">
+													<img src="img/limbs/youhuai.png" img_prefix="youhuai" alt="" class="zhengmian__you_huai" title="右小腿（内）">
+													<img src="img/limbs/youxiaotui.png" img_prefix="youxiaotui" alt="" class="zhengmian__you_xiaotui" title="右脚踝">
+													<img src="img/limbs/youjiao.png" img_prefix="youjiao" alt="" class="zhengmian__you_jiao" title="右脚">	
+												</div>
+												<div class="beimian_img_box">
+													<img src="img/limbs/tou_fan.png" img_prefix="tou_fan" alt="" class="beimian_tou" title="头颅">
+													<img src="img/limbs/bozi_fan.png" img_prefix="bozi_fan" alt="" class="beimian_bozi" title="脖子">
+													<img src="img/limbs/zuoxiong_fan.png" img_prefix="zuoxiong_fan" alt="" class="beimian_zuoxiong" title="左胸（后）">
+													<img src="img/limbs/youxiong_fan.png" img_prefix="youxiong_fan" alt="" class="beimian_youxiong" title="右胸（后）">
+													<img src="img/limbs/yaobu.png" img_prefix="yaobu" alt="" class="beimian_fubu" title="腰部">
+
+													<img src="img/limbs/zuoshangbi_fan.png" img_prefix="zuoshangbi_fan" alt="" class="beimian_zuo_shangbi" title="左上臂（外）">
+													<img src="img/limbs/zuozhou_fan.png" img_prefix="zuozhou_fan" alt="" class="beimian_zuo_zhou" title="左肘">
+													<img src="img/limbs/zuoxiabi_fan.png" img_prefix="zuoxiabi_fan" alt="" class="beimian_zuo_xiabi" title="左下臂（外）">
+													<img src="img/limbs/zuoshou_fan.png" img_prefix="zuoshou_fan" alt="" class="beimian_zuo_shou" title="左手">
+													
+													<img src="img/limbs/zuodatui_fan.png" img_prefix="zuodatui_fan" alt="" class="beimian__zuo_datui" title="左大腿（外）">
+													<img src="img/limbs/zuoxigai_fan.png" img_prefix="zuoxigai_fan" alt="" class="beimian__zuo_xigai" title="左膝盖">
+													<img src="img/limbs/zuoxiaotui_fan.png" img_prefix="zuoxiaotui_fan" alt="" class="beimian__zuo_xiaotui" title="左小腿（外）">
+													<img src="img/limbs/zuohuai_fan.png" img_prefix="zuohuai_fan" alt="" class="beimian__zuo_huai" title="左脚踝">
+													<img src="img/limbs/zuojiao_fan.png" img_prefix="zuojiao_fan" alt="" class="beimian__zuo_jiao" title="左脚">
+
+													<img src="img/limbs/youshangbi_fan.png" img_prefix="youshangbi_fan" alt="" class="beimian_you_shangbi" title="右上臂（外）">
+													<img src="img/limbs/youzhou_fan.png" img_prefix="youzhou_fan" alt="" class="beimian_you_zhou" title="右肘">
+													<img src="img/limbs/youxiabi_fan.png" img_prefix="youxiabi_fan" alt="" class="beimian_you_xiabi" title="右下臂（外）">
+													<img src="img/limbs/youshou_fan.png" img_prefix="youshou_fan" alt="" class="beimian_you_shou" title="右手">
+													
+														
+													<img src="img/limbs/youdatui_fan.png" img_prefix="youdatui_fan" alt="" class="beimian__you_datui" title="右大腿（外）">
+													<img src="img/limbs/youxigai_fan.png" img_prefix="youxigai_fan" alt="" class="beimian__you_xigai" title="右膝盖">
+													<img src="img/limbs/youxiaotui_fan.png" img_prefix="youhuai_fan" alt="" class="beimian__you_xiaotui" title="右小腿（外）">
+													<img src="img/limbs/youhuai_fan.png" img_prefix="youxiaotui_fan" alt="" class="beimian__you_huai" title="右脚踝">
+													<img src="img/limbs/youjiao_fan.png" img_prefix="youjiao_fan" alt="" class="beimian__you_jiao" title="右脚">	
+												</div>
+											</div>
+										</div>
+									</li>
+									<li>
+										<span>病因：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="外伤"><b>外伤</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="过劳"><b>过劳</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="不明"><b>不明</b>
+											</label>
+										</div>
+										<span  style="margin-left: 80px;">病程：</span>
+										<div class="fl clearfix">
+											<input type="text" class="time_input"><b>年</b>
+											<input type="text" class="time_input"><b>月</b>
+											<input type="text" class="time_input"><b>周</b>
+											<input type="text" class="time_input"><b>日</b>
+										</div>
+									</li>
+
+									<li>
+										<span>性质：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="钝"><b>钝</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="锐"><b>锐</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="涨"><b>涨</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="跳"><b>跳</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="牵"><b>牵</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>起病：</span>
+										<div class="fl clearfix">
+											<label>
+												<input type="radio" name="speed" class="radio_btn" value="急"><b>急</b>
+											</label>
+											<label>
+												<input type="radio" name="speed" class="radio_btn" value="慢"><b>慢</b>
+											</label>
+											<label>
+												<input type="radio" name="speed" class="radio_btn" value="反复"><b>反复</b>
+											</label>
+										</div>
+										<span  style="margin-left: 80px;">首次发病日期：</span>
+										<div class="fl clearfix">
+											<input type="text" class="time_input"><b>年</b>
+											<input type="text" class="time_input"><b>月</b>
+											<input type="text" class="time_input"><b>次</b>
+										</div>
+									</li>
+
+									<li>
+										<span>间歇：</span>
+										<div class="fl clearfix">
+											<b style="margin-right: 10px;margin-left: 0;">最短</b><input type="text" class="time_input">
+											<b style="margin-right: 10px;margin-left: 0;">最长</b><input type="text" class="time_input">
+										</div>
+										<span  style="margin-left: 80px;">程度：</span>
+										<div class="fl clearfix">
+											<label>
+												<input type="radio" name="degree" class="radio_btn" value="中度"><b>中度</b>
+											</label>
+											<label>
+												<input type="radio" name="degree" class="radio_btn" value="重度"><b>重度</b>
+											</label>
+										</div>
+									</li>
+
+									<li class="zhiliao_panduan_box">
+										<span>是否治疗：</span>
+										<div class="fl clearfix">
+											<label>
+												<input type="radio" name="treatment" class="radio_btn" value="经治"><b>经治</b>
+											</label>
+											<label>
+												<input type="radio" name="treatment" class="radio_btn" value="未治"><b>未治</b>
+											</label>
+										</div>
+									</li>
+
+									<li class="zhiliao_fangshi_box">
+										<span>做过哪些治疗：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="手术"><b>手术</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="微创"><b>微创</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="药物"><b>药物</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="物理"><b>物理</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="针灸"><b>针灸</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="按摩"><b>按摩</b>
+											</label><br>
+											<label>
+												<input type="radio" name="xiaoguo" class="radio_btn" value="完全缓解"><b>完全缓解</b>
+											</label>
+											<label>
+												<input type="radio" name="xiaoguo" class="radio_btn" value="部分缓解"><b>部分缓解</b>
+											</label>
+											<label>
+												<input type="radio" name="xiaoguo" class="radio_btn" value="总体减轻"><b>总体减轻</b>
+											</label>
+											<label>
+												<input type="radio" name="xiaoguo" class="radio_btn" value="部分减轻"><b>部分减轻</b>
+											</label>
+											<label>
+												<input type="radio" name="xiaoguo" class="radio_btn" value="其他"><b>其他</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>食欲：</span>
+										<div class="fl clearfix">
+											<label>
+												<input type="radio" name="shiyu" class="radio_btn" value="差"><b>差</b>
+											</label>
+											<label>
+												<input type="radio" name="shiyu" class="radio_btn" value="正常"><b>正常</b>
+											</label>
+											<label>
+												<input type="radio" name="shiyu" class="radio_btn" value="良好"><b>良好</b>
+											</label>
+										</div>
+										<span style="margin-left: 80px;">睡眠：</span>
+										<div class="fl clearfix">
+											<label>
+												<input type="radio" name="sleep" class="radio_btn" value="差"><b>差</b>
+											</label>
+											<label>
+												<input type="radio" name="sleep" class="radio_btn" value="正常"><b>正常</b>
+											</label>
+											<label>
+												<input type="radio" name="sleep" class="radio_btn" value="良好"><b>良好</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>日常活动：</span>
+										<div class="fl clearfix">
+											<label>
+												<input type="radio" name="richang" class="radio_btn" value="影响"><b>影响</b>
+											</label>
+											<label>
+												<input type="radio" name="richang" class="radio_btn" value="不影响"><b>不影响</b>
+											</label>
+										</div>
+										<span style="margin-left: 80px;">人际交往：</span>
+										<div class="fl clearfix">
+											<label>
+												<input type="radio" name="jiaowang" class="radio_btn" value="影响"><b>影响</b>
+											</label>
+											<label>
+												<input type="radio" name="jiaowang" class="radio_btn" value="不影响"><b>不影响</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>传/放射：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="头"><b>头</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="颈"><b>颈</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="肩"><b>肩</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="手"><b>手</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="上臂"><b>上臂</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="背"><b>背</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="腰"><b>腰</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="骶"><b>骶</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="臀"><b>臀</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="股后"><b>股后</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="小腿"><b>小腿</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="踝"><b>踝</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="足"><b>足</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>姿势变化：</span>
+										<div class="fl clearfix">
+											<label>
+												<input type="radio" name="zishibianhua" class="radio_btn" value="加重"><b>加重</b>
+											</label>
+											<label>
+												<input type="radio" name="zishibianhua" class="radio_btn" value="减轻"><b>减轻</b>
+											</label>
+											<label>
+												<input type="radio" name="zishibianhua" class="radio_btn" value="不变"><b>不变</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>加重/减轻：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="钝"><b>钝</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="锐"><b>锐</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="涨"><b>涨</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="跳"><b>跳</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="牵"><b>牵</b>
+											</label><br>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="平走"><b>平走</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="上楼"><b>上楼</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="下楼"><b>下楼</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="下蹲"><b>下蹲</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>颈：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="前屈"><b>前屈</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="后伸"><b>后伸</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="左倾"><b>左倾</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="右倾"><b>右倾</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="左转"><b>左转</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="右转"><b>右转</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="直立"><b>直立</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="平卧"><b>平卧</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>肩：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="上举"><b>上举</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="后伸"><b>后伸</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="外展"><b>外展</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="内收"><b>内收</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="旋前"><b>旋前</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="旋后"><b>旋后</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>肘：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="伸"><b>伸</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="屈"><b>屈</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="外翻"><b>外翻</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="内翻"><b>内翻</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="旋前"><b>旋前</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="旋后"><b>旋后</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>腕：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="伸"><b>伸</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="屈"><b>屈</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="外翻"><b>外翻</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="内翻"><b>内翻</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="旋前"><b>旋前</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="旋后"><b>旋后</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>背：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="前屈"><b>前屈</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="后伸"><b>后伸</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="左倾"><b>左倾</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="右倾"><b>右倾</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="左转"><b>左转</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="右转"><b>右转</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="直立"><b>直立</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="平卧"><b>平卧</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>腰：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="前屈"><b>前屈</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="后伸"><b>后伸</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="左倾"><b>左倾</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="右倾"><b>右倾</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="左转"><b>左转</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="右转"><b>右转</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="直立"><b>直立</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="平卧"><b>平卧</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>骶：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="伸"><b>伸</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="屈"><b>屈</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="外翻"><b>外翻</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="内翻"><b>内翻</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="旋前"><b>旋前</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="旋后"><b>旋后</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>膝：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="伸"><b>伸</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="屈"><b>屈</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="外翻"><b>外翻</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="内翻"><b>内翻</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="旋前"><b>旋前</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="旋后"><b>旋后</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>气候变化：</span>
+										<div class="fl clearfix">
+											<label>
+												<input type="radio" name="qihoubianhua" class="radio_btn" value="加重"><b>加重</b>
+											</label>
+											<label>
+												<input type="radio" name="qihoubianhua" class="radio_btn" value="减轻"><b>减轻</b>
+											</label>
+											<label>
+												<input type="radio" name="qihoubianhua" class="radio_btn" value="不变"><b>不变</b>
+											</label>
+										</div>
+										<span style="margin-left: 80px;">季节交换：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="春"><b>春</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="夏"><b>夏</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="秋"><b>秋</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="冬"><b>冬</b>
+											</label>
+											<label>
+												<input type="radio" name="jijiejiaohuan" class="radio_btn" value="加重"><b>加重</b>
+											</label>
+											<label>
+												<input type="radio" name="jijiejiaohuan" class="radio_btn" value="减轻"><b>减轻</b>
+											</label>
+										</div>
+									</li>
+
+									<li>
+										<span>其他相关检查：</span>
+										<div class="label_box fl clearfix">
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="化验"><b>化验</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="CT"><b>CT</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="核磁"><b>核磁</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="B超"><b>B超</b>
+											</label>
+											<label>
+												<input type="checkbox" class="checkbox_btn" value="其他"><b>其他</b>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!--变更内容框体-->
+	</div>
+</body>
+</html>

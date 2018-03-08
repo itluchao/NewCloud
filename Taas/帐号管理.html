@@ -1,0 +1,160 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="Shortcut Icon" href="https://oj8y27rzn.qnssl.com/taas/images/xinyunicon.png"/>
+	<link rel="stylesheet" href="https://oj8y27rzn.qnssl.com/taas/css/base.css">
+	<link rel="stylesheet" href="https://oj8y27rzn.qnssl.com/taas/css/system.css">
+	<link rel="stylesheet" href="css/ID_guanli.css">
+	<script src="https://oj8y27rzn.qnssl.com/taas/js/jquery-1.7.2.js"></script>
+	<script src="https://oj8y27rzn.qnssl.com/taas/js/index.js"></script>
+	<script src="js/ajax_submit.js"></script>
+</head>
+<body>
+	<div class="system_head clearfix">
+		<div class="logo_box fl"></div>
+		<div class="head_title_box fl clearfix">
+			<h3>TaaS疼痛云平台</h3>
+			<p>提升疼痛患者生活品质</p>
+		</div>
+		<div class="head_msg_box fr clearfix">
+			<a href="javascript:;" class="exit_btn fr">退出</a>
+			<div class="head_personal_box fr clearfix">
+				<b></b>
+				<a href="javascript:;">靖县安定门医院（全国疼痛分级诊疗云平台成员）</a>
+			</div>
+			<div class="head_my_msg_box fr">
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+	</div>
+	<div class="system_content clearfix">
+		<div class="system_sidebar_box fl">
+			<a href="javascript:;" class="home_page_link">首页</a>
+			<div class="discovery parent_div">发现</div>
+			<a href="javascript:;" class="href_btn">预约专家</a>
+		    <div class="my_center parent_div">我的</div>
+		    <a href="javascript:;" class="href_btn now">医院信息</a>
+		    <a href="javascript:;" class="href_btn">我的消息</a>
+		    <a href="javascript:;" class="href_btn">我的预约</a>
+		    <a href="javascript:;" class="href_btn">账户设置</a>
+		</div>
+		<!--变更内容框体-->
+		<div class="system_content_box">
+			<div class="id_guanli_box">
+				<div class="id_guanli_titlex_box list_title clearfix">
+					<h3>账号管理</h3>
+					<a href="javascript:;">新增</a>
+				</div>
+				<div class="check_box clearfix">
+					<span>姓名：</span>
+					<input type="text">
+
+					<span>账号：</span>
+					<input type="text">
+
+					<span>角色：</span>
+					<select name="" id="">
+						<option value="医生">医生</option>
+						<option value="护士">护士</option>
+					</select>
+					
+					<a href="javascript:;" class="check_btn">查询</a>
+					<a href="javascript:;" class="reset_btn">重置</a>
+				</div>
+				<div class="list_box">
+					<table>
+						<tr>
+							<td class="number top" style="width: 5%;">编号</td>
+							<td class="name top" style="width: 20%;">姓名</td>
+							<td class="role top" style="width: 20%;">角色</td>
+							<td class="id top" style="width: 20%;">帐号</td>
+							<td class="operation top" style="width: 45%;">操作</td>
+						</tr>
+						<tr>
+							<td class="number">01</td>
+							<td class="name">宫本武藏</td>
+							<td class="role">护士</td>
+							<td class="id">xy00001</td>
+							<td class="operation">
+								<div class="ope_btn_box clearfix">
+									<a href="javascript:;" class="edit_btn">编辑</a>	
+									<a href="javascript:;" class="disable_btn">禁用</a>
+									<a href="javascript:;" class="disable_btn">启用</a>
+									<a href="https://www.baidu.com" class="repassword_btn">重置密码</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="number">01</td>
+							<td class="name">宫本武藏</td>
+							<td class="role">护士</td>
+							<td class="id">xy00001</td>
+							<td class="operation">
+								<div class="ope_btn_box clearfix">
+									<a href="javascript:;" class="edit_btn">编辑</a>	
+									<a href="javascript:;" class="disable_btn">禁用</a>
+									<a href="javascript:;" class="disable_btn">启用</a>
+									<a href="https://www.baidu.com" class="repassword_btn">重置密码</a>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="page_box">
+					<ul>
+						<li>
+							<a href="javascript:;" class="now">1</a>
+						</li>
+						<li>
+							<a href="javascript:;">2</a>
+						</li>
+						<li>
+							<a href="javascript:;">3</a>
+						</li>
+						<li>
+							<a href="javascript:;">4</a>
+						</li>
+						<li>
+							<a href="javascript:;">5</a>
+						</li>
+						<li>···</li>
+						<li>
+							<a href="javascript:;">45</a>
+						</li>
+						<li class="next_page">
+							<a href="javascript:;">下一页</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<a href="javascript:;"></a>
+		</div>
+		<!--变更内容框体-->
+	</div>
+</body>
+</html>
+<script>
+	$(document).ready(function() {
+		
+		$(".repassword_btn").each(function(index, el) {
+			$(this).click(function(event) {
+				delete_ajax($(this),repassOk);
+				return false;
+			});
+		});
+		$(".disable_btn").each(function(index, el) {
+			$(this).click(function(event) {
+				delete_ajax($(this),disable);
+				return false;
+			});
+		});
+		/*ajax提交*/
+		function msgError(url){
+			$(".system_content_box").append('<div id="mask_confirm_box"><div class="user_exist_box"><h3>该用户已经存在，是否直接办理入院</h3><div class="clearfix"><a href="'+url+'" class="sure fl">办理入院</a><a href="javascript:;" class="cancel fr">取消</a></div></div></div>');
+		}
+		msgError('https://www.baidu.com');
+	});
+</script>

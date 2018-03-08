@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="Shortcut Icon" href="http://www.newcloudgroup.cn/templets/yiyuan/img/xinyunicon.png"/>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/system.css">
+	<link rel="stylesheet" href="css/notice.css">
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/verification.js"></script>
+</head>
+<body>
+	<div class="system_head clearfix">
+		<div class="logo_box fl"></div>
+		<div class="head_title_box fl clearfix">
+			<h3>TaaS疼痛云平台</h3>
+			<p>提升疼痛患者生活品质</p>
+		</div>
+		<div class="head_msg_box fr clearfix">
+			<a href="javascript:;" class="exit_btn fr">退出</a>
+			<div class="head_personal_box fr clearfix">
+				<b></b>
+				<a href="javascript:;">靖县安定门医院（全国疼痛分级诊疗云平台成员）</a>
+			</div>
+			<div class="head_my_msg_box fr">
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+	</div>
+	<div class="system_content clearfix">
+		<div class="system_sidebar_box fl">
+			<a href="javascript:;" class="home_page_link">首页</a>
+			<div class="discovery parent_div">发现</div>
+			<a href="javascript:;" class="href_btn">预约专家</a>
+		    <div class="my_center parent_div">我的</div>
+		    <a href="javascript:;" class="href_btn now">医院信息</a>
+		    <a href="javascript:;" class="href_btn">我的消息</a>
+		    <a href="javascript:;" class="href_btn">我的预约</a>
+		    <a href="javascript:;" class="href_btn">账户设置</a>
+		</div>
+		<!--变更内容框体-->
+		<div class="system_content_box">
+			<div class="notice_board_box">
+				<h3 class="my_appointment_h3">我的预约</h3>
+				<div class="notice_board">
+					<div class="no_notice_box">
+						<img src="img/no_notice_bg.jpg" alt="">
+						<a href="javascript:;">去预约</a>
+					</div>
+					<ul class="notice_box">
+						<!-- <li>
+							<span class="pass fl"></span>
+							<a href="javascript:;" class="msg_link fl">ECS发布企业级产品家族19款实例族，性能倍数提升！</a>
+							<span class="msg_date fr">2017.05.17</span>
+						</li>
+						<li>
+							<span class="examine fl"></span>
+							<a href="javascript:;" class="msg_link fl">ECS发布企业级产品家族19款实例族，性能倍数提升！</a>
+							<span class="msg_date fr">2017.05.17</span>
+						</li>
+						<li>
+							<span class="refuse fl"></span>
+							<a href="javascript:;" class="msg_link fl">ECS发布企业级产品家族19款实例族，性能倍数提升！</a>
+							<span class="msg_date fr">2017.05.17</span>
+						</li> -->
+					</ul>
+					<div class="page_box clearfix">
+						<select name="" id="" class="show_num">
+							<option value="5">5条</option>
+							<option value="10">10条</option>
+							<option value="15">15条</option>
+						</select>
+						<div class="page_num_box fl clearfix">
+							<a href="javascript:;" class="page_after_btn"></a>
+							<a href="javascript:;" class="page_num_btn on">1</a>
+							<a href="javascript:;" class="page_num_btn">2</a>
+							<a href="javascript:;" class="page_num_btn">3</a>
+							<span>...</span>
+							<a href="javascript:;" class="page_num_btn">28</a>
+							<a href="javascript:;" class="page_num_btn">29</a>
+							<a href="javascript:;" class="page_next_next"></a>
+						</div>
+						<div class="title_num_box fl">共<span>10</span>条</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--变更内容框体-->
+	</div>
+</body>
+</html>
+<script>
+	$(document).ready(function() {
+		if($(".notice_box li").length == 0){
+			$(".page_box").hide();
+			$(".notice_box").hide();
+			$(".no_notice_box").show();
+		}else{
+			$(".page_box").show();
+			$(".notice_box").show();
+			$(".no_notice_box").hide();
+		}
+	});
+</script>

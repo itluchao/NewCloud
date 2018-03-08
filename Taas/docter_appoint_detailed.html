@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="Shortcut Icon" href="http://www.newcloudgroup.cn/templets/yiyuan/img/xinyunicon.png"/>
+	<link rel="stylesheet" href="https://oj8y27rzn.qnssl.com/taas/css/base.css">
+	<link rel="stylesheet" href="https://oj8y27rzn.qnssl.com/taas/css/system.css">
+	<link rel="stylesheet" href="https://oj8y27rzn.qnssl.com/taas/css/docter_appoint_v2.css">
+	<script src="https://oj8y27rzn.qnssl.com/taas/js/jquery-1.7.2.js"></script>
+	<script src="https://oj8y27rzn.qnssl.com/taas/js/index.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".appoint_msg").eq($(".appoint_msg").length-1).addClass('last');
+			$(".xiangxi_btn").each(function(index, el) {
+				$(this).click(function(event) {
+					$(".detailed_box").each(function(index, el) {
+						$(this).parent().css('zIndex', '0');
+						$(this).hide();
+					});
+					$(".detailed_box").eq(index).parent().css('zIndex', '3');
+					$(".detailed_box").eq(index).show();
+					if ($(".detailed_box").eq(index).height()<=400) {
+						$(".appoint_msg.last").css('marginBottom', 500+'px');
+					}else{
+						$(".appoint_msg.last").css('marginBottom', $(".detailed_box").eq(index).height()+100+'px');
+					}
+				});
+				$(".close_btn").eq(index).click(function(event) {
+					$(".detailed_box").eq(index).hide()
+				});
+			});	
+		});
+	</script>
+</head>
+<body>
+	<div class="system_head clearfix">
+		<div class="logo_box fl"></div>
+		<div class="head_title_box fl clearfix">
+			<h3>TaaS疼痛云平台</h3>
+			<p>提升疼痛患者生活品质</p>
+		</div>
+		<div class="head_msg_box fr clearfix">
+			<a href="javascript:;" class="exit_btn fr">退出</a>
+			<div class="head_personal_box fr clearfix">
+				<b></b>
+				<a href="javascript:;">靖县安定门医院（全国疼痛分级诊疗云平台成员）</a>
+			</div>
+			<div class="head_my_msg_box fr">
+				<a href="javascript:;"></a>
+				<span class="msg_num">1110</span>
+			</div>
+			
+		</div>
+	</div>
+	<div class="system_content clearfix">
+		<div class="system_sidebar_box fl">
+			<a href="javascript:;" class="home_page_link">首页</a>
+			<div class="discovery parent_div">发现</div>
+			<a href="javascript:;" class="href_btn">预约专家</a>
+		    <div class="my_center parent_div">我的</div>
+		    <a href="javascript:;" class="href_btn now">医院信息</a>
+		    <a href="javascript:;" class="href_btn">我的消息</a>
+		    <a href="javascript:;" class="href_btn">我的预约</a>
+		    <a href="javascript:;" class="href_btn">账户设置</a>
+		</div>
+		<!--变更内容框体-->
+		<div class="system_content_box">
+			<div class="docter_appoint_detailed_box">
+				<div class="docter_detailed_box clearfix">
+					<div class="docter_detailed_title_img_box">
+						<img src="https://static.ncmimg.com/taas/img/doctor_title_bg.jpg" alt="">
+					</div>
+					<div class="name_title_box">
+						<div class="doc_img_box">
+							<img src="https://static.ncmimg.com/taas/img/00000.png" alt="">
+						</div>
+						<p class="doc_name">洪文学 主任</p>
+						<p class="hos_name">疼痛科 - 中日友好医院</p>
+					</div>
+				</div>
+			</div>
+			<div class="appointment_introduce_btn_box clearfix">
+				<span class="appointment active">专家预约行程</span>
+				<span class="introduce">简介</span>
+			</div>
+
+			<div class="appointment_msg_box">
+				<table></table>
+				<div class="classify_box clearfix">
+					<span class="classify_01">时间段</span>
+					<span class="classify_02">预约简介</span>
+					<span class="classify_03">预约类型</span>
+					<span class="classify_04">要求</span>
+					<span class="classify_05">预约</span>
+				</div>
+				<ul>
+					<li class="appoint_msg clearfix">
+						<div class="classify_01 fl">2017-7-29-2017-7-30</div>
+						<div class="classify_02 fl clearfix">
+							<span>期望是两天，会带助理，只出诊；期望是两天，会带助理，只出诊；期望是两天，会带助理，只出诊；期望是</span>
+							<b class="xiangxi_btn">详情</b>
+							<div class="detailed_box">
+								<span class="close_btn"></span>
+								<h4>预约简介：</h4>
+								<p>期望是两天，会带助理，只出诊；期望是两天，会带助理，只出诊；期望是两天，会带助理，只出诊；期望是两天，会带助理，只出诊；期望是两天，会带助理，只出诊；期望是两天，会带助理，只出诊；期望是两天，会带助理，只出诊；期望是两天，会带助理，只出诊；</p>
+							</div>
+						</div>
+						<div class="classify_03 fl">手术，义诊，出诊；</div>
+						<div class="classify_04 fl" style="position: relative; z-index: 2;">
+							<span class="xiangxi_btn">查看</span>
+							<div class="detailed_box">
+								<span class="close_btn"></span>
+								<div class="ask_01_box">
+									<h4>手术描述：</h4>
+									<p></p>
+								</div>
+								<div class="ask_02_box">
+									<h4>义诊描述：</h4>
+									<p></p>
+								</div>
+								<div class="ask_03_box">
+									<h4>出诊描述：</h4>
+									<p></p>
+								</div>
+							</div>
+						</div>
+						<div class="classify_05 fl">
+							<a href="javascript:;" class="can show">预约</a>
+							<span class="canel">已约满</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="introduce_msg_box">
+				<div class="doc_introduce_msg_box clearfix">
+					<!-- <img src="https://static.ncmimg.com/taas/img/00000.png" alt=""> -->
+					<ul class="doc_msg_box fl" style="padding-left: 42px;">
+						<li class="name clearfix">
+							<span>吴定帮</span>
+							<b>中日友好医院</b>
+						</li>
+						<li class="hos_job clearfix">
+							<span>主任医师</span>
+							<b>中医科</b>
+						</li>
+						<li class="star clearfix">
+							<span>推荐指数：</span>
+							<img src="img/star08.jpg" alt="">
+						</li>
+					</ul>
+				</div>
+				<ul class="text_msg_box">
+					<li>
+						<span>擅长：</span>
+						<p>啊三大三大四的</p>
+					</li>
+					<li>
+						<span>执业经历：</span>
+						<p>啊三大三大四的</p>
+					</li>
+					<li>
+						<span>介绍：</span>
+						<p>啊三大三大四的</p>
+					</li>
+				</ul>  
+			</div>
+		</div>
+		<!--变更内容框体-->
+	</div>
+</body>
+</html>
+<script>
+	$(".appointment").click(function(event) {
+		$(this).addClass('active').siblings('span').removeClass('active');
+		$(".appointment_msg_box").show();
+		$(".introduce_msg_box").hide();
+	});
+	$(".introduce").click(function(event) {
+		$(this).addClass('active').siblings('span').removeClass('active');
+		$(".appointment_msg_box").hide();
+		$(".introduce_msg_box").show();
+	});
+</script>

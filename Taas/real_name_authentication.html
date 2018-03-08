@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="Shortcut Icon" href="http://www.newcloudgroup.cn/templets/yiyuan/img/xinyunicon.png"/>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/system.css">
+	<link rel="stylesheet" href="css/real_name_authentication_box.css">
+	<link rel="stylesheet" href="css/uploadify.css">
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/areame.js"></script>
+	<script src="js/jquery.uploadify.js"></script>
+	<script>
+		$(document).ready(function() {
+			var userAgent = navigator.userAgent; 
+			alert(userAgent)
+			function myBrowser(){
+			    var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+			    if (userAgent.indexOf("Chrome") > -1){
+				  return "Chrome";
+				}//判断是否IE浏览器
+			}
+			//以下是调用上面的函数
+			var mb = myBrowser();
+			if ("Chrome" == mb) {
+			    alert("我是 Chrome");
+			}
+
+			//---------------
+			$(".fail_reason_btn").mouseover(function(event) {
+				$(".reason_box").show();
+			});
+			$(".fail_reason_btn").mouseout(function(event) {
+				$(".reason_box").hide();
+			});
+			$(".upload_pic_box").each(function(index, el) {
+				$(this).click(function(event) {
+					$(".file_btn").eq(index).click();
+				});
+			});
+			$(".file_btn").each(function(index, el) {
+				$(this).change(function(event) {
+					console.log($(".file_btn").imgFile)
+					$(".upload_pic_box img").eq(index).attr('src', $(".file_btn").eq(index).val());
+				});
+			});
+			$(".upload_pic_box img").each(function(index, el) {
+				$(this).load(function() {
+					$(this).css({
+						marginLeft: -$(this).width()/2+'px',
+						marginTop: -$(this).height()/2+'px'
+					});
+				});
+			});
+			/*function flashChecker() {  
+			  var hasFlash = 0;　　　　 //是否安装了flash    
+			  var flashVersion = 0;　　 //flash版本    
+			  
+			  if(document.all) {  
+			    var swf = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');  
+			    if(swf) {  
+			      hasFlash = 1;  
+			      VSwf = swf.GetVariable("$version");  
+			      flashVersion = parseInt(VSwf.split(" ")[1].split(",")[0]);  
+			    }  
+			  } else {  
+			    if(navigator.plugins && navigator.plugins.length > 0) {  
+			      var swf = navigator.plugins["Shockwave Flash"];  
+			      if(swf) {  
+			        hasFlash = 1;  
+			        var words = swf.description.split(" ");  
+			        for(var i = 0; i < words.length; ++i) {  
+			          if(isNaN(parseInt(words[i]))) continue;  
+			          flashVersion = parseInt(words[i]);  
+			        }  
+			      }  
+			    }  
+			  }  
+			  return { f: hasFlash, v: flashVersion };  
+			}  
+			  
+			var fls = flashChecker();  
+			var s = "";  
+			if(!fls.f) {  
+			  if(confirm("您的浏览器未安装Flash插件，现在安装？")) {  
+			    window.location.href = "http://get.adobe.com/cn/flashplayer/";  
+			  }  
+			}   */
+		});
+	</script>
+</head>
+<body>
+
+	<div class="system_head clearfix">
+		<div class="logo_box fl"></div>
+		<div class="head_title_box fl clearfix">
+			<h3>TaaS疼痛云平台</h3>
+			<p>提升疼痛患者生活品质</p>
+		</div>
+		<div class="head_msg_box fr clearfix">
+			<a href="javascript:;" class="exit_btn fr">退出</a>
+			<div class="head_personal_box fr clearfix">
+				<b></b>
+				<a href="javascript:;">靖县安定门医院（全国疼痛分级诊疗云平台成员）</a>
+			</div>
+			<div class="head_my_msg_box fr">
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+	</div>
+	<div class="system_content clearfix">
+		<div class="system_sidebar_box fl">
+			<a href="javascript:;" class="home_page_link">首页</a>
+			<div class="discovery parent_div">发现</div>
+			<a href="javascript:;" class="href_btn">预约专家</a>
+		    <div class="my_center parent_div">我的</div>
+		    <a href="javascript:;" class="href_btn now">医院信息</a>
+		    <a href="javascript:;" class="href_btn">我的消息</a>
+		    <a href="javascript:;" class="href_btn">我的预约</a>
+		    <a href="javascript:;" class="href_btn">账户设置</a>
+		</div>
+		<!--变更内容框体-->
+		<div class="system_content_box">
+			<div class="real_name_authentication_box">
+				<div class="title_box clearfix">
+					<h2 class="title">实名认证</h2>
+					<span class="authentication_sucss">(已认证)</span>
+					<div class="fail_box fl clearfix show">
+						<span class="authentication_fail_msg fl">认证失败，请重新编辑信息，再次提交</span>
+						<div class="fail_reason fl">
+							<span class="fail_reason_btn">移入查看失败原因</span>
+							<div class="reason_box">
+								<h4>请重新修改如下信息：</h4>
+								<p>
+									1.医院名称<br>
+									2.身份证信息不属实<br>
+									3.医院名称<br>
+									4.身份证信息不属实<br>
+									5.身份证信息不属实<br>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form_box">
+					<div class="hospital_authentication_msg_box">
+						<div class="make_appointment_head_box clearfix">
+							<h3>医院信息</h3>
+						</div>
+						<ul>
+							<li class="clearfix">
+								<span class="bitian">医院名称：</span>
+								<input type="text" placeholder="输入医院名称" class="long_input">
+							</li>
+							<li class="clearfix">
+								<span class="bitian">医院级别：</span>
+								<select name="" id="" class="long_select">
+									<option value="">清选择</option>
+									<option value="">三级甲等</option>
+									<option value="">三级乙等</option>
+									<option value="">三级丙等</option>
+									<option value="">二级甲等</option>
+									<option value="">二级乙等</option>
+									<option value="">二级丙等</option>
+									<option value="">一级甲等</option>
+									<option value="">一级乙等</option>
+									<option value="">一级丙等</option>
+								</select>
+							</li>
+							<li class="clearfix">
+								<span class="bitian">医院地址：</span>
+								<select name="" id="area1" class="address_select"></select>
+								<select name="" id="area2" class="address_select"></select>
+								<select name="" id="area3" class="address_select"></select>
+							</li>
+							<li class="clearfix">
+								<span class="bitian"></span>
+								<textarea name="" id="" class="address"></textarea>
+							</li>
+							<li class="clearfix">
+								<span class="bitian">医院电话：</span>
+								<input type="text" placeholder="医院座机电话" class="tel">
+							</li>
+							<li class="clearfix">
+								<span>医院logo：</span>
+								<div class="logo_pic_box upload_pic_box">
+									<img src="" alt="">
+									<p>仅支持JPG.JPEG.PNG.格式的图片上传</p>
+								</div>
+								<input type="file" class="file_btn" />
+							</li>
+							<input type = “file” name = “file_upload” id = “file_upload” / >
+							<script>
+								$(document).ready(function() {
+									if($(".logo_pic_box").attr("src") != ''){
+										$(this).css({
+											border: 'none',
+											background: '#FFF'
+										});	
+									}
+								});
+							</script>
+						</ul>
+					</div>
+					<div class="applicant_authentication_msg_box">
+						<div class="make_appointment_head_box clearfix">
+							<h3>申请人信息</h3>
+						</div>
+						<ul>
+							<li class="clearfix">
+								<span class="bitian">医院名称：</span>
+								<input type="text" placeholder="输入申请人名称" class="long_input">
+							</li>
+							<li class="clearfix">
+								<span class="bitian">科室：</span>
+								<select name="" id="" class="long_select">
+									<option value="">清选择</option>
+									<option value="">疼痛科</option>
+									<option value="">中医科</option>
+								</select>
+							</li>
+							<li class="clearfix">
+								<span class="bitian">职称：</span>
+								<select name="" id="" class="long_select">
+									<option value="">清选择</option>
+									<option value="">主任医师</option>
+									<option value="">副主任医师</option>
+									<option value="">主治医师</option>
+									<option value="">住院医师</option>
+								</select>
+							</li>
+							<li class="clearfix">
+								<span class="bitian">身份证号：</span>
+								<input type="text" placeholder="请填写真实身份证号" class="long_input">
+							</li>
+							<li class="clearfix">
+								<span class="bitian">医院logo：</span>
+								<div>
+									<div class="idcard_pic_box zhengmian upload_pic_box">
+										<img src="img/banner_img_02.jpg" alt="">
+										<p>仅支持JPG.JPEG.PNG.格式的图片上传</p>
+									</div>
+									<input type="file" class="file_btn" />
+								</div>
+								<div>
+									<div class="idcard_pic_box beimian upload_pic_box">
+										<img src="" alt="">
+										<p>仅支持JPG.JPEG.PNG.格式的图片上传</p>
+									</div>
+									<input type="file" class="file_btn" />
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<input type="button" value="提交审核" class="submit_btn">
+				<div class="verifying_box">
+					<img src="img/verifying.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!--变更内容框体-->
+	</div>
+	<div class="up_loading_box">
+		<img src="img/35.png" alt="">	
+	</div>
+</body>
+</html>

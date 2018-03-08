@@ -1,0 +1,521 @@
+.docter_detailed_box{
+	width: 97%;
+	min-height: 288px;
+	border: 1px solid #eaeaea;
+	margin-top: 30px;
+	margin-left: 15px;
+	background: #fbfbfb;
+}
+.img_box{
+	width:164px;
+	height: 164px;
+	line-height: 164px;
+	background: #FFF;
+	border-radius: 50%;
+	text-align: center; 
+	overflow: hidden; 
+	border: 8px solid #efefef;
+	margin: 35px 45px 20px 30px;
+	position: relative;
+}
+.img_box img{
+	width: 164px;
+}
+.doc_score_box span{
+	float: left;
+	line-height: 12px;
+	font-size: 12px;
+	padding-left: 58px;
+}
+.doc_score_box img{
+	float: left;
+}
+.doc_text_box{
+	width: 76.6%;
+}
+.doc_title_box{
+	height: 108px;
+	border-bottom: 1px solid #eee;
+}
+.name_title_box{
+	padding-top: 36px;
+}
+.name_title_box p{
+	float: left;
+	line-height: 18px;
+	font-size: 18px;
+	color: #242424;
+	margin-right: 20px;
+}
+.name_title_box span{
+	float: left;
+	line-height: 14px;
+	font-size: 14px;
+	color: #242424;
+	margin-top: 4px;
+}
+.hospital_title_box p{
+	margin-top: 15px;
+	font-size: 14px;
+	line-height: 14px;
+	color: #ff9805;
+}
+.doc_team_box{
+	height: 36px;
+	padding: 1px;
+	display: inline-block;
+	margin-top: 40px;
+	border: 1px solid #2d8ff3;
+	border-radius: 10px;
+}
+.doc_team_box span{
+	float: left;
+	line-height: 36px;
+	font-size: 12px;
+	color: #2d8ff3;
+	padding-left: 6px;
+	padding-right: 4px;
+}
+.doc_team_box b{
+	float: left;
+	width: 40px;
+	height: 36px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #FFF;
+	background: #2d8ff3;
+	text-align: center;
+	border-radius: 0 10px 10px 0 ;
+}
+.introduce_box h4{
+	float: left;
+	margin-top: 26px;
+	width: 86px;
+	height: 24px;
+	text-align: center;
+	background: #ff9805;
+	color: #FFF;
+	font-size: 14px;
+	line-height: 24px;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+.require_box{
+	width: 48%;
+	padding-right: 2%;
+	margin-top: 36px;
+	border-right: 1px solid #eee;
+}
+.require_box p{
+	padding-bottom: 10px;
+	font-size: 14px;
+	line-height: 24px;
+}
+.expert_introduce{
+	width: 31%;
+	margin-top: 36px;
+	padding-left: 55px;
+}
+.expert_introduce p{
+	font-size: 12px;
+	line-height: 24px;
+	color: #a7a7a7;
+}
+.appointment_msg_box{
+	margin-top: 20px;
+	width: 97%;
+	margin-left: 15px;
+	border: 1px solid #eaeaea;
+	border-right: none;
+	border-bottom: none;
+	margin-bottom: 50px;
+}
+.classify_box{
+	background: #fbfbfb;
+	height: 58px;
+	border-bottom: 1px solid #eaeaea;;
+}
+.appoint_msg{
+	border-bottom: 1px solid #eaeaea;
+}
+.classify_box > span,.appoint_msg > div{
+	float: left;
+	line-height: 58px;
+	font-size: 14px;
+	color: #4a4a4a;
+	text-align: center;
+	border-right: 1px solid #eaeaea;
+	box-sizing: border-box;
+	color: #4a4a4a;
+}
+.classify_01{
+	width: 19.9%;
+}
+.classify_02{
+	width: 39.9%;
+	position: relative;
+}
+.classify_03{
+	width: 19.9%;
+}
+.classify_04{
+	width: 9.9%;
+	position: relative;
+}
+.classify_05{
+	width: 9.9%;
+	height: 58px;
+}
+.classify_02 span{
+	float: left;
+	padding-left: 45px;
+	width: 70%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;	
+}
+.classify_02 b{
+	float: left;
+	color: #2189f4;
+	cursor: pointer;
+}
+.classify_04 span{
+	color: #2189f4;
+	cursor: pointer;
+}
+.appoint_msg:nth-child(even){
+	background:#fbfbfb;
+}
+.appoint_msg.last{
+	margin-bottom:500px;
+}
+.classify_05 .can,.classify_05 .canel{
+	display: block;
+	width: 80px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	font-size: 14px;
+	margin: auto;
+	margin-top: 15px;
+	border-radius: 5px;
+	display: none;
+}
+.classify_05 .can{
+	border: 1px solid #2d8ff3;
+	color: #2d8ff3;
+}
+.classify_05 .canel{
+	border: 1px solid #ff9805;
+	color: #ff9805;
+}
+.detailed_box{
+	position: absolute;
+	border: 1px solid #2d8ff3;
+	border-radius: 7px;
+	background: #FFF;
+	display: none;
+	z-index: 5;
+}
+.classify_02 .detailed_box{
+	width: 516px;
+	padding: 0 30px 40px;
+	top: 22px;
+	right: -500px;
+	z-index: 6;
+}
+.classify_04 .detailed_box{
+	width: 667px;
+	padding: 0 30px 40px;
+	top: 22px;
+	right: 10px;
+}
+.detailed_box .close_btn{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 24px;
+	height: 24px;
+	background: url(../img/ask_close_btn.png) no-repeat center;
+}
+.detailed_box h4{
+	line-height: 52px;
+	padding-top: 10px;
+	border-bottom: 1px solid #ececec;
+	text-align: left;
+}
+.detailed_box p{
+	padding-top: 18px;
+	font-size: 14px;
+	line-height: 24px;
+	text-align: left;
+}
+/*-----预约表单样式-------*/
+.apply_form_box{
+	width: 97%;
+	border: 1px solid #eaeaea;
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 50px;
+}
+.apply_form_box.having{
+	background: url(../img/having.png) no-repeat right top;
+}
+.apply_form_box.fail{
+	background: url(../img/fail.png) no-repeat right top;
+}
+.apply_form_box.succse{
+	background: url(../img/succse.png) no-repeat right top;
+}
+.apply_form_box h2{
+	padding-top: 8px;
+	line-height: 96px;
+	font-size: 24px;
+	text-align: center;
+}
+.apply_form_box .ask_box{
+	width: 93.36%;
+	margin-left: 36px;
+	border-top: 1px solid #f0f0f0;
+	border-bottom: 1px solid #f0f0f0;
+}
+.ask_box h3{
+	padding-top: 17px;
+	line-height: 50px;
+	font-size: 18px;
+	color: #272727;
+}
+.ask_box p{
+	font-size: 14px;
+	line-height: 24px;
+	padding-bottom: 30px;
+}
+.yuyue_date_box > span{
+	width: 120px;
+	margin-top: 29px;
+	margin-left: 36px;
+	float: left;
+	line-height: 14px;
+	height: 25px;
+	padding-top: 11px;
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+.yuyue_date_box > p{
+	width: 80%;
+	margin-top: 35px;
+	float: left;
+	line-height: 24px;
+	font-size: 14px;
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+.yuyue_date_box > p span{
+	float: left;
+	margin-right: 8px;
+}
+.yuyue_data_choice_box{
+	position: relative;
+	margin-top: 28px;
+	height: 36px;
+	margin-bottom: 15px;
+}
+.yuyue_data_btn{
+	cursor: pointer;
+	margin-left: 15px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #2d8ff3;
+}
+.date_choice_box{
+	max-width: 840px;
+}
+.date_choice_box > div{
+	float: left;
+	line-height: 36px;
+	font-size: 14px;
+	color: #3d3d3d;
+	margin-right: 20px;
+}
+.shenqing_msg_box{
+	padding-left: 36px;
+}
+.shenqing_msg_box span{
+	float: left;
+	width: 120px;
+	line-height: 34px;
+	font-size: 14px;
+	color: #3d3d3d;
+}
+.shenqing_msg_box input{
+	float: left;
+	width: 383px;
+	padding-left: 15px;
+	font-size: 14px;
+	line-height: 14px;	
+	height: 34px;
+	border: 1px solid #c9c9c9;
+	margin-right: 40px;
+	margin-bottom: 24px;
+	background: #FFF;
+}
+.expect_docter_detailed_box{
+	padding-left: 36px;
+}
+.expect_docter_detailed_box > span{
+	width: 120px;
+	line-height: 34px;
+	float: left;
+	font-size: 14px;
+	color: #3d3d3d;
+}
+.expect_do_check input{
+	width: 14px;
+	height: 14px;
+	margin-top: 10px;
+	float: left;
+	margin-bottom: 30px;
+}
+.expect_do_check span{
+	float: left;
+	color: #909090;
+	padding-left: 12px;
+	padding-right: 35px;
+	line-height: 34px;
+}
+.checked_box span{
+	float: left;
+	color: #909090;
+	padding-left: 26px;
+	padding-right: 35px;
+	line-height: 34px;
+	background: url(../img/checked_bg.png) no-repeat left center;
+	display: none;
+}
+.classify_expect{
+	margin-bottom: 30px;
+	display:none;
+}
+.classify_expect span{
+	float: left;
+	width: 110px;
+	font-size: 14px;
+	line-height: 34px;
+	color: #3d3d3d;
+}
+.classify_expect input{
+	float: left;
+	border: 1px solid #c9c9c9;
+	height: 26px;
+	line-height: 14px;
+	font-size: 14px;
+	margin-top: 3px;
+	background: #FFF;
+}
+.operation_num_box input{
+	width: 36px; 
+	text-align: center;
+	background: #FFF;
+}
+.operation_describe_box textarea{
+	width: 700px;
+	padding: 5px 12px;
+	height: 138px;
+	font-size: 14px;
+	line-height: 24px;
+	border: 1px solid #c9c9c9;
+	background: #FFF;
+}
+.patient_num_box input{
+	width: 45px;
+	text-align: center;
+}
+.teach_someting_box input{
+	width: 210px;
+}
+.teach_someting_box input,.clinic_box input{
+	width: 709px;
+	padding-left: 15px;
+	font-size: 14px;
+	line-height: 14px;
+}
+.trip_msg_box>span{
+	float: left;	
+	width: 120px;
+	margin-left: 36px;	
+}
+.trip_box{
+	padding-top: 50px;
+}
+.am_box span,.pm_box span,.supplement_box span{
+	float: left;
+	width: 140px;
+	line-height: 24px;
+	font-size: 14px;
+}
+.am_box textarea,.pm_box textarea{
+	float: left;
+	width: 233px;
+	height: 103px;
+	padding: 0 5px;
+	border: 1px solid #c9c9c9;
+	margin-right: 70px;
+	margin-bottom: 38px;
+	font-size: 14px;
+	line-height: 24px;
+	background: #FFF;
+}
+.supplement_box textarea{
+	float: left;
+	width: 690px;
+	height: 103px;
+	padding: 0 5px;
+	border: 1px solid #c9c9c9;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 86px;
+	background: #FFF;
+}
+.submit_box{
+	width: 356px;
+	margin:0 auto;
+}
+.submit_box a{
+	float: left;
+	width: 148px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 68px;
+	border-radius: 5px;
+}
+.submit_box .send_msg_btn{
+	background: #2d8ff3;
+	color: #FFF;
+	margin-right: 60px;
+}
+.submit_box .canel_msg_btn{
+	background: #c5c5c5;
+	color: #FFF;
+}
+.canel_box a{
+	display: block;
+	width: 100px;
+	height: 38px;
+	line-height: 38px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 14px;
+	color:#FFF;
+	background: #2d8ff3;
+	margin: 0 auto;
+	margin-bottom: 68px;
+}
+
+
+
+
+
+

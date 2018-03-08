@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <meta charset="UTF-8">
+     <meta name="viewport"   content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+     <title>用户测试用例</title>
+     <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.5.0/skins/default/aliplayer-min.css" />
+     <script type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.5.0/aliplayer-flash-min.js"></script>
+     <script type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.5.0/aliplayer-h5-min.js"></script>
+    </head>
+    <body>
+        <div  class="prism-player" id="J_prismPlayer" style="position: absolute; height: 500px;"></div>
+        <script>
+            var player = new Aliplayer({
+            id: 'J_prismPlayer',
+            width: '100%',
+            autoplay: false,
+            //支持播放地址播放,此播放优先级最高
+            source : 'http://1255993004.vod2.myqcloud.com/d3fe7865vodgzp1255993004/b409f0ab4564972819221395360/PuMlepPFsIAA.mp4',
+            //播放方式二：点播用户推荐
+            vid : '1e067a2831b641db90d570b6480fbc40',
+            playauth : '',
+            cover: 'http://liveroom-img.oss-cn-qingdao.aliyuncs.com/logo.png',            
+            //播放方式三：仅MTS用户使用
+            vid : '1e067a2831b641db90d570b6480fbc40',
+            accId: '',
+            accSecret: '',
+            stsToken: '',
+            domainRegion: '',
+            authInfo: '',
+            //播放方式四：使用STS方式播放
+            vid : '1e067a2831b641db90d570b6480fbc40',
+            accessKeyId: '',
+            securityToken: '',
+            accessKeySecret: ''
+            },function(player){
+                console.log('播放器创建好了。')
+           });
+        </script>
+    </body>
+</html>

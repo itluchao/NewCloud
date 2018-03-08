@@ -1,0 +1,219 @@
+.notice_board_box h3{
+	line-height: 62px;
+	font-size: 16px;
+	margin-top: 7px;
+	padding-left: 26px;
+	margin-left: 16px;
+	color: #393939;
+	background: url(../img/notice.png) no-repeat left center;
+}
+.notice_board_box .my_msg_h3{
+	background: url(../img/my_msg_h3.png) no-repeat left center;
+}
+.notice_board_box .my_appointment_h3{
+	background: url(../img/my_appointment_h3.png) no-repeat left center;
+}
+.notice_board{
+	width: 97%;
+	border: 1px solid #eaeaea;
+	margin-left: 15px;
+	position: relative;
+	padding-bottom: 126px;
+}
+.no_notice_box{
+	width: 100%;
+	padding-top: 60px;
+	text-align: center;
+}
+.no_notice_box a{
+	display: block;
+	width: 160px;
+	height: 44px;
+	border: 1px solid #2d8ff3;
+	font-size: 22px;
+	line-height: 44px;
+	color: #2d8ff3;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 22px;
+}
+.notice_box{
+	padding-left: 26px;
+	min-height: 400px;
+}
+.notice_box li{
+	width: 95%;
+	height: 80px;
+	margin: 0 auto; 
+	border-bottom: 1px solid #e8e8e8;
+	overflow: hidden;
+}
+.notice_box .icon{
+	width: 20px;
+	height: 20px;
+	margin: 30px 15px 30px 1px;
+	background: url(../img/announcement_icon.png) no-repeat center;
+}
+.notice_box .pass{
+	width: 20px;
+	height: 20px;
+	margin: 30px 15px 30px 1px;
+	background: url(../img/pass.png) no-repeat center;
+}
+.notice_box .examine{
+	width: 20px;
+	height: 20px;
+	margin: 30px 15px 30px 1px;
+	background: url(../img/examine.png) no-repeat center;
+}
+.notice_box .refuse{
+	width: 20px;
+	height: 20px;
+	margin: 30px 15px 30px 1px;
+	background: url(../img/refuse.png) no-repeat center;
+}
+.notice_box .msg_link{
+	float: left;
+	line-height: 80px;
+	font-size: 14px;
+	color: #393939;
+}
+.notice_box .yidu_msg_link{
+	float: left;
+	line-height: 80px;
+	font-size: 14px;
+	color: #adadad;
+}
+.notice_box .weidu_msg_link{
+	float: left;
+	line-height: 80px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #393939;
+}
+.notice_box .msg_date{
+	line-height: 80px;
+	font-size: 14px;
+	color: #999;
+}
+.page_box{
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+}
+.show_num{
+	float: left;
+	height: 24px;
+	border: 1px solid #a5a5a5;
+	border-radius: 3px;
+	text-align: center;
+	display: block;
+	width: 62px;
+	margin-right: 45px;
+}
+.show_num option{
+	display: block;
+	line-height: 24px;
+	font-size: 14px;
+	color: #393939;
+	text-align: center;
+}
+.page_num_box a{
+	float: left;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 16px;
+	color: #393939;
+	text-align: center;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+.page_num_box .page_after_btn{
+	background: url(../img/after_arr_btn.png) no-repeat center;
+}
+.page_num_box .page_next_next{
+	background: url(../img/next_arr_btn.png) no-repeat center;
+}
+.page_num_box span{
+	float: left;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 16px;
+	color: #393939;
+	text-align: center;
+	margin-right: 10px;
+}
+.page_num_box .on{
+	color: #FFF;
+	background: #2d8ff3;
+}
+.page_num_box .hover{
+	color: #FFF;
+	background: #2d8ff3;
+}
+.title_num_box{
+	margin-left: 30px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #393939;
+}
+/*---------------公告内容页css--------------*/
+.notice_content_box{
+	padding-bottom: 120px;
+}
+.notice_content_box .back_btn{
+	display: block;
+	line-height: 62px;
+	font-size: 16px;
+	margin-top: 7px;
+	padding-left: 26px;
+	margin-left: 16px;
+	color: #393939;
+	background: url(../img/back_btn.png) no-repeat left center;
+}
+.notice_content{
+	width: 97%;
+	border: 1px solid #eaeaea;
+	margin-left: 15px;
+	padding-top: 44px;
+	padding-bottom: 45px;
+}
+.notice_content h3{
+	text-align: center;
+	line-height: 24px;
+	font-size: 24px;
+	margin-bottom: 38px;
+	color: #393939;
+}
+.notice_content .notice_date{
+	line-height: 14px;
+	font-size: 14px;
+	color: #393939;	
+	text-align: center;
+	display: block;
+	margin-bottom: 45px;
+}
+.notice_content p{
+	line-height: 24px;
+	font-size: 14px;
+	padding-left: 45px;
+	width: 92.5%;
+	color: #393939;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

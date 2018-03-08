@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="Shortcut Icon" href="http://www.newcloudgroup.cn/templets/yiyuan/img/xinyunicon.png"/>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/system.css">
+	<link rel="stylesheet" href="css/docter_appoint.css">
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/index.js"></script>
+	sc
+	<script>
+		$(document).ready(function() {
+			$(".appoint_msg").eq($(".appoint_msg").length-1).addClass('last');
+			$(".xiangxi_btn").each(function(index, el) {
+				$(this).click(function(event) {
+					$(".detailed_box").each(function(index, el) {
+						$(this).parent().css('zIndex', '0');
+						$(this).hide();
+					});
+					$(".detailed_box").eq(index).parent().css('zIndex', '3');
+					$(".detailed_box").eq(index).show();
+					if ($(".detailed_box").eq(index).height()<=400) {
+						$(".appoint_msg.last").css('marginBottom', 500+'px');
+					}else{
+						$(".appoint_msg.last").css('marginBottom', $(".detailed_box").eq(index).height()+100+'px');
+					}
+				});
+				$(".close_btn").eq(index).click(function(event) {
+					$(".detailed_box").eq(index).hide()
+				});
+			});	
+		});
+	</script>
+</head>
+<body>
+	<div class="system_head clearfix">
+		<div class="logo_box fl"></div>
+		<div class="head_title_box fl clearfix">
+			<h3>TaaS疼痛云平台</h3>
+			<p>提升疼痛患者生活品质</p>
+		</div>
+		<div class="head_msg_box fr clearfix">
+			<a href="javascript:;" class="exit_btn fr">退出</a>
+			<div class="head_personal_box fr clearfix">
+				<b></b>
+				<a href="javascript:;">靖县安定门医院（全国疼痛分级诊疗云平台成员）</a>
+			</div>
+			<div class="head_my_msg_box fr">
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+	</div>
+	<div class="system_content clearfix">
+		<div class="system_sidebar_box fl">
+			<a href="javascript:;" class="home_page_link">首页</a>
+			<div class="discovery parent_div">发现</div>
+			<a href="javascript:;" class="href_btn">预约专家</a>
+		    <div class="my_center parent_div">我的</div>
+		    <a href="javascript:;" class="href_btn now">医院信息</a>
+		    <a href="javascript:;" class="href_btn">我的消息</a>
+		    <a href="javascript:;" class="href_btn">我的预约</a>
+		    <a href="javascript:;" class="href_btn">账户设置</a>
+		</div>
+		<!--变更内容框体-->
+		<div class="system_content_box">
+			<div class="docter_appoint_detailed_box">
+				<div class="docter_detailed_box clearfix">
+					<div class="doc_img_box fl">
+						<div class="img_box">
+							<img src="img/choice_img_1.jpg" alt="">
+						</div>
+						<div class="doc_score_box clearfix">
+							<span>推荐指数：</span>
+							<img src="img/star10.jpg" alt="">
+						</div>
+					</div>
+					<div class="doc_text_box fl">
+						<div class="doc_title_box clearfix">
+							<div class="name__hospital_title_box fl">
+								<div class="name_title_box clearfix">
+									<p>洪文学</p>
+									<span>主任医师</span>
+								</div>
+								<div class="hospital_title_box clearfix">
+									<p>中日友好医院 - 疼痛科</p>
+								</div>
+							</div>
+							<div class="doc_team_box fr clearfix">
+								<span>洪文学</span>
+								<b>专家<br>团队</b>
+							</div>
+						</div>
+						<div class="introduce_box clearfix">
+							<h4>专家擅长</h4>	 
+							<div class="require_box fl">
+								<p>接受预约范围：北京周边<br>接受预约人数：10人<br>医院要求： 二级医院及以上<br>预约性质：手术<br>疾病要求：踝关节炎或踝关节创伤患者，特别是需要做关节置换的
+								</p>
+							</div>
+							<div class="expert_introduce fl">
+								<p>职业经历：<br>1、可预约班次更新时间：每日17:00左右更新<br>2、预约周期：1-5天内<br>3、取消时限：提前一天17：00前
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="appointment_msg_box">
+				<table></table>
+				<div class="classify_box clearfix">
+					<span class="classify_01">时间段</span>
+					<span class="classify_02">预约简介</span>
+					<span class="classify_03">预约类型</span>
+					<span class="classify_04">要求</span>
+					<span class="classify_05">预约</span>
+				</div>
+				<ul>
+					<li class="appoint_msg clearfix">
+						<div class="classify_01 fl">2017-7-29-2017-7-30</div>
+						<div class="classify_02 fl clearfix">
+							<span>期望是两天，会带助理，只出诊；期望是两天，会带助理，只出诊；期望是两天，会带助理，只出诊；期望是</span>
+							<b class="xiangxi_btn">详情</b>
+							<div class="detailed_box">
+								<span class="close_btn"></span>
+								<h4>预约简介：</h4>
+								<p>期望是两天，会带助理，只出诊；期望是两天，会带助理，只出诊；期望是两天，会带助理，只出诊；期望是
+两天，会带助理，只出诊；期望是两天，会带助理，只出诊；期望是两天，会带助理，只出诊；期望是两天，
+会带助理，只出诊；期望是两天，会带助理，只出诊；</p>
+							</div>
+						</div>
+						<div class="classify_03 fl">手术，义诊，出诊；</div>
+						<div class="classify_04 fl" style="position: relative; z-index: 2;">
+							<span class="xiangxi_btn">查看</span>
+							<div class="detailed_box">
+								<span class="close_btn"></span>
+								<div class="ask_01_box">
+									<h4>手术描述：</h4>
+									<p></p>
+								</div>
+								<div class="ask_02_box">
+									<h4>义诊描述：</h4>
+									<p></p>
+								</div>
+								<div class="ask_03_box">
+									<h4>出诊描述：</h4>
+									<p></p>
+								</div>
+							</div>
+						</div>
+						<div class="classify_05 fl">
+							<a href="javascript:;" class="can show">预约</a>
+							<span class="canel">已约满</span>
+						</div>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+		<!--变更内容框体-->
+	</div>
+</body>
+</html>

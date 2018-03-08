@@ -1,0 +1,246 @@
+.settings_box h2{
+	padding-top: 7px;
+	line-height: 62px;
+	font-size: 16px;
+	color: #393939;
+	padding-left: 42px;
+	background: url(../img/settings_icon.png) no-repeat 16px 30px;
+}
+.settings_homepage_box{
+	width: 97%;
+	border: 1px solid #eaeaea;
+	margin-left: 15px;
+}
+.settings_top_msg_box{
+	padding-top: 55px;
+	padding-left: 66px;
+	height: 174px;
+}
+.avatar_box{
+	width: 114px;	
+	height: 114px;
+	border: 5px solid #f0f0f0;
+	border-radius: 50%;
+	position: relative;	
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+.avatar_box img{
+	max-width: 114px;
+	max-height: 114px;
+}
+.avatar_box .button{
+	position: absolute;
+	bottom: 0 ;
+	left: 0;
+	line-height: 24px;
+	font-size: 12px;
+	width: 114px;
+	text-align: center;
+	color: #FFF;
+	background: #3d3d3d;
+	cursor: pointer;
+}
+.revise_avatar_file_btn{
+	display: none;
+}
+.ID_msg_box{
+	margin-left: 44px;
+	padding-top: 14px;
+}
+.account_box p{
+	line-height: 38px;
+	font-size: 16px;
+	padding-left: 25px;
+	background: url(../img/account.png) no-repeat left center;
+	color: #393939;
+}
+.account_box .account_number{
+	line-height: 38px;
+	font-size: 16px;
+	color: #393939;2d8ff3
+}
+.account_box .Authenticated{
+	color: #2d8ff3;
+	border: 1px solid #2d8ff3;
+	border-radius: 2px;
+	width: 48px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 9px;
+	margin-left: 15px;
+}
+.ID_box p{
+	line-height: 38px;
+	font-size: 16px;
+	padding-left: 25px;
+	background: url(../img/ID.png) no-repeat left center;
+	color: #393939;
+}
+.ID_box .id_number{
+	line-height: 38px;
+	font-size: 16px;
+	color: #393939;2d8ff3
+}
+.settings_password_box,.settings_phone_box{
+	width: 89.5%;
+	height: 146px;
+	border-top: 1px dashed #e6e6e6;
+	margin-left: 66px;
+}
+.set_msg{
+	float: left;
+	line-height: 146px;
+	padding-left: 26px;
+	font-size: 14px;
+	color: #737373;
+	margin-right: 8%;
+}
+.was_set{
+	background: url(../img/was_set.png) no-repeat left center;
+}
+.not_set{
+	background: url(../img/not_set.png) no-repeat left center;
+}
+.settings_homepage_box .set_name{
+	float: left;
+	line-height: 146px;
+	font-size: 18px;
+	color: #373737;
+	margin-right: 8%;
+}
+.settings_homepage_box .set_introduce{
+	float: left;
+	line-height: 24px;
+	font-size: 14px;
+	color: #737373;
+	padding-top: 48px;
+	width: 56%;
+}
+.settings_homepage_box .revise{
+	float: right;
+	margin-right: 10.8%;
+	line-height: 148px;
+	font-size: 14px;
+	color: #2d8ff3;
+}
+.mod_password_box{
+	margin-left: 16px;	
+	width: 97.3%;
+	height: 596px;
+	border: 1px solid #ccc;
+}
+.mod_password_box .input_box{
+	padding-left: 98px;
+}
+.mod_password_box .input_box span{
+	float: left;
+	width: 120px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #3d3d3d;
+}
+.mod_password_box .input_box input{
+	float: left;
+	width: 383px;
+	padding-left: 15px;	
+	height: 34px;
+	line-height: 14px;
+	font-size: 14px;
+	border: 1px solid #c9c9c9;
+}
+.old_password_box{
+	margin-top: 46px;
+}
+.mod_password_box .logon_info_box{
+	padding-left: 234px;
+	height: 36px;
+}	
+.logon_info_box p{
+	line-height: 36px;
+	font-size: 12px;
+}
+.error{
+	color: #f55;
+}
+.submit_btn{
+	width: 144px;
+	height: 46px;
+	border: none;
+	border-radius: 3px;
+	color: #FFF;
+	font-size: 16px;
+	background: #2d8ff3;
+	margin-left: 308px;
+	margin-top: 69px;
+}
+.old_password_info_msg{
+	display: none;
+}
+.bind_phone_box{
+	margin-top: 46px;
+	margin-left: 98px;
+}
+.yanzheng_box{
+	margin-left: 98px;
+}
+.bind_phone_box span,.yanzheng_box span{
+	float: left;
+	line-height: 36px;
+	font-size: 14px;
+	width: 120px;
+}
+.bind_phone_box .bind_phone{
+	height: 34px;
+	width: 383px;
+	border: 1px solid #c9c9c9;
+	padding-left: 15px;
+	line-height: 14px;
+	font-size: 14px;
+}
+.yanzheng_box .logon_yanzheng{
+	width: 253px;
+	height: 34px;
+	padding-left: 15px;
+	border: 1px solid #c9c9c9;
+}
+.yanzheng_box .bind_phone_yanzheng{
+	width: 125px;
+	height: 36px;
+	border: none;
+	text-align: center;
+	margin-left: 5px;
+	color: #FFF;
+	line-height: 36px;
+	font-size: 14px;
+	background: #2d8ff3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

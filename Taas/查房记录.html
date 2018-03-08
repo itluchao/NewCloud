@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="Shortcut Icon" href="https://static.ncmimg.com/taas/images/xinyunicon.png"/>
+	<link rel="stylesheet" href="https://static.ncmimg.com/taas/css/base.css">
+	<link rel="stylesheet" href="https://static.ncmimg.com/taas/css/system.css">
+	<link rel="stylesheet" href="https://static.ncmimg.com/taas/css/live_broadcast.css">
+	<link rel="stylesheet" href="https://static.ncmimg.com/taas/css/swiper.css">
+	<script src="https://static.ncmimg.com/taas/js/jquery-1.7.2.js"></script>
+	<script src="https://static.ncmimg.com/taas/js/index.js"></script>
+	<script src="https://static.ncmimg.com/taas/js/swiper.min.js"></script>
+</head>
+<body>
+	<div class="system_head clearfix">
+		<div class="logo_box fl"></div>
+		<div class="head_title_box fl clearfix">
+			<h3>TaaS疼痛云平台</h3>
+			<p>提升疼痛患者生活品质</p>
+		</div>
+		<div class="head_msg_box fr clearfix">
+			<a href="javascript:;" class="exit_btn fr">退出</a>
+			<div class="head_personal_box fr clearfix">
+				<b></b>
+				<a href="javascript:;">靖县安定门医院（全国疼痛分级诊疗云平台成员）</a>
+			</div>
+			<div class="head_my_msg_box fr">
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+	</div>
+	<div class="system_content clearfix">
+		<div class="system_sidebar_box fl">
+			<a href="javascript:;" class="home_page_link">首页</a>
+			<div class="discovery parent_div">发现</div>
+			<a href="javascript:;" class="href_btn">预约专家</a>
+		    <div class="my_center parent_div">我的</div>
+		    <a href="javascript:;" class="href_btn now">医院信息</a>
+		    <a href="javascript:;" class="href_btn">我的消息</a>
+		    <a href="javascript:;" class="href_btn">我的预约</a>
+		    <a href="javascript:;" class="href_btn">账户设置</a>
+		</div>
+		<!--变更内容框体-->
+		<div class="system_content_box">
+			<div class="my_video_list_box">
+				<div class="accept_rounds_box">
+					<div class="no_rounds_box clearfix">
+						<img src="https://static.ncmimg.com/taas/img/weihujiao.png" alt="">
+						<p>暂无用户发起查房申请...</p>
+					</div>
+					<div class="rounds_box clearfix">
+						<img src="https://static.ncmimg.com/taas/img/hujiao.png" alt="">
+						<p>暂无用户发起查房申请...</p>
+						<a href="javascript:;" class="agree">同意</a>
+						<a href="javascript:;" class="refuse">拒绝</a>
+					</div>
+				</div>
+				<div class="record_rounds_title_box">
+					<span  class="record_rounds_title">查房记录</span>
+				</div>
+				<table class="record_rounds_list">
+					<tr>
+						<th>编号</th>
+						<th>发起人</th>
+						<th>医院</th>
+						<th>发起时间</th>
+						<th>结束时间</th>
+						<th>时常</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>张三</td>
+						<td>中国人民解放军总医院陆总医院</td>
+						<td>2018.01.02  12：00</td>
+						<td>2018.01.02  13：00</td>
+						<td>1小时</td>
+					</tr>
+				</table>
+				<div class="page_box">
+					<ul class="clearfix">
+						<li class="next_page"  style="margin-right: 10px;">
+							<a href="javascript:;">上一页</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="now">1</a>
+						</li>
+						<li>
+							<a href="javascript:;">2</a>
+						</li>
+						<li>
+							<a href="javascript:;">3</a>
+						</li>
+						<li>
+							<a href="javascript:;">4</a>
+						</li>
+						<li>
+							<a href="javascript:;">5</a>
+						</li>
+						<li>···</li>
+						<li>
+							<a href="javascript:;">45</a>
+						</li>
+						<li class="next_page">
+							<a href="javascript:;">下一页</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--变更内容框体-->
+	</div>
+</body>
+</html>
+<script>
+	$(document).ready(function() {
+		$(".refuse").click(function(event) {
+			$(".rounds_box").hide();
+			$(".no_rounds_box").show();
+		});
+	});
+</script>

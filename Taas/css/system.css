@@ -1,0 +1,465 @@
+.system_head{
+	height: 60px;
+	background: #373e42;
+}
+.logo_box{
+	width: 86px;
+	height: 60px;
+	background: url(https://static.ncmimg.com/taas/img/system_logo.png) no-repeat center;
+	border-right: 1px solid #171717;
+}
+.head_title_box h3{
+	padding-left: 22px;
+	float: left;
+	line-height: 60px;
+	font-size: 20px;
+	color: #FFF;
+	border-left: 1px solid #515354;
+}
+.head_title_box p{
+	padding-left: 30px;
+	float: left;
+	line-height: 60px;
+	font-size: 14px;
+	color: #FFF;
+}
+.head_msg_box .exit_btn{
+	width: 53px;
+	padding-left: 52px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 14px;
+	color: #FFF;
+	background: url(https://static.ncmimg.com/taas/img/exit_btn.png) no-repeat 25px center;
+	border-left: 1px solid #515354;
+}
+.head_personal_box{
+	min-width: 356px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: 60px;
+	border-left: 1px solid #515354;
+	border-right: 1px solid #171717;
+}
+.head_personal_box b{
+	float: left;
+	width: 34px;
+	height: 34px;
+	margin-top: 13px;
+	background: url(https://static.ncmimg.com/taas/img/hospital_icon_01.png) no-repeat center;
+	margin-right: 14px;
+}
+.head_personal_box a{
+	float: left;
+	font-size: 14px;
+	line-height: 16px;
+	color: #FFF;
+	margin-top: 22px;
+}
+.head_my_msg_box{
+	height: 60px;
+	border-right: 1px solid #171717;
+}
+.head_my_msg_box{
+	position: relative;
+}
+.head_my_msg_box .msg_num{
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	background: #ed4040;
+	color: #FFF;
+	border: 2px solid #373e42;
+	border-radius: 50%;
+	font-size: 12px;
+	text-align: center;
+	left: 13px;
+	top: 9px;
+	font-family: 'arial';
+}
+.head_my_msg_box a{
+	margin-top: 21px;
+	margin-right: 27px;
+	display: block;
+	width: 21px;
+	height: 16px;
+	background: url(https://static.ncmimg.com/taas/img/message.png) no-repeat center;
+}
+.system_content{
+	background: #333744;
+}
+.system_sidebar_box{
+	width: 190px;	
+	height: 100%;
+}
+.system_content_box{
+	overflow: hidden;
+	min-height: 600px;
+	min-width: 834px;
+	background:#FFF;
+}
+.home_page_link{
+	margin-top: 20px;
+	background: url(https://static.ncmimg.com/taas/img/home_page_link.png) no-repeat 44px center;
+	display: block;
+	width: 120px;
+	height: 34px;
+	padding-left: 70px;
+	color: #FFF;
+	line-height: 34px;
+}
+.parent_div{
+	margin-top: 30px;
+	display: block;
+	line-height: 34px;
+	font-size: 16px;
+	color: #FFF;
+	width: 120px;
+	padding-left: 70px;
+}
+.href_btn{
+	line-height: 34px;
+	font-size: 14px;
+	color: #FFF;
+	display: block;
+	width: 120px;
+	padding-left: 70px;
+}
+.href_btn.hover{
+	color: #FFF;
+	background: #2d8ff3;
+}
+.href_btn.now{
+	color: #FFF;
+	background: #2d8ff3;
+}
+.system_sidebar_box .discovery{
+	background: url(https://static.ncmimg.com/taas/img/find_link.png) no-repeat 44px center;
+}
+
+.system_sidebar_box .my_center{
+	background: url(https://static.ncmimg.com/taas/img/my_link.png) no-repeat 44px center;
+}
+.system_sidebar_box .seting{
+	background: url(https://static.ncmimg.com/taas/img/sidebar_seting.png) no-repeat 44px center;
+}
+.system_sidebar_box .suifangliebiao{
+	background: url(https://static.ncmimg.com/taas/img/sidebar_suifangliebiao.png) no-repeat 44px center;
+}
+.system_sidebar_box .suifangguanli{
+	background: url(https://static.ncmimg.com/taas/img/sidebar_jilu.png) no-repeat 44px center;
+}
+.system_sidebar_box .college{
+	background: url(https://static.ncmimg.com/taas/img/college_icon.png) no-repeat 44px center;
+}
+.system_sidebar_box .rounds{
+	background: url(https://static.ncmimg.com/taas/img/rounds_icon.png) no-repeat 44px center;
+}
+
+.system_content_box{
+	position: relative;
+}
+.go_verifying_box{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,.6);
+}
+.go_verifying_box .go_verifying{
+	width: 645px;
+	height: 331px;
+	background: url(https://static.ncmimg.com/taas/img/go_verifying.png);
+	position: relative;
+	margin: auto;
+	margin-top: 100px;
+}
+.go_verifying p{
+	text-align: center;
+	font-size: 24px;
+	line-height: 24px;
+	color: #2f2f2f;
+	padding-top: 186px;
+}
+.go_verifying a{
+	display: block;
+	width: 138px; 
+	height: 42px;
+	line-height: 42px;
+	color: #FFF;
+	background: #2d8ff3;
+	font-size: 18px;
+	text-align: center;
+	border-radius: 5px;
+	position: absolute;
+	left: 50%;
+	bottom: 41px;
+	margin-left: -69px;
+}
+.home_page_content_box h2{
+	padding-top: 8px;
+	line-height: 60px;
+	font-size: 16px;
+	padding-left: 42px;
+	background: url(https://static.ncmimg.com/taas/img/home_page_logo.png) no-repeat 16px 31px;
+}
+.make_appointment_box{
+	width: 97%;
+	margin-left: 15px;
+	border: 1px solid #ccc;
+}
+.make_appointment_head_box{
+	height: 46px;
+	background: #f2f2f2;
+}
+.make_appointment_head_box h3{
+	float: left;
+	margin-top: 15px;
+	margin-left: 27px;
+	font-size: 14px;
+	line-height: 16px;
+	padding-left: 10px;
+	border-left: 3px solid #2d8ff3;
+}
+.make_appointment_head_box a{
+	float: right;
+	margin-right: 32px;
+	margin-top: 16px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #393939;
+}
+.expert_box{
+	width: 100%;
+	height: 364px;
+	padding-top: 30px;
+	overflow: hidden;
+}
+.expert_appointment_box{
+	float: left;
+	width: 310px;
+	height: 150px;
+	border: 1px dashed #9e9e9e;
+	margin: 30px;
+	margin-top: 0;
+}
+.expert_appointment_box .pic_name_box{
+	width: 138px;
+	padding-top: 10px;
+	text-align: center;
+	padding-right: 10px;
+}
+.pic_name_box img{
+	display: block;
+	border: 3px solid #efefef;
+	width: 76px;
+	height: 76px;
+	border-radius: 50%;
+	margin: 0 auto;
+	margin-bottom: 6px;
+}
+.pic_name_box .docter_name{
+	line-height: 22px;
+	font-size: 16px;
+	color： #161616;
+}
+.pic_name_box .docter_title{
+	line-height: 22px;
+	font-size: 14px;
+	color： #161616;
+}
+.expert_appointment_box .docter_msg_box{
+	padding-top: 15px;
+}
+.docter_msg_box .department{
+	display: block;
+	line-height: 22px;
+	font-size: 12px;
+	padding-left: 22px;
+	color: #393939;
+	background: url(https://static.ncmimg.com/taas/img/department_icon.png) no-repeat left center;
+}
+.docter_msg_box .hospital{
+	display: block;
+	line-height: 22px;
+	font-size: 12px;
+	padding-left: 22px;
+	color: #393939;
+	background: url(https://static.ncmimg.com/taas/img/hospital_icon_02.png) no-repeat left center;
+}
+.docter_msg_box .appointment_times{
+	padding-left: 22px;
+	background: url(https://static.ncmimg.com/taas/img/department_icon.png) no-repeat left center;
+}
+.appointment_times .times{
+	float: left;
+	color: #ff4e00;
+	line-height: 22px;
+	font-size: 12px;
+}
+.appointment_times p{
+	float: left;
+	line-height: 22px;
+	font-size: 12px;
+	color: #393939;
+}
+.score_box .score{
+	line-height: 22px;
+	font-size: 12px;
+	color: #393939;
+}
+.score_box .score_img{
+	margin-top: 4px;
+}
+.docter_msg_box .appointment_now_btn{
+	display: block;
+	margin-top: 12px;
+	width: 129px;
+	height: 27px;
+	border: none;
+	background: #2d8ff3;
+	color: #FFF;
+	line-height: 27px;
+	font-size: 12px;
+	text-align: center;
+}
+.banner_home_page_box{
+	width: 97%;
+	height: 137px;
+	margin-left: 15px;
+	border: 1px solid #ccc;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.banner_msg_box{
+	width:100%;
+	height: 137px;
+	background:url(https://static.ncmimg.com/taas/img/11111.jpg);
+	text-align: center;
+}
+.announcement_content_box{
+	width: 97%;
+	margin-left: 15px;
+	border: 1px solid #ccc;
+	margin-bottom: 27px;
+}
+.announcement_box{
+	padding-top: 36px;
+	padding-bottom: 14px;
+}
+.announcement_msg_box{
+	margin-bottom: 20px;
+	padding-left: 27px;
+}
+.announcement_msg_box .icon{
+	width: 20px;
+	height: 20px;
+	background: url(https://static.ncmimg.com/taas/img/announcement_icon.png) no-repeat center;
+	margin-right: 15px;
+}
+.announcement_msg_box .msg_link{
+	line-height: 20px;
+	font-size: 12px;
+	color: #393939;
+}
+.announcement_msg_box .msg_date{
+	line-height: 20px;
+	font-size: 12px;
+	color: #999;
+	margin-right: 30px;
+}
+.serch_expert_head_box h3{
+	line-height: 62px;
+	font-size: 16px;
+	margin-left: 16px;
+	padding-left: 25px;
+	background: url(https://static.ncmimg.com/taas/img/expert.png) no-repeat left center;
+	float: left;
+}
+.serch_box{
+	float: right;
+	margin-right: 20px;
+	margin-top: 24px;
+}
+.serch_box .serch_text{
+	width: 122px;
+	padding-left: 40px;
+	height: 26px;
+	border: 1px solid #d3d3d3;
+	font-size: 12px;
+	line-height: 12px;
+	background: url(https://static.ncmimg.com/taas/img/serch_fangdajing.png) no-repeat 10px center;
+	border-radius: 13px;
+	margin-right: 10px;
+}
+.serch_box .serch_btn{
+	width: 65px ;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFF;
+	background: #2d8ff3;
+	border: none;
+	border-radius: 14px;
+	cursor: pointer;
+}
+.docter_box{
+	min-height: 500px;
+	width: 97%;
+	padding-top: 30px;
+	padding-bottom: 60px;
+	border: 1px solid #eaeaea;
+	margin-left: 15px;
+	position: relative;
+}
+.no_docter_box{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 80px;
+}
+.docter_page_box{
+	width: 260px;
+	margin-left: -130px;
+	height: 20px;
+	position: absolute;
+	left: 50%;
+	bottom: 30px;
+}
+.page_num_box a{
+	float: left;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 16px;
+	color: #393939;
+	text-align: center;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+.page_num_box .page_after_btn{
+	background: url(https://static.ncmimg.com/taas/img/after_arr_btn.png) no-repeat center;
+}
+.page_num_box .page_next_next{
+	background: url(https://static.ncmimg.com/taas/img/next_arr_btn.png) no-repeat center;
+}
+.page_num_box span{
+	float: left;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 16px;
+	color: #393939;
+	text-align: center;
+	margin-right: 10px;
+}
+.page_num_box .on{
+	color: #FFF;
+	background: #2d8ff3;
+}
+.page_num_box .hover{
+	color: #FFF;
+	background: #2d8ff3;
+}

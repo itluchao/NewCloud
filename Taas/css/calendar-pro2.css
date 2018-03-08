@@ -1,0 +1,133 @@
+.demo-box{
+	position: absolute;
+	top:0;
+	left: 0;
+	display:none;
+	width: 406px;
+	border: 2px solid #85c1ff;
+	border-radius: 5px;
+	background: #FFF;
+	overflow: hidden;
+	padding:0 10px;
+	box-shadow: 0px 5px 50px #ececec;
+}
+/*******单独组件样式********/
+.calendar-box *{
+	box-sizing: border-box;
+}
+.ht-rili-head{
+	overflow: hidden;
+}
+.ht-rili-querybox{
+	overflow: hidden;
+}
+.ht-rili-title{
+	float: left;
+	color: #85c1ff;
+	padding-left: 15px;
+	font-size: 14px;
+	line-height: 50px;
+}
+.ht-rili-datebox{
+	float: left;
+	margin-top: 18px;
+	margin-left: 15px;
+}
+.ht-rili-date{
+	text-align: center;
+	float: left;
+	width: 100px;
+	height: 14px;
+	font-size: 14px;
+	line-height: 14px;
+}
+.ht-rili-leftarr{
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin-top:1px;
+	background: url(../img/left.png) no-repeat center;
+	background-size: cover;
+	cursor: pointer;
+}
+.ht-rili-rightarr{
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin-top: 1px;
+	background: url(../img/right.png) no-repeat center;
+	background-size: cover;
+	cursor: pointer;
+}
+.ht-rili-th{
+	width: 14.25%;
+	float: left;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #000;
+	border-top: 1px solid #2d8ff3;
+}
+.ht-rili-td{
+	width: 14.25%;
+	float: left;
+	text-align: center;
+	height: 50px;
+	padding-top: 10px;
+	cursor: pointer;
+	border-top: 1px solid #eaeaea;
+}
+.ht-rili-body{
+	overflow: hidden;
+}
+.ht-rili-day{
+	display: block;
+	font-size: 14px;
+	line-height: 24px;
+}
+.ht-rili-money{
+	display: block;	
+	width: 100%;
+	font-size: 12px;
+	line-height: 12px;
+	color: #FFF;
+}
+.ht-rili-td-disabled{
+	color: #666;
+}
+.ht-rili-onclick{
+	background: #2d8ff3;
+	color: #FFF;
+	border-right: 1px solid #FFF;
+}
+.ht-rili-td-active{
+	background: #2d8ff3;
+	color: #FFF;
+	background-image: url(../img/active.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+.ht_rili_confirm_canel_box{
+	float: left;
+	overflow: hidden;
+	padding-left: 40px;
+}
+.ht_rili_confirm_canel_box span{
+	float: left;
+	text-align: center;
+	width: 50px;	
+	height: 24px;
+	font-size: 12px;
+	line-height: 22px;
+	border: 1px solid #dfe1e2;
+	margin-left: 8px;
+	margin-top: 12px;
+	background: #2d8ff3;
+	color:#FFF;
+	cursor: pointer;
+}
+.ht_rili_confirm_canel_box .canel{
+	background: #FFF;
+	color: #2b2b2b;
+}

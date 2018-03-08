@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="Shortcut Icon" href="http://www.newcloudgroup.cn/templets/yiyuan/img/xinyunicon.png"/>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/system.css">
+	<link rel="stylesheet" href="css/settings.css">
+	<script src="js/jquery-1.7.2.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<div class="system_head clearfix">
+		<div class="logo_box fl"></div>
+		<div class="head_title_box fl clearfix">
+			<h3>TaaS疼痛云平台</h3>
+			<p>提升疼痛患者生活品质</p>
+		</div>
+		<div class="head_msg_box fr clearfix">
+			<a href="javascript:;" class="exit_btn fr">退出</a>
+			<div class="head_personal_box fr clearfix">
+				<b></b>
+				<a href="javascript:;">靖县安定门医院（全国疼痛分级诊疗云平台成员）</a>
+			</div>
+			<div class="head_my_msg_box fr">
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+	</div>
+	<div class="system_content clearfix">
+		<div class="system_sidebar_box fl">
+			<a href="javascript:;" class="home_page_link">首页</a>
+			<div class="discovery parent_div">发现</div>
+			<a href="javascript:;" class="href_btn">预约专家</a>
+		    <div class="my_center parent_div">我的</div>
+		    <a href="javascript:;" class="href_btn now">医院信息</a>
+		    <a href="javascript:;" class="href_btn">我的消息</a>
+		    <a href="javascript:;" class="href_btn">我的预约</a>
+		    <a href="javascript:;" class="href_btn">账户设置</a>
+		</div>
+		<!--变更内容框体-->
+		<div class="system_content_box">
+			<div class="settings_box">
+				<h2>账户设置</h2>
+				<div class="settings_homepage_box">
+					<div class="settings_top_msg_box clearfix">
+						<div class="avatar_settings_box fl">
+							<div class="avatar_box">
+								<img src="img/after_arr_btn.png" alt="" onload="$(this).css('marginTop', ($(this).parent().height()-$(this).height())/2)+'px'">
+								<div class="button">修改头像</div>
+							</div>
+							<input type="file" value="" class="revise_avatar_file_btn">
+						</div>
+						<div class="ID_msg_box fl">
+							<div class="account_box clearfix">
+								<p class="fl">登录账号 ： </p>
+								<span class="account_number fl">carry9160</span>
+								<b class="Authenticated fl">已认证</b>
+							</div> 
+							<div class="ID_box clearfix">
+								<p class="fl">账号ID ： </p>
+								<span class="id_number fl">1345802175017908</span>
+							</div> 
+						</div>
+					</div>
+					<div class="settings_password_box clearfix">
+						<span class="was_set set_msg">已设置</span>
+						<div class="set_name">登录密码</div>
+						<div class="set_introduce">安全性高的密码可以使帐号更安全。建议您定期更换密码，设置一个包含字<br>母，符号或数字中至少两项且长度超过6位的密码。</div>
+						<a href="javascript:;" class="revise">修改</a>
+					</div>
+					<div class="settings_phone_box clearfix">
+						<span class="not_set set_msg">未设置</span>
+						<div class="set_name">手机绑定</div>
+						<div class="set_introduce">您已绑定了手机<span>186****6349</span><br>您的手机号可以直接用于登录、找回密码等。</div>
+						<a href="javascript:;" class="revise">修改</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--变更内容框体-->
+	</div>
+</body>
+</html>
+<script>
+	$(document).ready(function() {
+		$(".button").click(function(event) {		
+			$(".revise_avatar_file_btn").click();	
+		});
+	});
+</script>

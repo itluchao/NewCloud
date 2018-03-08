@@ -1,0 +1,226 @@
+.doctor_suifang_content_box{
+	width: 100%;
+	background: #f8f3ef;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.doctor_link_box {
+	width: 98%;
+	background: #FFF;
+	margin:0 auto;
+}
+.doctor_link_box a{
+	float: left;
+	margin: 2% 3% ;
+	width: 19%;
+}
+.doctor_link_box a img{
+	width: 100%;
+}
+.doctor_tongji_box{
+	width: 98%;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.graph_box{
+	width: 48.8%;
+	background: #FFF;
+	height: 405px;
+	box-sizing: border-box;
+}
+.graph_box{
+	width: 48.8%;
+	background: #FFF;
+	height: 405px;
+	box-sizing: border-box;
+}
+.work_count_box{
+	padding-top: 25px;
+	width: 50%;
+	background: #FFF;
+	height: 405px;
+	box-sizing: border-box;
+}
+.graph_title_box{
+	padding-top: 25px;	
+	padding-left: 22px;
+}
+.graph_title_box h3{
+	float: left;
+	font-size: 30px;
+	line-height: 30px;
+	color: #4b4b4b;
+	margin-right: 30px;
+}
+.graph_title_box select{
+	float: left;
+	width: 100px;
+	padding-left: 10px;
+	height: 30px;
+	border: 1px solid #5b5b5b;
+	background: #f5f5f5;
+	font-size: 16px;
+	line-height: 28px;
+	color: #222121;
+	text-align: center;
+	border-radius: 5px;
+}
+.graph{
+	width: 100%;
+	height: 81.2%;
+	margin-top: 20px;
+}
+.work_count_title_box{
+	width: 93.4%;
+	margin: 0 auto;
+}
+.work_count_title_box h3{
+	float: left;
+	font-size: 30px;
+	line-height: 30px;
+	color: #4b4b4b;
+}
+.work_count_title_box select{
+	float: left;
+	margin-left: 15px;
+	width: 75px;
+	padding-left: 15px;
+	height: 30px;
+	border: 1px solid #5b5b5b;
+	background: #f5f5f5;
+	border-radius: 5px;
+	text-align: center;
+}
+.check_box input{
+	float: left;
+	width: 64px;
+	padding-left: 4px;
+	height: 28px;
+	border: 1px solid #bdbdbd;
+	font-size: 12px;
+	line-height: 12px;
+	color: #222121;
+}
+.check_box span{
+	float: left;
+	line-height: 30px;
+	font-size: 16px;
+	color: #22212;
+	margin:0 10px;
+}
+.check_box .submit{
+	width: 70px;
+	height: 30px;
+	border: none;
+	padding: 0;
+	margin-left: 20px;
+	font-size: 16px;
+	line-height: 30px;
+	background: #2d8ff3;
+	color: #FFF;
+	cursor: pointer;
+}
+.work_count_box table{
+	width:93.4%;
+	margin:0 auto;
+	margin-top: 30px;
+	box-sizing: border-box;
+	border: 1px solid #dedede;
+}
+.work_count_box th{
+	width:33.3%;
+	height: 50px;
+	font-size: 16px;
+	color: #22212;
+	line-height: 50px;
+	box-sizing: border-box;
+	border-right: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	background: #f9f9f9;
+	text-align: center;
+}
+.work_count_box td{
+	width:33.3%;
+	height: 50px;
+	font-size: 16px;
+	color: #22212;
+	line-height: 50px;
+	box-sizing: border-box;
+	border-right: 1px solid #dedede;
+	text-align: center;
+}
+.work_count_box td a{
+	color: #2d8ff3;
+}
+.dynamic_box{
+	width: 98%;
+	margin:0 auto;
+	background: #FFF;
+}
+.dynamic_box h3{
+	width: 94%;
+	border-bottom: 1px solid #dedede;
+	line-height: 80px;
+	font-size: 30px;
+	color: #4b4b4b;
+	text-align: left;
+	margin:0 auto;
+}
+.dynamic_content_box{
+	width: 94%;
+	margin: 0 auto;
+}
+.nurse_dynamic_box{
+	overflow: hidden;
+	width: 50%;
+	min-height: 260px;
+	margin-top: 28px;
+	background: url(https://oj8y27rzn.qnssl.com/taas/img/bg_line.png) no-repeat right center;
+	box-sizing: border-box;
+	padding-right: 5%;
+}
+.nurse_dynamic_box ul{
+	padding: 15px 0;
+	height: 260px;
+	overflow: hidden;
+}
+.nurse_dynamic_box li{
+	margin-bottom: 24px;
+}
+.nurse_dynamic_box p{
+	float: left;
+	width:70%;
+	font-size: 14px;	
+	line-height: 16px;
+	color:#4b4b4b;
+}
+.nurse_dynamic_box span{
+	float: right;
+	width: 30%;
+	font-size: 14px;	
+	line-height: 14px;
+	color:#4b4b4b;
+}
+.doctor_dynamic_box{
+	padding-right: 0;
+	padding-left: 5%;
+	background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

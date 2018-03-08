@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="Shortcut Icon" href="https://static.ncmimg.com/taas/images/xinyunicon.png"/>
+	<link rel="stylesheet" href="https://static.ncmimg.com/taas/css/base.css">
+	<link rel="stylesheet" href="https://static.ncmimg.com/taas/css/system.css">
+	<link rel="stylesheet" href="https://static.ncmimg.com/taas/css/live_broadcast.css">
+	<link rel="stylesheet" href="https://static.ncmimg.com/taas/css/swiper.css">
+	<script src="https://static.ncmimg.com/taas/js/jquery-1.7.2.js"></script>
+	<script src="https://static.ncmimg.com/taas/js/index.js"></script>
+	<script src="https://static.ncmimg.com/taas/js/swiper.min.js"></script>
+</head>
+<body>
+	<div class="system_head clearfix">
+		<div class="logo_box fl"></div>
+		<div class="head_title_box fl clearfix">
+			<h3>TaaS疼痛云平台</h3>
+			<p>提升疼痛患者生活品质</p>
+		</div>
+		<div class="head_msg_box fr clearfix">
+			<a href="javascript:;" class="exit_btn fr">退出</a>
+			<div class="head_personal_box fr clearfix">
+				<b></b>
+				<a href="javascript:;">靖县安定门医院（全国疼痛分级诊疗云平台成员）</a>
+			</div>
+			<div class="head_my_msg_box fr">
+				<a href="javascript:;"></a>
+			</div>
+		</div>
+	</div>
+	<div class="system_content clearfix">
+		<div class="system_sidebar_box fl">
+			<a href="javascript:;" class="home_page_link">首页</a>
+			<div class="discovery parent_div">发现</div>
+			<a href="javascript:;" class="href_btn">预约专家</a>
+		    <div class="my_center parent_div">我的</div>
+		    <a href="javascript:;" class="href_btn now">医院信息</a>
+		    <a href="javascript:;" class="href_btn">我的消息</a>
+		    <a href="javascript:;" class="href_btn">我的预约</a>
+		    <a href="javascript:;" class="href_btn">账户设置</a>
+		</div>
+		<!--变更内容框体-->
+		<div class="system_content_box">
+			<div class="my_video_list_box">
+				<div class="my_video_list_title_box clearfix">
+					<span class="my_video_title shipin  fl">在线教育</span>
+					<a href="javascript:;" class="now">临床教学</a>
+					<a href="javascript:;">医学护理</a>
+					<a href="javascript:;">科研课程</a>
+					<input type="text" placeholder="搜索姓名或课程名称" class="fr search">
+				</div>
+				<div class="video_list_box">
+					<ul class="clearfix">
+						<li>
+							<div class="video_link_box">
+								<img src="https://static.ncmimg.com/taas/img/video_demo_img.png" alt="">
+								<b class="corner">视频</b>
+								<span class="duration">175:38</span>
+								<a href="javascript:;" class="link_play">
+									<img src="https://static.ncmimg.com/taas/img/play_icon.png" alt="">
+								</a>
+							</div>
+							<div class="clearfix">
+								<h4 class="name">樊碧发主任</h4>
+								<b class="del_choice"></b>
+							</div>
+							<div class="class_follow_box clearfix">
+								<span class="class fl">科研教学</span>
+								<span class="follow fr">9999</span>
+							</div>
+						</li> 
+						
+					</ul>
+				</div>
+				<div class="page_box">
+					<ul class="clearfix">
+						<li class="next_page"  style="margin-right: 10px;">
+							<a href="javascript:;">上一页</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="now">1</a>
+						</li>
+						<li>
+							<a href="javascript:;">2</a>
+						</li>
+						<li>
+							<a href="javascript:;">3</a>
+						</li>
+						<li>
+							<a href="javascript:;">4</a>
+						</li>
+						<li>
+							<a href="javascript:;">5</a>
+						</li>
+						<li>···</li>
+						<li>
+							<a href="javascript:;">45</a>
+						</li>
+						<li class="next_page">
+							<a href="javascript:;">下一页</a>
+						</li>
+					</ul>
+				</div>
+				<div class="user_exist_box">
+					<h3>是否删除选中的视频</h3>
+					<div class="clearfix">
+						<a href="javascript:;" class="sure fl">确认</a>
+						<a href="javascript:;" class="cancel fr">取消</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--变更内容框体-->
+	</div>
+</body>
+</html>
+<script>
+	$(document).ready(function() {
+		$(".video_list_box li").mouseover(function(event) {
+			$(this).addClass('hover')
+		});
+		$(".video_list_box li").mouseout(function(event) {
+			$(this).removeClass('hover')
+		});
+		
+		
+	});
+</script>
