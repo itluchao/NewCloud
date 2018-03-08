@@ -6,12 +6,11 @@
 	<link rel="Shortcut Icon" href="https://static.ncmimg.com/taas/images/xinyunicon.png"/>
 	<link rel="stylesheet" href="https://static.ncmimg.com/taas/css/base.css">
 	<link rel="stylesheet" href="https://static.ncmimg.com/taas/css/system.css">
-	<link rel="stylesheet" href="css/live_broadcast.css">
+	<link rel="stylesheet" href="https://static.ncmimg.com/taas/css/live_broadcast.css">
 	<link rel="stylesheet" href="https://static.ncmimg.com/taas/css/swiper.css">
 	<script src="https://static.ncmimg.com/taas/js/jquery-1.7.2.js"></script>
 	<script src="https://static.ncmimg.com/taas/js/index.js"></script>
 	<script src="https://static.ncmimg.com/taas/js/swiper.min.js"></script>
-	<script src="https://static.ncmimg.com/taas/js/jquery.sinaEmotion.js"></script>
 </head>
 <body>
 	https://static.ncmimg.com/taas/
@@ -63,7 +62,23 @@
 						<span class="follow"></span>
 					</div>
 				</div>
-				<div class="broadcast_video_box"></div>
+				<div class="broadcast_video_box clearfix">
+
+				</div>
+				<div class="broadcast_video_box clearfix">
+					<div class="live_video fl">
+						
+					</div>
+					<div class="live_chat fl">
+						<div class="msg_box">
+							<p><span>王三多 ：</span>周医师讲课很有意思，期待下次直直播， 周医师讲课很有意思，期待下次直播。</p>
+						</div>
+						<div class="leave_msg_box clearfix">
+							<textarea name=""></textarea>
+							<input type="submit" value="发送">
+						</div>
+					</div>
+				</div>
 				<div class="message_notice_board_box clearfix">
 					<div class="message_board_title_box">
 						<span>留言评论</span>
@@ -131,7 +146,6 @@
 			$(".rounds_box").hide();
 			$(".no_rounds_box").show();
 		});
-		$('#face').SinaEmotion($('.emotion'));
 
 		$("#analytic").click(function(event) {
 			var inputText = $('#emotion').val();
